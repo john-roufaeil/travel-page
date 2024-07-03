@@ -1,1 +1,19 @@
-// layout.scss
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+span {
+    vertical-align: middle;
+}
+
+li {
+    vertical-align: middle;
+    cursor: pointer;
+}

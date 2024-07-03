@@ -12,6 +12,7 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -20,56 +21,62 @@
   text-transform: none;
   line-height: 1;
 
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-1:before {
+.icon-down:before {
   content: "\e900";
   color: #2437ac;
 }
 
-.icon-2:before {
+.icon-1:before {
   content: "\e901";
   color: #2437ac;
 }
 
-.icon-3:before {
+.icon-2:before {
   content: "\e902";
   color: #2437ac;
 }
 
-.icon-brochures:before {
+.icon-3:before {
   content: "\e903";
   color: #2437ac;
 }
 
-.icon-browser:before {
+.icon-brochures:before {
   content: "\e904";
+  color: #2437ac;
+}
+
+.icon-browser:before {
+  content: "\e905";
   color: #fff;
 }
 
 .icon-calendar:before {
-  content: "\e905";
+  content: "\e906";
 }
 
 .icon-camp:before {
-  content: "\e906";
-  color: #fff;
-}
-
-.icon-currency:before {
   content: "\e907";
   color: #fff;
 }
 
-.icon-fb:before {
+.icon-currency:before {
   content: "\e908";
+  color: #fff;
+}
+
+.icon-fb:before {
+  content: "\e909";
   color: #00b8ff;
 }
 
 .icon-globe:before {
-  content: "\e909";
+  content: "\e90b";
   color: #fff;
 }
 
@@ -79,7 +86,7 @@
 }
 
 .icon-in:before {
-  content: "\e90b";
+  content: "\e91f";
   color: #2437ac;
 }
 
@@ -187,12 +194,12 @@
 }
 
 .icon-right-arrow:before {
-  content: "\e91f";
+  content: "\e920";
   color: #fff;
 }
 
 .icon-route:before {
-  content: "\e920";
+  content: "\e927";
   color: #2437ac;
 }
 

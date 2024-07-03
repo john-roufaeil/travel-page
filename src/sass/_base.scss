@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans'
 }
 
 body {
     font-family: $font-stack;
-    color: $primary-color;
+    color: $primary;
+    margin: 30px;
 }
