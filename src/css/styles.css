@@ -56,6 +56,16 @@ li {
   font-size: 1em;
   color: #FFFFFF; }
 
+.text-btn {
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  color: #FFFFFF;
+  border: none; }
+
 .nav-item {
   font-weight: 700;
   text-decoration: none;
@@ -68,16 +78,19 @@ li {
 .shaded-bg {
   background-color: #2437AC;
   color: #FFFFFF;
+  padding: 0 0 0 15em;
   border-radius: 50px;
   border: none;
-  margin: 0.5em 0;
+  margin: 1em 0;
   width: 100%;
   height: 80vh;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center; }
 
 .shaded-bg h2 {
   font-weight: 800;
-  font-size: 3em; }
+  font-size: 3.5em; }
 
 #eiffel-1,
 #eiffel-2 {
@@ -86,7 +99,8 @@ li {
   display: inline-block; }
 
 #eiffel-1 {
-  bottom: 0; }
+  bottom: 0;
+  left: 0; }
 
 #eiffel-2 {
   bottom: 0;
@@ -108,11 +122,20 @@ li {
   right: 10em;
   display: inline-block; }
 
+.icon-play {
+  padding: 10px 8px 10px 12px;
+  border-radius: 100%;
+  background-color: #3A4BB4;
+  text-align: center; }
+
 .mt-1 {
   margin-top: 1em; }
 
 .mt-2 {
   margin-top: 2em; }
+
+.ml-05 {
+  margin-left: 0.5em; }
 
 .ml-1 {
   margin-left: 1em; }
@@ -120,11 +143,17 @@ li {
 .ml-2 {
   margin-left: 2em; }
 
+.mr-05 {
+  margin-right: 0.5em; }
+
 .mr-1 {
   margin-right: 1em; }
 
 .mr-2 {
   margin-right: 2em; }
+
+.mb-05 {
+  margin-bottom: 0.5em; }
 
 .mb-1 {
   margin-bottom: 1em; }
@@ -152,3 +181,6 @@ li {
 
 .f-6px {
   font-size: 6px; }
+
+.w-40p {
+  width: 40%; }

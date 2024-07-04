@@ -6,6 +6,10 @@
     margin-top: 2em;
 }
 
+.ml-05 {
+    margin-left: 0.5em;
+}
+
 .ml-1 {
     margin-left: 1em;
 }
@@ -14,12 +18,20 @@
     margin-left: 2em;
 }
 
+.mr-05 {
+    margin-right: 0.5em;
+}
+
 .mr-1 {
     margin-right: 1em;
 }
 
 .mr-2 {
     margin-right: 2em;
+}
+
+.mb-05 {
+    margin-bottom: 0.5em;
 }
 
 .mb-1 {
@@ -56,4 +68,8 @@
 
 .f-6px {
     font-size: 6px;
+}
+
+.w-40p {
+    width: 40%;
 }
