@@ -17,6 +17,10 @@
     background-color: $white;
 }
 
+.btn:hover .icon-right-arrow:before {
+    color: $secondary;
+}
+
 .outlined-btn {
     display: inline-block;
     padding: 1em 1.5em;
@@ -34,6 +38,37 @@
     background-color: $white;
     border: 1px solid $primary;
     color: $primary;
+}
+
+.outlined-btn:hover .icon-right-arrow:before {
+    color: $primary;
+}
+
+.outlined-btn-sec {
+    display: inline-block;
+    padding: 1em 1.5em;
+    background-color: transparent;
+    border: 1px solid $secondary;
+    border-radius: 150px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    color: $secondary;
+}
+
+.outlined-btn-sec .icon-right-arrow:before {
+    color: $secondary;
+}
+
+.outlined-btn-sec:hover {
+    background-color: $secondary;
+    color: $white;
+    border: 1px solid $white;
+}
+
+.outlined-btn-sec:hover .icon-right-arrow:before {
+    color: $white;
 }
 
 .text-btn {
@@ -156,7 +191,7 @@
 .card-title {
     color: $primary;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .card-text {
@@ -213,7 +248,7 @@
 }
 
 .why-us-images {
-    width: 45%;
+    width: 41%;
 
     img {
         width: 100%;
@@ -221,7 +256,7 @@
 }
 
 .why-us-text {
-    width: 50%;
+    width: 55%;
 }
 
 .why-us-companies {
@@ -246,4 +281,64 @@
 
 .why-us-title-primary {
     color: $primary;
+}
+
+.two-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    width: 49%;
+    border-radius: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.why-card-head {
+    display: flex;
+    align-items: center;
+}
+
+.why-card-title {
+    color: $primary;
+    margin-left: 0.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.card-text .icon-tick:before {
+    color: $secondary;
+    margin-right: 0.5em;
+}
+
+.why-more {
+    display: flex;
+    align-items: center;
+}
+
+.why-icon {
+    width: 3em;
+    height: 3em;
+    background-color: $secondary;
+    border-radius: 100%;
+    padding: 0.8em;
+    margin: 1em 0;
+}
+
+.why-icon span {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.help {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
 }

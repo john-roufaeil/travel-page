@@ -50,6 +50,9 @@ li {
   border: 1px solid #00B8FF;
   background-color: #FFFFFF; }
 
+.btn:hover .icon-right-arrow:before {
+  color: #00B8FF; }
+
 .outlined-btn {
   display: inline-block;
   padding: 1em 1.5em;
@@ -66,6 +69,32 @@ li {
   background-color: #FFFFFF;
   border: 1px solid #2437AC;
   color: #2437AC; }
+
+.outlined-btn:hover .icon-right-arrow:before {
+  color: #2437AC; }
+
+.outlined-btn-sec {
+  display: inline-block;
+  padding: 1em 1.5em;
+  background-color: transparent;
+  border: 1px solid #00B8FF;
+  border-radius: 150px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  color: #00B8FF; }
+
+.outlined-btn-sec .icon-right-arrow:before {
+  color: #00B8FF; }
+
+.outlined-btn-sec:hover {
+  background-color: #00B8FF;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF; }
+
+.outlined-btn-sec:hover .icon-right-arrow:before {
+  color: #FFFFFF; }
 
 .text-btn {
   display: inline-block;
@@ -170,7 +199,7 @@ li {
 .card-title {
   color: #2437AC;
   font-size: 1.5em;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .card-text {
   color: #727272;
@@ -218,12 +247,12 @@ li {
   font-size: 1.2em; }
 
 .why-us-images {
-  width: 45%; }
+  width: 41%; }
   .why-us-images img {
     width: 100%; }
 
 .why-us-text {
-  width: 50%; }
+  width: 55%; }
 
 .why-us-companies {
   margin-top: 4em;
@@ -244,6 +273,57 @@ li {
 
 .why-us-title-primary {
   color: #2437AC; }
+
+.two-cards {
+  display: flex;
+  justify-content: space-between; }
+
+.why-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  width: 49%;
+  border-radius: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column; }
+
+.why-card-head {
+  display: flex;
+  align-items: center; }
+
+.why-card-title {
+  color: #2437AC;
+  margin-left: 0.5em;
+  font-weight: 700;
+  font-size: 1.2em; }
+
+.card-text .icon-tick:before {
+  color: #00B8FF;
+  margin-right: 0.5em; }
+
+.why-more {
+  display: flex;
+  align-items: center; }
+
+.why-icon {
+  width: 3em;
+  height: 3em;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 0.8em;
+  margin: 1em 0; }
+
+.why-icon span {
+  font-size: 1.5em;
+  text-align: center; }
+
+.help {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center; }
 
 .mt-1 {
   margin-top: 1em; }
