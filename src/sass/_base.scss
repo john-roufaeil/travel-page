@@ -5,8 +5,16 @@
     font-family: 'Plus Jakarta Sans'
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
 body {
     font-family: $font-stack;
     color: $primary;
-    margin: 30px;
+    width: 100%;
+    padding: 2em;
 }
