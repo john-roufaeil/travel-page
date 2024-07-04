@@ -1,36 +1,32 @@
 .btn {
     display: inline-block;
     padding: 1em 1.5em;
-    color: $white;
-    border: 1px solid transparent;
     border-radius: 150px;
     cursor: pointer;
-    text-align: center;
     font-weight: 400;
     font-size: 1em;
+    text-align: center;
+}
+
+.contained-btn {
+    color: $white;
+    border: 1px solid transparent;
     background-color: $secondary;
 }
 
-.btn:hover {
+.contained-btn:hover {
     color: $secondary;
     border: 1px solid $secondary;
     background-color: $white;
 }
 
-.btn:hover .icon-right-arrow:before {
+.contained-btn:hover .icon-right-arrow:before {
     color: $secondary;
 }
 
 .outlined-btn {
-    display: inline-block;
-    padding: 1em 1.5em;
     background-color: transparent;
     border: 1px solid $white;
-    border-radius: 150px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1em;
     color: $white;
 }
 
@@ -45,15 +41,8 @@
 }
 
 .outlined-btn-sec {
-    display: inline-block;
-    padding: 1em 1.5em;
     background-color: transparent;
     border: 1px solid $secondary;
-    border-radius: 150px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1em;
     color: $secondary;
 }
 
@@ -72,12 +61,7 @@
 }
 
 .text-btn {
-    display: inline-block;
     background-color: transparent;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1em;
     color: $white;
     border: none;
 }
@@ -86,7 +70,7 @@
     text-decoration: underline;
 }
 
-.btn:hover span {
+.contained-btn:hover span {
     color: $primary;
 }
 
@@ -101,18 +85,22 @@
     cursor: pointer;
 }
 
-.welcome {
+.welcome,
+.countries-container {
     background-color: $primary;
     color: $white;
-    padding: 0 0 0 15em;
     border-radius: 50px;
     border: none;
     margin: 1em 0;
     width: 100%;
-    height: 80vh;
-    position: relative;
     display: flex;
     align-items: center;
+}
+
+.welcome {
+    padding: 0 0 0 15em;
+    position: relative;
+    height: 80vh;
 }
 
 .welcome h2 {
@@ -156,6 +144,7 @@
 }
 
 .icon-play {
+    text-decoration: none;
     padding: 10px 8px 10px 12px;
     border-radius: 100%;
     background-color: #3A4BB4;
@@ -273,9 +262,12 @@
     font-weight: 700;
 }
 
-.why-us-title {
+.title {
     font-size: 2.5em;
     font-weight: 700;
+}
+
+.why-us-title {
     color: $black;
 }
 
@@ -341,4 +333,138 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
+}
+
+.countries .section-title,
+.countries .icon-brochures:before {
+    color: $white;
+}
+
+.countries {
+    width: 70%;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.countries-title {
+    width: 50%;
+}
+
+.carousel-icon {
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid $white;
+    margin: 1em 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-icon .icon-right-arrow:before,
+.carousel-icon .icon-left-arrow:before {
+    color: $white;
+}
+
+.carousel-icon .icon-left-arrow:before {
+    font-size: 1.5em;
+}
+
+.carousel-icon .icon-right-arrow:before {
+    font-size: 0.9em;
+}
+
+.carousel-icon:hover {
+    background-color: $secondary;
+    border: 1px solid $secondary;
+}
+
+.carousel-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.countries-hello {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.countries-imgs-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em 0 0;
+    gap: 15px;
+}
+
+.canada-img img,
+.australia-img img,
+.usa-img img,
+.sri-lanka-img img {
+    height: 100%;
+    width: 95%;
+}
+
+.canada-img,
+.australia-img,
+.usa-img,
+.sri-lanka-img,
+.bangladesh-img {
+    position: relative;
+}
+
+.bangladesh-img img {
+    height: 100%;
+    width: 95%;
+}
+
+.canada-flag,
+.bangladesh-flag,
+.australia-flag,
+.usa-flag,
+.sri-lanka-flag {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.working-visa {
+    display: inline-block;
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 1.5em 1em;
+    border-radius: 20px;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 3em);
+    gap: 10px;
+}
+
+.working-visa p:first-of-type {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.working-visa p:last-of-type {
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 0.7em;
+    text-align: center;
+    width: fit-content;
 }
