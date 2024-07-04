@@ -1,14 +1,20 @@
 .btn {
     display: inline-block;
     padding: 1em 1.5em;
-    color: #fff;
-    border: none;
+    color: $white;
+    border: 1px solid transparent;
     border-radius: 150px;
     cursor: pointer;
     text-align: center;
     font-weight: 400;
     font-size: 1em;
     background-color: $secondary;
+}
+
+.btn:hover {
+    color: $secondary;
+    border: 1px solid $secondary;
+    background-color: $white;
 }
 
 .outlined-btn {
@@ -24,6 +30,12 @@
     color: $white;
 }
 
+.outlined-btn:hover {
+    background-color: $white;
+    border: 1px solid $primary;
+    color: $primary;
+}
+
 .text-btn {
     display: inline-block;
     background-color: transparent;
@@ -33,6 +45,14 @@
     font-size: 1em;
     color: $white;
     border: none;
+}
+
+.text-btn:hover {
+    text-decoration: underline;
+}
+
+.btn:hover span {
+    color: $primary;
 }
 
 .nav-item {
