@@ -8,13 +8,14 @@ body,
 html {
   margin: 0;
   padding: 0;
-  width: 100vw; }
+  width: 100%; }
 
 body {
   font-family: "Helvetica, Arial, sans-serif";
   color: #2437AC;
   width: 100%;
-  padding: 2em; }
+  padding: 2em;
+  background-color: #F1F5EB; }
 
 nav {
   display: flex;
@@ -127,6 +128,37 @@ li {
   border-radius: 100%;
   background-color: #3A4BB4;
   text-align: center; }
+
+.offerings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  width: 32%;
+  border-radius: 20px; }
+
+.card-icon {
+  width: 4em;
+  height: 4em;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1em;
+  margin: 1em 0; }
+
+.card-icon span {
+  font-size: 2em; }
+
+.card-title {
+  color: #2437AC;
+  font-size: 1.5em;
+  font-weight: 600; }
+
+.card-text {
+  color: #727272;
+  margin: 1em 0; }
 
 .mt-1 {
   margin-top: 1em; }

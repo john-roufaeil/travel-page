@@ -106,3 +106,40 @@
     background-color: #3A4BB4;
     text-align: center;
 }
+
+.offerings {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1em 2em;
+    width: 32%;
+    border-radius: 20px;
+}
+
+.card-icon {
+    width: 4em;
+    height: 4em;
+    background-color: $secondary;
+    border-radius: 100%;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.card-icon span {
+    font-size: 2em;
+}
+
+.card-title {
+    color: $primary;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.card-text {
+    color: $sub-text;
+    margin: 1em 0;
+}
