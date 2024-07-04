@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-.shaded-bg {
+.welcome {
     background-color: $primary;
     color: $white;
     padding: 0 0 0 15em;
@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.shaded-bg h2 {
+.welcome h2 {
     font-weight: 800;
     font-size: 3.5em;
 }
@@ -142,4 +142,57 @@
 .card-text {
     color: $sub-text;
     margin: 1em 0;
+}
+
+.why-us {
+    width: 70%;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.why-us-images {
+    display: flex;
+    width: 45%;
+    gap: 1em;
+}
+
+.why-us-images-1,
+.why-us-images-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp {
+    background-color: $secondary;
+    color: $white;
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2em;
+    align-items: center;
+}
+
+.exp-number {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+.exp-text {
+    font-size: 1.2em;
+}
+
+.why-us-details {
+    width: 50%;
+    display: flex;
+}
+
+.why-us-companies {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
 }
