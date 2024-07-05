@@ -37,6 +37,9 @@ li {
   align-items: center;
   gap: 0.25em; }
 
+section {
+  margin: 5em auto; }
+
 .contained-btn-sm {
   display: inline-block;
   border-radius: 150px;
@@ -198,6 +201,17 @@ li {
   color: #727272;
   margin: 1em 0; }
 
+.section-title {
+  color: #2437AC;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  font-weight: 700; }
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700; }
+
 .offerings {
   display: flex;
   width: 100%;
@@ -264,7 +278,6 @@ li {
 
 .why-us {
   width: 70%;
-  margin: 5em auto;
   display: flex;
   flex-direction: column; }
 
@@ -317,17 +330,6 @@ li {
   margin-top: 4em;
   display: flex;
   justify-content: space-between; }
-
-.section-title {
-  color: #2437AC;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  margin-left: 0.5em;
-  font-weight: 700; }
-
-.title {
-  font-size: 2.5em;
-  font-weight: 700; }
 
 .why-us-title {
   color: #000000;
@@ -549,6 +551,24 @@ li {
   font-size: 0.7em;
   text-align: center;
   width: fit-content; }
+
+.visa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%; }
+
+.visa-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em; }
+
+.visa-card {
+  border: 1px solid #E3DBD8;
+  width: 49%;
+  height: 100px;
+  border-radius: 20px; }
 
 @use 'sass:math';
 .p-0 {
@@ -799,3 +819,6 @@ li {
 
 .bold {
   font-weight: 700; }
+
+.text-center {
+  text-align: center; }
