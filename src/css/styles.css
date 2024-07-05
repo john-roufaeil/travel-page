@@ -34,73 +34,121 @@ li {
   vertical-align: middle;
   cursor: pointer; }
 
-.contained-btn {
+.contained-btn-sm {
   display: inline-block;
-  padding: 1em 1.5em;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 1em;
   text-align: center;
+  background-color: #00B8FF;
   color: #FFFFFF;
-  border: 1px solid transparent;
-  background-color: #00B8FF; }
-  .contained-btn:hover {
+  border: 1px solid #FFFFFF;
+  padding: 0.8em 1.2em;
+  font-size: 0.7em;
+  width: fit-content; }
+  .contained-btn-sm:hover {
+    display: inline-block;
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    background-color: #FFFFFF;
     color: #00B8FF;
     border: 1px solid #00B8FF;
-    background-color: #FFFFFF; }
+    padding: 0.8em 1.2em;
+    font-size: 0.7em;
+    width: fit-content; }
+    .contained-btn-sm:hover .icon-right-arrow:before {
+      color: #00B8FF; }
+
+.contained-btn {
+  display: inline-block;
+  border-radius: 150px;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  background-color: #00B8FF;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 1em 1.5em;
+  font-size: 1em; }
+  .contained-btn:hover {
+    display: inline-block;
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #00B8FF;
+    border: 1px solid #00B8FF;
+    padding: 1em 1.5em;
+    font-size: 1em; }
     .contained-btn:hover .icon-right-arrow:before {
       color: #00B8FF; }
 
 .outlined-btn {
   display: inline-block;
-  padding: 1em 1.5em;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 1em;
   text-align: center;
   background-color: transparent;
+  color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  color: #FFFFFF; }
+  padding: 1em 1.5em;
+  font-size: 1em; }
   .outlined-btn:hover {
+    display: inline-block;
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
     background-color: #FFFFFF;
+    color: #2437AC;
     border: 1px solid #2437AC;
-    color: #2437AC; }
+    padding: 1em 1.5em;
+    font-size: 1em; }
     .outlined-btn:hover .icon-right-arrow:before {
       color: #2437AC; }
 
 .outlined-btn-sec {
   display: inline-block;
-  padding: 1em 1.5em;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 1em;
   text-align: center;
   background-color: transparent;
+  color: #00B8FF;
   border: 1px solid #00B8FF;
-  color: #00B8FF; }
+  padding: 1em 1.5em;
+  font-size: 1em; }
   .outlined-btn-sec .icon-right-arrow:before {
     color: #00B8FF; }
   .outlined-btn-sec:hover {
+    display: inline-block;
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
     background-color: #00B8FF;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    padding: 1em 1.5em;
+    font-size: 1em; }
     .outlined-btn-sec:hover .icon-right-arrow:before {
       color: #FFFFFF; }
 
 .text-btn {
   display: inline-block;
-  padding: 1em 1.5em;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 1em;
   text-align: center;
   background-color: transparent;
   color: #FFFFFF;
-  border: none; }
+  border: 1px solid #FFFFFF;
+  padding: 1em 1.5em;
+  font-size: 1em; }
   .text-btn:hover {
     text-decoration: underline; }
 

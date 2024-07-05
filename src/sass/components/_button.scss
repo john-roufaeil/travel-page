@@ -1,23 +1,43 @@
-@mixin btn() {
+@mixin btn($bg-color, $text-color, $size) {
     display: inline-block;
-    padding: 1em 1.5em;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
-    font-size: 1em;
     text-align: center;
+    background-color: $bg-color;
+    color: $text-color;
+    border: 1px solid $text-color;
+
+    @if $size ==base {
+        padding: 1em 1.5em;
+        font-size: 1em;
+    }
+
+    @else {
+        @debug SMALL;
+        padding: 0.8em 1.2em;
+        font-size: 0.7em;
+        width: fit-content;
+    }
+}
+
+.contained-btn-sm {
+    @include btn($secondary, $white, small);
+
+    &:hover {
+        @include btn($white, $secondary, small);
+
+        .icon-right-arrow:before {
+            color: $secondary;
+        }
+    }
 }
 
 .contained-btn {
-    @include btn();
-    color: $white;
-    border: 1px solid transparent;
-    background-color: $secondary;
+    @include btn($secondary, $white, base);
 
     &:hover {
-        color: $secondary;
-        border: 1px solid $secondary;
-        background-color: $white;
+        @include btn($white, $secondary, base);
 
         .icon-right-arrow:before {
             color: $secondary;
@@ -26,15 +46,10 @@
 }
 
 .outlined-btn {
-    @include btn();
-    background-color: transparent;
-    border: 1px solid $white;
-    color: $white;
+    @include btn(transparent, $white, base);
 
     &:hover {
-        background-color: $white;
-        border: 1px solid $primary;
-        color: $primary;
+        @include btn($white, $primary, base);
 
         .icon-right-arrow:before {
             color: $primary;
@@ -43,19 +58,14 @@
 }
 
 .outlined-btn-sec {
-    @include btn();
-    background-color: transparent;
-    border: 1px solid $secondary;
-    color: $secondary;
+    @include btn(transparent, $secondary, base);
 
     .icon-right-arrow:before {
         color: $secondary;
     }
 
     &:hover {
-        background-color: $secondary;
-        color: $white;
-        border: 1px solid $white;
+        @include btn($secondary, $white, base);
 
         .icon-right-arrow:before {
             color: $white;
@@ -65,10 +75,7 @@
 
 
 .text-btn {
-    @include btn();
-    background-color: transparent;
-    color: $white;
-    border: none;
+    @include btn(transparent, $white, base);
 
     &:hover {
         text-decoration: underline;
