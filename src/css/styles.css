@@ -446,12 +446,23 @@ li {
   height: 2em;
   background-color: transparent;
   border-radius: 100%;
+  padding: 0;
   border: 1px solid #FFFFFF;
   margin: 1em 0;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.carousel-icon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content; }
+
+.icon-right-arrow,
+.icon-left-arrow {
+  height: 50%; }
 
 .carousel-icon .icon-right-arrow:before,
 .carousel-icon .icon-left-arrow:before {
@@ -464,7 +475,8 @@ li {
 
 .carousel-icons {
   display: flex;
-  gap: 1em; }
+  gap: 1em;
+  justify-content: center; }
 
 .countries-hello {
   display: flex;
