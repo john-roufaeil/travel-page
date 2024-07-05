@@ -8,7 +8,7 @@
     color: $text-color;
     border: 1px solid $border-color;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
 
     @if $size ==base {
         padding: 1em 1.5em;

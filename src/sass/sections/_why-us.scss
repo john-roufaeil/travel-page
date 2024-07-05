@@ -30,7 +30,7 @@
     background-color: $secondary;
     color: $white;
     display: flex;
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     padding: 2em;
     align-items: center;
@@ -47,15 +47,18 @@
 }
 
 .why-us-images {
-    width: 41%;
+    width: 45%;
 
     img {
-        width: 100%;
+        width: 90%;
     }
 }
 
 .why-us-text {
-    width: 55%;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .why-us-companies {
@@ -79,6 +82,7 @@
 
 .why-us-title {
     color: $black;
+    line-height: 90%;
 }
 
 .why-us-title-primary {
@@ -93,7 +97,7 @@
 .why-card {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5em;
-    width: 49%;
+    width: 48%;
     border-radius: 20px;
     display: flex;
     align-items: left;
@@ -113,7 +117,19 @@
     font-size: 1.2em;
 }
 
-.card-text .icon-tick:before {
+.why-card-text-details {
+    color: $sub-text;
+    font-size: 0.9em;
+    margin: 0 0 0.5em 0;
+}
+
+.why-card-text {
+    margin: 0 0.5em 0.5em 0;
+    color: $sub-text;
+    font-size: 0.9em;
+}
+
+.why-card-text .icon-tick:before {
     color: $secondary;
     margin-right: 0.5em;
 }
@@ -129,7 +145,6 @@
     background-color: $secondary;
     border-radius: 100%;
     padding: 0.8em;
-    margin: 1em 0;
 }
 
 .why-icon span {
@@ -143,4 +158,31 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
+}
+
+.why-us-image-1-parent {
+    position: relative
+}
+
+.why-us-image-1-frame {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+}
+
+.why-card-icon {
+    width: 3em;
+    height: 3em;
+    background-color: $secondary;
+    border-radius: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 1.5em;
+    }
 }

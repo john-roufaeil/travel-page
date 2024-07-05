@@ -6,7 +6,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 1em;
 }
 
 span {
@@ -16,4 +16,7 @@ span {
 li {
     vertical-align: middle;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
 }
