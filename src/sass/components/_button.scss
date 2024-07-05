@@ -1,4 +1,4 @@
-.btn {
+@mixin btn() {
     display: inline-block;
     padding: 1em 1.5em;
     border-radius: 150px;
@@ -9,6 +9,7 @@
 }
 
 .contained-btn {
+    @include btn();
     color: $white;
     border: 1px solid transparent;
     background-color: $secondary;
@@ -25,6 +26,7 @@
 }
 
 .outlined-btn {
+    @include btn();
     background-color: transparent;
     border: 1px solid $white;
     color: $white;
@@ -41,6 +43,7 @@
 }
 
 .outlined-btn-sec {
+    @include btn();
     background-color: transparent;
     border: 1px solid $secondary;
     color: $secondary;
@@ -62,6 +65,7 @@
 
 
 .text-btn {
+    @include btn();
     background-color: transparent;
     color: $white;
     border: none;
