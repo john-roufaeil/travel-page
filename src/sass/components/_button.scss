@@ -1,15 +1,16 @@
 @mixin btn($bg-color, $text-color, $size, $border-color: $text-color) {
-    display: inline-block;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
     height: fit-content;
+    width: fit-content;
     text-align: center;
     background-color: $bg-color;
     color: $text-color;
     border: 1px solid $border-color;
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
 
     @if $size ==base {
         padding: 1em 1.5em;

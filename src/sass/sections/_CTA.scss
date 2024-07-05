@@ -2,9 +2,10 @@
     width: 70%;
     display: flex;
     gap: 2em;
+    justify-content: space-between;
 
     .CTA-img {
-        width: 40%;
+        width: 35%;
         height: auto;
 
         img {
@@ -13,10 +14,11 @@
     }
 
     .side-CTA {
+        width: 70%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 2em;
-        width: 100%;
 
         .CTA-offers {
             border-radius: 20px;
@@ -24,6 +26,28 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+
+            img {
+                width: 30%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .CTA-offers-details {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                padding: 2em;
+
+                .card-text {
+                    font-size: 0.8em;
+                }
+
+                .icon-right-arrow {
+                    margin: 0 0 0 0.5em;
+                    font-size: 0.8em;
+                }
+            }
         }
 
         .CTA-stats {

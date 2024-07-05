@@ -41,34 +41,36 @@ section {
   margin: 5em auto; }
 
 .contained-btn-sm {
-  display: inline-block;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   background-color: #00B8FF;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   padding: 0.8em 1.2em;
   font-size: 0.7em;
   width: fit-content; }
   .contained-btn-sm .icon-right-arrow:before {
     color: #FFFFFF; }
   .contained-btn-sm:hover {
-    display: inline-block;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
     height: fit-content;
+    width: fit-content;
     text-align: center;
     background-color: #FFFFFF;
     color: #00B8FF;
     border: 1px solid #00B8FF;
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     padding: 0.8em 1.2em;
     font-size: 0.7em;
     width: fit-content; }
@@ -76,116 +78,123 @@ section {
       color: #00B8FF; }
 
 .contained-btn {
-  display: inline-block;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   background-color: #00B8FF;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   padding: 1em 1.5em;
   font-size: 1em; }
   .contained-btn .icon-right-arrow:before {
     color: #FFFFFF; }
   .contained-btn:hover {
-    display: inline-block;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
     height: fit-content;
+    width: fit-content;
     text-align: center;
     background-color: #FFFFFF;
     color: #00B8FF;
     border: 1px solid #00B8FF;
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     padding: 1em 1.5em;
     font-size: 1em; }
     .contained-btn:hover .icon-right-arrow:before {
       color: #00B8FF; }
 
 .outlined-btn {
-  display: inline-block;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   padding: 1em 1.5em;
   font-size: 1em; }
   .outlined-btn .icon-right-arrow:before {
     color: #FFFFFF; }
   .outlined-btn:hover {
-    display: inline-block;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
     height: fit-content;
+    width: fit-content;
     text-align: center;
     background-color: #FFFFFF;
     color: #2437AC;
     border: 1px solid #2437AC;
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     padding: 1em 1.5em;
     font-size: 1em; }
     .outlined-btn:hover .icon-right-arrow:before {
       color: #2437AC; }
 
 .outlined-btn-sec {
-  display: inline-block;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   background-color: transparent;
   color: #00B8FF;
   border: 1px solid #00B8FF;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   padding: 1em 1.5em;
   font-size: 1em; }
   .outlined-btn-sec .icon-right-arrow:before {
     color: #00B8FF; }
   .outlined-btn-sec:hover {
-    display: inline-block;
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
     height: fit-content;
+    width: fit-content;
     text-align: center;
     background-color: #00B8FF;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     padding: 1em 1.5em;
     font-size: 1em; }
     .outlined-btn-sec:hover .icon-right-arrow:before {
       color: #FFFFFF; }
 
 .text-btn {
-  display: inline-block;
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid transparent;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   padding: 1em 1.5em;
   font-size: 1em; }
   .text-btn:hover {
@@ -670,23 +679,39 @@ section {
 .CTA {
   width: 70%;
   display: flex;
-  gap: 2em; }
+  gap: 2em;
+  justify-content: space-between; }
   .CTA .CTA-img {
-    width: 40%;
+    width: 35%;
     height: auto; }
     .CTA .CTA-img img {
       width: 100%; }
   .CTA .side-CTA {
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    width: 100%; }
+    justify-content: space-between;
+    gap: 2em; }
     .CTA .side-CTA .CTA-offers {
       border-radius: 20px;
       background-color: #FFFFFF;
       width: 100%;
       display: flex;
       justify-content: space-between; }
+      .CTA .side-CTA .CTA-offers img {
+        width: 30%;
+        height: auto;
+        object-fit: cover; }
+      .CTA .side-CTA .CTA-offers .CTA-offers-details {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 2em; }
+        .CTA .side-CTA .CTA-offers .CTA-offers-details .card-text {
+          font-size: 0.8em; }
+        .CTA .side-CTA .CTA-offers .CTA-offers-details .icon-right-arrow {
+          margin: 0 0 0 0.5em;
+          font-size: 0.8em; }
     .CTA .side-CTA .CTA-stats {
       border-radius: 20px;
       background-color: #00B8FF;
