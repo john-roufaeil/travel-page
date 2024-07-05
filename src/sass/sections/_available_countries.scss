@@ -1,0 +1,67 @@
+.available-countries {
+    width: 70%;
+
+    .icon-wiggly-arrow {
+        font-size: 0.5em;
+    }
+
+    .available-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: last baseline;
+    }
+
+    .countries-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        margin-top: 1em;
+
+        .available-country {
+            border: 1px solid $border;
+            padding: 2em;
+            margin: 1em 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            width: 24%;
+            gap: 1em;
+
+            img {
+                width: 25%;
+            }
+
+            .card-title {
+                font-size: 1.2em;
+            }
+
+            .card-ticks {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 1em;
+
+                .card-tick {
+                    display: flex;
+                    justify-content: baseline;
+                    align-items: center;
+                }
+
+                .icon-tick {
+                    font-size: 0.6em;
+                    margin-right: 1em;
+                }
+
+                .icon-tick::before {
+                    color: $primary
+                }
+
+                p {
+                    font-size: 0.8em;
+                    color: $sub-text;
+                }
+            }
+        }
+    }
+}
