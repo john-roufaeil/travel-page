@@ -1,3 +1,4 @@
+// colors
 $background: #F1F5EB;
 $primary: #2437AC;
 $secondary: #00B8FF;
@@ -6,7 +7,12 @@ $sub-text: #727272;
 $white: #FFFFFF;
 $black: #000000;
 
+// font
 $font-stack: 'Helvetica, Arial, sans-serif';
 
-$base-margin: 16px;
-$base-padding: 16px;
+// spacing
+$no-space: 0em;
+$sm-space: 0.5em;
+$base-space: 0.75em;
+$md-space: 1em;
+$lg-space: 2em;

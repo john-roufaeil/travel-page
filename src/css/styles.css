@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -46,54 +47,73 @@ li {
   color: #FFFFFF;
   border: 1px solid transparent;
   background-color: #00B8FF; }
-
-.contained-btn:hover {
-  color: #00B8FF;
-  border: 1px solid #00B8FF;
-  background-color: #FFFFFF; }
-
-.contained-btn:hover .icon-right-arrow:before {
-  color: #00B8FF; }
+  .contained-btn:hover {
+    color: #00B8FF;
+    border: 1px solid #00B8FF;
+    background-color: #FFFFFF; }
+    .contained-btn:hover .icon-right-arrow:before {
+      color: #00B8FF; }
 
 .outlined-btn {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   color: #FFFFFF; }
-
-.outlined-btn:hover {
-  background-color: #FFFFFF;
-  border: 1px solid #2437AC;
-  color: #2437AC; }
-
-.outlined-btn:hover .icon-right-arrow:before {
-  color: #2437AC; }
+  .outlined-btn:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #2437AC;
+    color: #2437AC; }
+    .outlined-btn:hover .icon-right-arrow:before {
+      color: #2437AC; }
 
 .outlined-btn-sec {
   background-color: transparent;
   border: 1px solid #00B8FF;
   color: #00B8FF; }
-
-.outlined-btn-sec .icon-right-arrow:before {
-  color: #00B8FF; }
-
-.outlined-btn-sec:hover {
-  background-color: #00B8FF;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF; }
-
-.outlined-btn-sec:hover .icon-right-arrow:before {
-  color: #FFFFFF; }
+  .outlined-btn-sec .icon-right-arrow:before {
+    color: #00B8FF; }
+  .outlined-btn-sec:hover {
+    background-color: #00B8FF;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF; }
+    .outlined-btn-sec:hover .icon-right-arrow:before {
+      color: #FFFFFF; }
 
 .text-btn {
   background-color: transparent;
   color: #FFFFFF;
   border: none; }
+  .text-btn:hover {
+    text-decoration: underline; }
 
-.text-btn:hover {
-  text-decoration: underline; }
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  width: 32%;
+  border-radius: 20px; }
 
-.contained-btn:hover span {
-  color: #2437AC; }
+.card-icon {
+  width: 4em;
+  height: 4em;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1em;
+  margin: 1em 0; }
+  .card-icon span {
+    font-size: 2em; }
+
+.card-title {
+  color: #2437AC;
+  font-size: 1.5em;
+  font-weight: 700; }
+
+.card-text {
+  color: #727272;
+  margin: 1em 0; }
+
+.offerings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
 
 .nav-item {
   font-weight: 700;
@@ -101,11 +121,7 @@ li {
   list-style-type: none;
   text-transform: uppercase; }
 
-.clickable {
-  cursor: pointer; }
-
-.welcome,
-.countries-container {
+.welcome {
   background-color: #2437AC;
   color: #FFFFFF;
   border-radius: 50px;
@@ -113,16 +129,13 @@ li {
   margin: 1em 0;
   width: 100%;
   display: flex;
-  align-items: center; }
-
-.welcome {
+  align-items: center;
   padding: 0 0 0 15em;
   position: relative;
   height: 80vh; }
-
-.welcome h2 {
-  font-weight: 800;
-  font-size: 3.5em; }
+  .welcome h2 {
+    font-weight: 800;
+    font-size: 3.5em; }
 
 #eiffel-1,
 #eiffel-2 {
@@ -160,37 +173,6 @@ li {
   border-radius: 100%;
   background-color: #3A4BB4;
   text-align: center; }
-
-.offerings {
-  display: flex;
-  width: 100%;
-  justify-content: space-between; }
-
-.card {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1em 2em;
-  width: 32%;
-  border-radius: 20px; }
-
-.card-icon {
-  width: 4em;
-  height: 4em;
-  background-color: #00B8FF;
-  border-radius: 100%;
-  padding: 1em;
-  margin: 1em 0; }
-
-.card-icon span {
-  font-size: 2em; }
-
-.card-title {
-  color: #2437AC;
-  font-size: 1.5em;
-  font-weight: 700; }
-
-.card-text {
-  color: #727272;
-  margin: 1em 0; }
 
 .why-us {
   width: 70%;
@@ -313,6 +295,16 @@ li {
   flex-direction: column;
   align-items: left;
   justify-content: center; }
+
+.countries-container {
+  background-color: #2437AC;
+  color: #FFFFFF;
+  border-radius: 50px;
+  border: none;
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  align-items: center; }
 
 .countries .section-title,
 .countries .icon-brochures:before {
@@ -485,3 +477,6 @@ li {
 
 .w-40p {
   width: 40%; }
+
+.clickable {
+  cursor: pointer; }

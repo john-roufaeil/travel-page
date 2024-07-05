@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -505,7 +506,7 @@ li {
   border-radius: 150px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 7em;
+  font-size: 0.7em;
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;

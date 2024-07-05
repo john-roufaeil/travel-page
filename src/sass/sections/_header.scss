@@ -1,0 +1,74 @@
+.offerings {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-weight: 700;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.welcome {
+    background-color: $primary;
+    color: $white;
+    border-radius: 50px;
+    border: none;
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15em;
+    position: relative;
+    height: 80vh;
+
+    h2 {
+        font-weight: 800;
+        font-size: 3.5em;
+    }
+}
+
+#eiffel-1,
+#eiffel-2 {
+    width: 21em;
+    position: absolute;
+    display: inline-block;
+}
+
+#eiffel-1 {
+    bottom: 0;
+    left: 0;
+}
+
+#eiffel-2 {
+    bottom: 0;
+    right: 6.5em;
+    z-index: 10;
+}
+
+#man {
+    width: 26em;
+    position: absolute;
+    bottom: 0;
+    right: 13.5em;
+    z-index: 11;
+    display: inline-block;
+}
+
+#circle {
+    width: 28em;
+    position: absolute;
+    bottom: 0;
+    right: 10em;
+    display: inline-block;
+}
+
+.icon-play {
+    text-decoration: none;
+    padding: 10px 8px 10px 12px;
+    border-radius: 100%;
+    background-color: #3A4BB4;
+    text-align: center;
+}
