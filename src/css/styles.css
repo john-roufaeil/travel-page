@@ -420,12 +420,6 @@ li {
 .carousel-icon .icon-left-arrow:before {
   color: #FFFFFF; }
 
-.carousel-icon .icon-left-arrow:before {
-  font-size: 1.5em; }
-
-.carousel-icon .icon-right-arrow:before {
-  font-size: 0.9em; }
-
 .carousel-icon:hover {
   background-color: #00B8FF;
   border: 1px solid #00B8FF; }
