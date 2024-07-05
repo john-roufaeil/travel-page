@@ -1,4 +1,5 @@
 .why-us {
+    // height: fit-content;
     width: 70%;
     margin: 5em auto;
     display: flex;
@@ -14,16 +15,15 @@
 .why-us-images {
     display: flex;
     width: 45%;
-    gap: 1em;
 }
 
 .why-us-images-1,
 .why-us-images-2 {
     display: flex;
     flex-direction: column;
-    gap: 2em;
     justify-content: space-between;
     align-items: center;
+    gap: 1em;
 }
 
 .exp {

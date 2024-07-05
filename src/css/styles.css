@@ -275,16 +275,15 @@ li {
 
 .why-us-images {
   display: flex;
-  width: 45%;
-  gap: 1em; }
+  width: 45%; }
 
 .why-us-images-1,
 .why-us-images-2 {
   display: flex;
   flex-direction: column;
-  gap: 2em;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  gap: 1em; }
 
 .exp {
   background-color: #00B8FF;
