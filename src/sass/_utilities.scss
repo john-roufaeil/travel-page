@@ -1,54 +1,178 @@
-.mt-1 {
-    margin-top: 1em;
+@use 'sass:math';
+
+$utilities: (
+    "padding" : ("prefix": "p",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "padding-top" : ("prefix": "pt",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "padding-right" : ("prefix": "pr",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "padding-bottom" : ("prefix": "pb",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "padding-left" : ("prefix": "pl",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "margin" : ("prefix": "m",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "margin-top" : ("prefix": "mt",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "margin-right" : ("prefix": "mr",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "margin-bottom" : ("prefix": "mb",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+    "margin-left" : ("prefix": "ml",
+        "values": ("0": $base-space * 0,
+            "05": $base-space * 0.5,
+            "1": $base-space,
+            "2": $base-space * 2,
+            "4": $base-space * 4,
+            "6": $base-space * 6,
+            "8": $base-space * 8,
+        ),
+    ),
+);
+
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $value in $values {
+        @if $key =="default" {
+            .#{$prefix} {
+                #{$property}: $value;
+            }
+        }
+
+        @else {
+            .#{$prefix}-#{$key} {
+                #{$property}: #{$value};
+            }
+        }
+    }
 }
 
-.mt-2 {
-    margin-top: 2em;
-}
+// .mt-1 {
+//     margin-top: 1em;
+// }
 
-.ml-05 {
-    margin-left: 0.5em;
-}
+// .mt-2 {
+//     margin-top: 2em;
+// }
 
-.ml-1 {
-    margin-left: 1em;
-}
+// .ml-05 {
+//     margin-left: 0.5em;
+// }
 
-.ml-2 {
-    margin-left: 2em;
-}
+// .ml-1 {
+//     margin-left: 1em;
+// }
 
-.mr-05 {
-    margin-right: 0.5em;
-}
+// .ml-2 {
+//     margin-left: 2em;
+// }
 
-.mr-1 {
-    margin-right: 1em;
-}
+// .mr-05 {
+//     margin-right: 0.5em;
+// }
 
-.mr-2 {
-    margin-right: 2em;
-}
+// .mr-1 {
+//     margin-right: 1em;
+// }
 
-.mb-05 {
-    margin-bottom: 0.5em;
-}
+// .mr-2 {
+//     margin-right: 2em;
+// }
 
-.mb-1 {
-    margin-bottom: 1em;
-}
+// .mb-05 {
+//     margin-bottom: 0.5em;
+// }
 
-.mb-2 {
-    margin-bottom: 2em;
-}
+// .mb-1 {
+//     margin-bottom: 1em;
+// }
 
-.pt-1 {
-    padding-top: 1em;
-}
+// .mb-2 {
+//     margin-bottom: 2em;
+// }
 
-.pt-2 {
-    padding-top: 2em;
-}
+// .pt-1 {
+//     padding-top: 1em;
+// }
+
+// .pt-2 {
+//     padding-top: 2em;
+// }
 
 .w-1 {
     width: 1em;
@@ -71,7 +195,7 @@
 }
 
 .w-40p {
-    width: 40%;
+    width:40%;
 }
 
 .clickable {
