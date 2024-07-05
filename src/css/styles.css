@@ -667,6 +667,45 @@ section {
           font-size: 0.8em;
           color: #727272; }
 
+.CTA {
+  width: 70%;
+  display: flex;
+  gap: 2em; }
+  .CTA .CTA-img {
+    width: 40%;
+    height: auto; }
+    .CTA .CTA-img img {
+      width: 100%; }
+  .CTA .side-CTA {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%; }
+    .CTA .side-CTA .CTA-offers {
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+    .CTA .side-CTA .CTA-stats {
+      border-radius: 20px;
+      background-color: #00B8FF;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2.5em 1.5em; }
+      .CTA .side-CTA .CTA-stats .CTA-stat {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #FFFFFF; }
+        .CTA .side-CTA .CTA-stats .CTA-stat .CTA-number {
+          font-size: 2.2em;
+          font-weight: 700; }
+        .CTA .side-CTA .CTA-stats .CTA-stat .CTA-desc {
+          font-size: 0.7em;
+          font-weight: 400; }
+
 @use 'sass:math';
 .p-0 {
   padding: 0em; }

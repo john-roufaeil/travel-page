@@ -1,0 +1,55 @@
+.CTA {
+    width: 70%;
+    display: flex;
+    gap: 2em;
+
+    .CTA-img {
+        width: 40%;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .side-CTA {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+
+        .CTA-offers {
+            border-radius: 20px;
+            background-color: $white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .CTA-stats {
+            border-radius: 20px;
+            background-color: $secondary;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2.5em 1.5em;
+
+            .CTA-stat {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: $white;
+
+                .CTA-number {
+                    font-size: 2.2em;
+                    font-weight: 700;
+                }
+
+                .CTA-desc {
+                    font-size: 0.7em;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
