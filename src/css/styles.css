@@ -885,6 +885,10 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 1em; }
+  .testimonial .testimonial-img {
+    width: 40%; }
+    .testimonial .testimonial-img img {
+      width: 100%; }
   .testimonial .testimonial-details {
     width: 60%;
     background-color: #00B8FF;

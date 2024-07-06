@@ -4,6 +4,14 @@
     justify-content: space-between;
     gap: 1em;
 
+    .testimonial-img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     .testimonial-details {
         width: 60%;
         background-color: $secondary;
