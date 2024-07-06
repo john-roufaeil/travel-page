@@ -16,7 +16,7 @@ body {
   font-family: "Helvetica, Arial, sans-serif";
   color: #2437AC;
   width: 100%;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   background-color: #F1F5EB; }
 
 nav {
@@ -1055,6 +1055,53 @@ section {
             font-size: 0.8em; }
       .blogs .blogs-list .blog img {
         width: 100%; }
+
+footer {
+  background-color: #2437AC;
+  color: #FFFFFF;
+  position: relative;
+  left: -2em;
+  width: calc(100% + 4em);
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden; }
+  footer .footer-shape {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: absolute; }
+  footer .footer-qs {
+    display: flex;
+    width: calc(70% - 4em);
+    margin: 0 auto;
+    padding: 1em 0;
+    justify-content: space-between; }
+    footer .footer-qs .vertical-line {
+      width: 1px;
+      background-color: white;
+      margin: 0 1em;
+      border: 1px solid white;
+      opacity: 0.2; }
+    footer .footer-qs .footer-qs-object {
+      display: flex;
+      align-items: center;
+      gap: 1em; }
+      footer .footer-qs .footer-qs-object .why-card-icon {
+        width: 4em;
+        height: 4em; }
+        footer .footer-qs .footer-qs-object .why-card-icon span {
+          font-size: 2em; }
+        footer .footer-qs .footer-qs-object .why-card-icon .icon-flight:before {
+          color: #FFFFFF; }
+      footer .footer-qs .footer-qs-object p {
+        font-size: 1.5em; }
 
 @use 'sass:math';
 .p-0 {

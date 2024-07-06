@@ -1,0 +1,63 @@
+footer {
+    background-color: $primary;
+    color: $white;
+    position: relative;
+    left: -2em;
+    width: calc(100% + 4em);
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    .footer-shape {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .footer-qs {
+        display: flex;
+        width: calc(70% - 4em);
+        margin: 0 auto;
+        padding: 1em 0;
+        justify-content: space-between;
+
+        .vertical-line {
+            width: 1px;
+            background-color: white;
+            margin: 0 1em;
+            border: 1px solid white;
+            opacity: 0.2;
+        }
+
+        .footer-qs-object {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            .why-card-icon {
+                width: 4em;
+                height: 4em;
+
+                span {
+                    font-size: 2em;
+                }
+
+                .icon-flight:before {
+                    color: $white;
+                }
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
