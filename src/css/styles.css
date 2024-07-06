@@ -885,10 +885,6 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 1em; }
-  .testimonial .testimonial-img {
-    width: 40%; }
-    .testimonial .testimonial-img img {
-      width: 100%; }
   .testimonial .testimonial-details {
     width: 60%;
     background-color: #00B8FF;
@@ -937,6 +933,59 @@ section {
           .testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-right-arrow:before,
           .testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-left-arrow:before {
             color: #FFFFFF; }
+
+.process {
+  background-color: #FFFFFF;
+  color: #2437AC;
+  border-radius: 50px;
+  border: none;
+  margin: 10em 0 5em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; }
+  .process .process-shape {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 30%;
+    position: absolute; }
+  .process .process-container {
+    z-index: 2;
+    width: 70%;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em; }
+    .process .process-container .process-cards {
+      margin: 1em 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 2em; }
+      .process .process-container .process-cards .process-card {
+        box-shadow: 0px 0px 5px 0px lightgray;
+        border-radius: 20px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 0 0 2em 0;
+        background-color: #FFFFFF; }
+        .process .process-container .process-cards .process-card span {
+          font-size: 2em; }
+        .process .process-container .process-cards .process-card .process-card-title {
+          font-size: 1.2em;
+          font-weight: 700; }
+        .process .process-container .process-cards .process-card .process-card-text {
+          font-size: 0.8em; }
+      .process .process-container .process-cards .process-card-down {
+        margin: 2em 0 0 0; }
 
 @use 'sass:math';
 .p-0 {
