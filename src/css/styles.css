@@ -880,6 +880,64 @@ section {
         .team .team-container .team-details .team-img a {
           text-decoration: none; }
 
+.testimonial {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em; }
+  .testimonial .testimonial-img {
+    width: 40%; }
+    .testimonial .testimonial-img img {
+      width: 100%; }
+  .testimonial .testimonial-details {
+    width: 60%;
+    background-color: #00B8FF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 3em; }
+    .testimonial .testimonial-details .icon-quotes {
+      font-size: 2em; }
+    .testimonial .testimonial-details .testimonial-text {
+      font-size: 1.5em; }
+    .testimonial .testimonial-details .testimonial-contact {
+      display: flex;
+      gap: 0.5em;
+      align-items: center; }
+      .testimonial .testimonial-details .testimonial-contact img {
+        transform: scale(0.8); }
+      .testimonial .testimonial-details .testimonial-contact .testimonial-contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5em; }
+        .testimonial .testimonial-details .testimonial-contact .testimonial-contact-details .testimonial-name {
+          font-weight: 700; }
+        .testimonial .testimonial-details .testimonial-contact .testimonial-contact-details .testimonial-pos {
+          font-size: 0.8em; }
+    .testimonial .testimonial-details .testimonial-nav {
+      display: flex;
+      align-items: center;
+      gap: 1em; }
+      .testimonial .testimonial-details .testimonial-nav hr {
+        color: white;
+        border: 1px solid #FFFFFF;
+        width: 100%;
+        height: 1px; }
+      .testimonial .testimonial-details .testimonial-nav .carousel-icon {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF; }
+        .testimonial .testimonial-details .testimonial-nav .carousel-icon .icon-right-arrow:before,
+        .testimonial .testimonial-details .testimonial-nav .carousel-icon .icon-left-arrow:before {
+          color: #00B8FF; }
+        .testimonial .testimonial-details .testimonial-nav .carousel-icon:hover {
+          background-color: #00B8FF; }
+          .testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-right-arrow:before,
+          .testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-left-arrow:before {
+            color: #FFFFFF; }
+
 @use 'sass:math';
 .p-0 {
   padding: 0em; }
