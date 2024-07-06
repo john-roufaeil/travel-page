@@ -1,0 +1,85 @@
+.coaching {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+
+    .carousel-icon {
+        background-color: $secondary;
+        border: 1px solid $secondary;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $secondary;
+
+            .icon-right-arrow:before,
+            .icon-left-arrow:before {
+                color: $secondary;
+            }
+        }
+    }
+
+    .coaching-categories {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2em;
+
+        .coaching-category {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .coaching-details {
+                background-color: $white;
+                border-radius: 20px 0 20px 20px;
+                bottom: -4em;
+                right: 0;
+                width: 95%;
+                padding: 1.5em;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .card-title {
+                    font-size: 1.2em;
+                }
+
+                .link-container {
+                    background-color: transparent;
+                    border: 1px solid $secondary;
+                    height: 50%;
+                    width: fit-content;
+                    padding: 1em;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .icon-link {
+                        height: 50%;
+                    }
+
+                    .icon-link:before {
+                        color: $secondary;
+                        font-size: 0.8em;
+                    }
+
+                    &:hover {
+                        background-color: $secondary;
+                        border: 1px solid transparent;
+                        cursor: pointer;
+
+                        .icon-link:before {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

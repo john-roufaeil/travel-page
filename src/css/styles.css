@@ -468,8 +468,8 @@ section {
   width: 50%; }
 
 .carousel-icon {
-  width: 2em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
   background-color: transparent;
   border-radius: 100%;
   padding: 0;
@@ -492,7 +492,7 @@ section {
 
 .carousel-icon .icon-right-arrow:before,
 .carousel-icon .icon-left-arrow:before {
-  font-size: 0.5em;
+  font-size: 0.65em;
   color: #FFFFFF; }
 
 .carousel-icon:hover {
@@ -730,6 +730,65 @@ section {
         .CTA .side-CTA .CTA-stats .CTA-stat .CTA-desc {
           font-size: 0.7em;
           font-weight: 400; }
+
+.coaching {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em; }
+  .coaching .carousel-icon {
+    background-color: #00B8FF;
+    border: 1px solid #00B8FF; }
+    .coaching .carousel-icon:hover {
+      background-color: transparent;
+      border: 1px solid #00B8FF; }
+      .coaching .carousel-icon:hover .icon-right-arrow:before,
+      .coaching .carousel-icon:hover .icon-left-arrow:before {
+        color: #00B8FF; }
+  .coaching .coaching-categories {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2em; }
+    .coaching .coaching-categories .coaching-category {
+      position: relative; }
+      .coaching .coaching-categories .coaching-category img {
+        width: 100%; }
+      .coaching .coaching-categories .coaching-category .coaching-details {
+        background-color: #FFFFFF;
+        border-radius: 20px 0 20px 20px;
+        bottom: -4em;
+        right: 0;
+        width: 95%;
+        padding: 1.5em;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .coaching .coaching-categories .coaching-category .coaching-details .card-title {
+          font-size: 1.2em; }
+        .coaching .coaching-categories .coaching-category .coaching-details .link-container {
+          background-color: transparent;
+          border: 1px solid #00B8FF;
+          height: 50%;
+          width: fit-content;
+          padding: 1em;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .coaching .coaching-categories .coaching-category .coaching-details .link-container .icon-link {
+            height: 50%; }
+          .coaching .coaching-categories .coaching-category .coaching-details .link-container .icon-link:before {
+            color: #00B8FF;
+            font-size: 0.8em; }
+          .coaching .coaching-categories .coaching-category .coaching-details .link-container:hover {
+            background-color: #00B8FF;
+            border: 1px solid transparent;
+            cursor: pointer; }
+            .coaching .coaching-categories .coaching-category .coaching-details .link-container:hover .icon-link:before {
+              color: #FFFFFF; }
 
 @use 'sass:math';
 .p-0 {
