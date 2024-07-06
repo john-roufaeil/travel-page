@@ -790,6 +790,64 @@ section {
             .coaching .coaching-categories .coaching-category .coaching-details .link-container:hover .icon-link:before {
               color: #FFFFFF; }
 
+.team {
+  background-color: #FFFFFF;
+  color: #2437AC;
+  border-radius: 50px;
+  border: none;
+  margin: 10em 0 5em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .team .team-container {
+    width: 70%;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em; }
+    .team .team-container .team-details {
+      display: flex;
+      gap: 2em; }
+      .team .team-container .team-details .team-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        width: 100%;
+        flex: 2; }
+        .team .team-container .team-details .team-text .team-object {
+          display: flex;
+          justify-content: space-between;
+          border: 1px solid #E3DBD8;
+          width: 100%;
+          padding: 1em 2em;
+          border-radius: 20px; }
+          .team .team-container .team-details .team-text .team-object .team-object-text {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column; }
+            .team .team-container .team-details .team-text .team-object .team-object-text .card-title {
+              font-size: 1.2em; }
+            .team .team-container .team-details .team-text .team-object .team-object-text .card-text {
+              font-size: 0.9em;
+              margin: 1em 0 0 0; }
+          .team .team-container .team-details .team-text .team-object .carousel-icon {
+            background-color: transparent;
+            border: 1px solid #00B8FF; }
+            .team .team-container .team-details .team-text .team-object .carousel-icon .icon-right-arrow:before,
+            .team .team-container .team-details .team-text .team-object .carousel-icon .icon-left-arrow:before {
+              color: #00B8FF; }
+            .team .team-container .team-details .team-text .team-object .carousel-icon:hover {
+              background-color: #00B8FF;
+              border: 1px solid transparent; }
+              .team .team-container .team-details .team-text .team-object .carousel-icon:hover .icon-right-arrow:before,
+              .team .team-container .team-details .team-text .team-object .carousel-icon:hover .icon-left-arrow:before {
+                color: white; }
+      .team .team-container .team-details .team-img {
+        flex: 1; }
+        .team .team-container .team-details .team-img img {
+          width: 100%; }
+
 @use 'sass:math';
 .p-0 {
   padding: 0em; }

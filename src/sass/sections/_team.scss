@@ -1,0 +1,84 @@
+.team {
+    background-color: $white;
+    color: $primary;
+    border-radius: 50px;
+    border: none;
+    margin: 10em 0 5em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .team-container {
+        width: 70%;
+        margin: 4em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+
+        .team-details {
+            display: flex;
+            gap: 2em;
+
+            .team-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                width: 100%;
+                flex: 2;
+
+                .team-object {
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid $border;
+                    width: 100%;
+                    padding: 1em 2em;
+                    border-radius: 20px;
+
+                    .team-object-text {
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+
+                        .card-title {
+                            font-size: 1.2em;
+                        }
+
+                        .card-text {
+                            font-size: 0.9em;
+                            margin: 1em 0 0 0;
+                        }
+                    }
+
+                    .carousel-icon {
+                        background-color: transparent;
+                        border: 1px solid $secondary;
+
+                        .icon-right-arrow:before,
+                        .icon-left-arrow:before {
+                            color: $secondary;
+                        }
+
+                        &:hover {
+                            background-color: $secondary;
+                            border: 1px solid transparent;
+
+                            .icon-right-arrow:before,
+                            .icon-left-arrow:before {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .team-img {
+                flex: 1;
+
+                img {
+                    width: 100%
+                }
+            }
+        }
+    }
+}
