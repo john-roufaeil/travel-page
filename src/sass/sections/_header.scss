@@ -1,7 +1,6 @@
 .offerings {
-    display: flex;
+    @include flex(row, space-between);
     width: 100%;
-    justify-content: space-between;
 }
 
 .nav-item {
@@ -18,8 +17,7 @@
     border: none;
     margin: 1rem 0;
     width: 100%;
-    display: flex;
-    align-items: center;
+    @include flex(row, normal, center);
     padding: 0 0 0 15rem;
     position: relative;
     height: 80vh;

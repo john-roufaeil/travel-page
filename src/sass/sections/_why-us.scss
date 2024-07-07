@@ -1,38 +1,30 @@
 .why-us {
-    // height: fit-content;
+    @include flex(column);
     width: 70%;
-    display: flex;
-    flex-direction: column;
 }
 
 .why-us-details {
+    @include flex(row, space-between);
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .why-us-images {
-    display: flex;
+    @include flex();
     width: 45%;
 }
 
 .why-us-images-1,
 .why-us-images-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    @include flex(column, space-between, center, 1rem);
 }
 
 .exp {
+    @include flex(row, normal, center);
     background-color: $secondary;
     color: $white;
-    display: flex;
     width: 90%;
     border-radius: 20px;
     padding: 2rem;
-    align-items: center;
 }
 
 .exp-number {
@@ -54,16 +46,13 @@
 }
 
 .why-us-text {
+    @include flex(column, space-between);
     width: 52%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .why-us-companies {
+    @include flex(row, space-between);
     margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
 }
 
 .why-us-title {
@@ -76,8 +65,7 @@
 }
 
 .two-cards {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between);
 }
 
 .why-card {
@@ -85,15 +73,11 @@
     padding: 0.5rem;
     width: 48%;
     border-radius: 20px;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: column;
+    @include flex(column, left, left);
 }
 
 .why-card-head {
-    display: flex;
-    align-items: center;
+    @include flex(row, normal, center);
 }
 
 .why-card-title {
@@ -112,7 +96,7 @@
 .why-card-text {
     margin: 0 0.5rem 0.5rem 0;
     color: $sub-text;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .why-card-text .icon-tick:before {
@@ -121,8 +105,7 @@
 }
 
 .why-more {
-    display: flex;
-    align-items: center;
+    @include flex(row, normal, center);
 }
 
 .why-icon {
@@ -139,11 +122,8 @@
 }
 
 .help {
+    @include flex(column, normal, left);
     margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
 }
 
 .why-us-image-1-parent {
@@ -158,15 +138,13 @@
 }
 
 .why-card-icon {
+    @include flex(row, center, center);
     width: 3rem;
     height: 3rem;
     background-color: $secondary;
     border-radius: 100%;
     padding: 1rem;
     margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     span {
         font-size: 1.5rem;

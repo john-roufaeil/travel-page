@@ -6,27 +6,20 @@
     }
 
     .available-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: last baseline;
+        @include flex(row, space-between, last baseline);
     }
 
     .countries-list {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
+        @include flex(row, space-between, center, 1rem);
         margin-top: 1rem;
 
         .available-country {
             border: 1px solid $border;
             padding: 2rem;
             margin: 1rem 0 0 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @include flex(column, space-evenly, start, 1rem);
             border-radius: 20px;
             width: 24%;
-            gap: 1rem;
 
             img {
                 width: 25%;
@@ -37,15 +30,10 @@
             }
 
             .card-ticks {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                gap: 1rem;
+                @include flex(column, space-evenly, start, 1rem);
 
                 .card-tick {
-                    display: flex;
-                    justify-content: baseline;
-                    align-items: center;
+                    @include flex(row, baseline, center);
                 }
 
                 .icon-tick {

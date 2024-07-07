@@ -5,8 +5,7 @@
     border: none;
     margin: 1rem 0;
     width: 100%;
-    display: flex;
-    align-items: center;
+    @include flex(row, normal, center);
 }
 
 .countries .section-title,
@@ -17,8 +16,7 @@
 .countries {
     width: 70%;
     margin: 5rem auto;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
 }
 
 .countries-title {
@@ -34,15 +32,11 @@
     border: 1px solid $white;
     margin: 1rem 0;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
 }
 
 .carousel-icon span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     height: fit-content;
 }
 
@@ -63,24 +57,17 @@
 }
 
 .carousel-icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    @include flex(row, center, normal, 1rem);
 }
 
 .countries-hello {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+    @include flex(row, space-between, end);
 }
 
 .countries-imgs-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    @include flex(row, space-between, normal, 1rem, nowrap);
     width: 100%;
     padding: 2rem 0 0;
-    gap: 15px;
 }
 
 .canada-img img,
@@ -115,18 +102,14 @@
 }
 
 .working-visa {
-    display: inline-block;
+    @include flex(column, space-between, normal,0.6rem);
     background-color: $secondary;
-    display: flex;
-    justify-content: space-between;
     margin: 1rem;
     padding: 1.5rem 1rem;
     border-radius: 20px;
-    flex-direction: column;
     position: absolute;
     bottom: 0;
     width: calc(100% - 3rem);
-    gap: 10px;
 }
 
 .working-visa p:first-of-type {

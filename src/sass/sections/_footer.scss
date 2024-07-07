@@ -5,9 +5,7 @@ footer {
     left: -2rem;
     width: calc(100% + 4rem);
     margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between);
 
     .footer-map {
         position: relative;
@@ -26,11 +24,10 @@ footer {
     }
 
     .footer-qs {
-        display: flex;
+        @include flex(row, space-between);
         width: calc(70% - 4rem);
         margin: 0 auto;
         padding: 1rem 0;
-        justify-content: space-between;
 
         .vertical-line {
             margin: 0 1rem;
@@ -39,9 +36,7 @@ footer {
         }
 
         .footer-qs-object {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+            @include flex(row, normal, center, 1rem);
 
             .why-card-icon {
                 width: 4rem;
@@ -66,19 +61,14 @@ footer {
         font-size: 0.8rem;
         width: calc(70% - 4rem);
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        @include flex(row, space-between, start);
         padding: 2rem 0;
         border-top: 2px solid rgba(255, 255, 255, 0.2);
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
         .footer-links-col {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex(column, space-between, normal, 2rem);
             width: 22%;
-            gap: 2rem;
             padding: 3rem 0;
 
             .email {
@@ -86,8 +76,7 @@ footer {
                 border-radius: 999px;
                 height: 3rem;
                 position: relative;
-                display: flex;
-                align-items: center;
+                @include flex(row, normal, center);
 
                 p {
                     margin: 1rem;
@@ -101,9 +90,7 @@ footer {
                     border-radius: 100%;
                     width: 3rem;
                     height: 3rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(row, center, center);
                 }
             }
 
@@ -113,13 +100,10 @@ footer {
             }
 
             .footer-links-col-content {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
+                @include flex(column, normal, normal, 1rem);
 
                 p {
-                    display: flex;
-                    align-items: center;
+                    @include flex(row, normal, center);
                 }
 
                 .icon-tick {
@@ -133,8 +117,7 @@ footer {
             }
 
             .social-media {
-                display: flex;
-                gap: 1rem;
+                @include flex(row, normal, normal, 1rem);
 
                 .icon-x:before,
                 .icon-fb:before,
@@ -155,9 +138,7 @@ footer {
         color: rgba(255, 255, 255, 0.8);
 
         .footer-policy-links {
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
+            @include flex(row, space-between, normal, 1rem);
         }
     }
 }

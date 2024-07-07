@@ -1,12 +1,11 @@
 .team {
+    @include flex(column);
     background-color: $white;
     color: $primary;
     border-radius: 50px;
     border: none;
     margin: 10rem 0 5rem 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     position: relative;
     overflow: hidden;
 
@@ -24,25 +23,18 @@
         z-index: 2;
         width: 70%;
         margin: 4rem auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 2rem;
+        @include flex(column, space-between, normal, 2rem);
 
         .team-details {
-            display: flex;
-            gap: 2rem;
+            @include flex(row, normal, normal, 2rem);
 
             .team-text {
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
+                @include flex(column, normal, normal, 1.5rem);
                 width: 100%;
                 flex: 2;
 
                 .team-object {
-                    display: flex;
-                    justify-content: space-between;
+                    @include flex(row, space-between, center);
                     border: 1px solid $border;
                     width: 100%;
                     padding: 1rem 2rem;
@@ -51,9 +43,7 @@
                     background-color: $white;
 
                     .team-object-text {
-                        display: flex;
-                        justify-content: space-evenly;
-                        flex-direction: column;
+                        @include flex(column, space-evenly);
 
                         .card-title {
                             font-size: 1.2rem;
@@ -90,9 +80,7 @@
             .team-img {
                 flex: 1;
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(column, normal, center);
 
                 .social-media {
                     position: absolute;
@@ -102,10 +90,7 @@
                     border-radius: 20px;
                     width: fit-content;
                     padding: 0.5rem 1rem;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 1rem;
+                    @include flex(row, space-between, center, 1rem);
                 }
 
                 img {

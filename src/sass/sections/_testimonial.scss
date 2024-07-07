@@ -1,8 +1,6 @@
 .testimonial {
     width: 70%;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    @include flex(row, space-between, normal, 1rem);
 
     .testimonial-img {
         width: 40%;
@@ -16,9 +14,7 @@
         width: 60%;
         background-color: $secondary;
         color: $white;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        @include flex(column, space-between);
         border-radius: 20px;
         padding: 3rem;
 
@@ -31,20 +27,14 @@
         }
 
         .testimonial-contact {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-
+            @include flex(row, normal, center, 0.5rem);
 
             img {
                 transform: scale(0.8);
             }
 
             .testimonial-contact-details {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 0.5rem;
+                @include flex(column, space-between, center, 0.5rem);
 
                 .testimonial-name {
                     font-weight: 700;
@@ -57,9 +47,7 @@
         }
 
         .testimonial-nav {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+            @include flex(row, normal, center, 1rem);
 
             hr {
                 color: white;
