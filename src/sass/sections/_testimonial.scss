@@ -2,7 +2,7 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
-    gap: 1em;
+    gap: 1rem;
 
     .testimonial-img {
         width: 40%;
@@ -20,19 +20,19 @@
         justify-content: space-between;
         flex-direction: column;
         border-radius: 20px;
-        padding: 3em;
+        padding: 3rem;
 
         .icon-quotes {
-            font-size: 2em;
+            font-size: 2rem;
         }
 
         .testimonial-text {
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
 
         .testimonial-contact {
             display: flex;
-            gap: 0.5em;
+            gap: 0.5rem;
             align-items: center;
 
 
@@ -44,14 +44,14 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                gap: 0.5em;
+                gap: 0.5rem;
 
                 .testimonial-name {
                     font-weight: 700;
                 }
 
                 .testimonial-pos {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -59,7 +59,7 @@
         .testimonial-nav {
             display: flex;
             align-items: center;
-            gap: 1em;
+            gap: 1rem;
 
             hr {
                 color: white;

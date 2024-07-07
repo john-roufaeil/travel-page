@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2em;
+    gap: 2rem;
 
     .carousel-icon {
         background-color: $secondary;
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        gap: 2em;
+        gap: 2rem;
 
         .coaching-category {
             position: relative;
@@ -36,17 +36,17 @@
             .coaching-details {
                 background-color: $white;
                 border-radius: 20px 0 20px 20px;
-                bottom: -4em;
+                bottom: -4rem;
                 right: 0;
                 width: 95%;
-                padding: 1.5em;
+                padding: 1.5rem;
                 position: absolute;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
                 .card-title {
-                    font-size: 1.2em;
+                    font-size: 1.2rem;
                 }
 
                 .link-container {
@@ -54,7 +54,7 @@
                     border: 1px solid $secondary;
                     height: 50%;
                     width: fit-content;
-                    padding: 1em;
+                    padding: 1rem;
                     border-radius: 20px;
                     display: flex;
                     justify-content: center;
@@ -66,7 +66,7 @@
 
                     .icon-link:before {
                         color: $secondary;
-                        font-size: 0.8em;
+                        font-size: 0.8rem;
                     }
 
                     &:hover {

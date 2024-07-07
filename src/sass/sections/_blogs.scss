@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2em;
+    gap: 2rem;
 
     .carousel-icon {
         border: 1px solid $primary;
@@ -27,7 +27,7 @@
 
     .blogs-list {
         display: flex;
-        gap: 1.5em;
+        gap: 1.5rem;
         align-items: center;
         justify-content: space-between;
 
@@ -40,15 +40,15 @@
             align-items: center;
 
             .blog-info {
-                padding: 2em;
+                padding: 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                gap: 1em;
+                gap: 1rem;
 
                 .blog-details {
                     color: $black;
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -56,7 +56,7 @@
                     .date,
                     .admin {
                         display: flex;
-                        gap: 0.25em;
+                        gap: 0.25rem;
                         align-items: center;
                     }
                 }
@@ -66,12 +66,12 @@
                 }
 
                 .blog-text {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                     color: $sub-text;
                 }
 
                 .blog-button {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                     font-weight: 600;
                     display: flex;
                     align-items: center;
@@ -82,7 +82,7 @@
                     }
 
                     .icon-right-arrow:before {
-                        font-size: 0.8em;
+                        font-size: 0.8rem;
                     }
                 }
             }

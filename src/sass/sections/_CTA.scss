@@ -1,7 +1,7 @@
 .CTA {
     width: 70%;
     display: flex;
-    gap: 2em;
+    gap: 2rem;
     justify-content: space-between;
 
     .CTA-img {
@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 2em;
+        gap: 2rem;
 
         .CTA-offers {
             border-radius: 20px;
@@ -37,15 +37,15 @@
                 display: flex;
                 justify-content: space-around;
                 flex-direction: column;
-                padding: 2em;
+                padding: 2rem;
 
                 .card-text {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                 }
 
                 .icon-right-arrow {
-                    margin: 0 0 0 0.5em;
-                    font-size: 0.8em;
+                    margin: 0 0 0 0.5rem;
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -56,7 +56,7 @@
             width: 100%;
             display: flex;
             justify-content: space-evenly;
-            padding: 2.5em 1.5em;
+            padding: 2.5rem 1.5rem;
 
             .CTA-stat {
                 display: flex;
@@ -65,12 +65,12 @@
                 color: $white;
 
                 .CTA-number {
-                    font-size: 2.2em;
+                    font-size: 2.2rem;
                     font-weight: 700;
                 }
 
                 .CTA-desc {
-                    font-size: 0.7em;
+                    font-size: 0.7rem;
                     font-weight: 400;
                 }
             }

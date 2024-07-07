@@ -3,7 +3,7 @@
     color: $primary;
     border-radius: 50px;
     border: none;
-    margin: 10em 0 5em 0;
+    margin: 10rem 0 5rem 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,20 +23,20 @@
     .team-container {
         z-index: 2;
         width: 70%;
-        margin: 4em auto;
+        margin: 4rem auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 2em;
+        gap: 2rem;
 
         .team-details {
             display: flex;
-            gap: 2em;
+            gap: 2rem;
 
             .team-text {
                 display: flex;
                 flex-direction: column;
-                gap: 1.5em;
+                gap: 1.5rem;
                 width: 100%;
                 flex: 2;
 
@@ -45,7 +45,7 @@
                     justify-content: space-between;
                     border: 1px solid $border;
                     width: 100%;
-                    padding: 1em 2em;
+                    padding: 1rem 2rem;
                     border-radius: 20px;
                     z-index: 3;
                     background-color: $white;
@@ -56,12 +56,12 @@
                         flex-direction: column;
 
                         .card-title {
-                            font-size: 1.2em;
+                            font-size: 1.2rem;
                         }
 
                         .card-text {
-                            font-size: 0.9em;
-                            margin: 1em 0 0 0;
+                            font-size: 0.9rem;
+                            margin: 1rem 0 0 0;
                         }
                     }
 
@@ -97,15 +97,15 @@
                 .social-media {
                     position: absolute;
                     margin: auto;
-                    bottom: 2.5em;
+                    bottom: 2.5rem;
                     background-color: $white;
                     border-radius: 20px;
                     width: fit-content;
-                    padding: 0.5em 1em;
+                    padding: 0.5rem 1rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    gap: 1em;
+                    gap: 1rem;
                 }
 
                 img {

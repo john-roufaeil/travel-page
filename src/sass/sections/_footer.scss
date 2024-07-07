@@ -2,9 +2,9 @@ footer {
     background-color: $primary;
     color: $white;
     position: relative;
-    left: -2em;
-    width: calc(100% + 4em);
-    margin-top: 2em;
+    left: -2rem;
+    width: calc(100% + 4rem);
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,13 +27,13 @@ footer {
 
     .footer-qs {
         display: flex;
-        width: calc(70% - 4em);
+        width: calc(70% - 4rem);
         margin: 0 auto;
-        padding: 1em 0;
+        padding: 1rem 0;
         justify-content: space-between;
 
         .vertical-line {
-            margin: 0 1em;
+            margin: 0 1rem;
             border: 1px solid white;
             opacity: 0.2;
         }
@@ -41,14 +41,14 @@ footer {
         .footer-qs-object {
             display: flex;
             align-items: center;
-            gap: 1em;
+            gap: 1rem;
 
             .why-card-icon {
-                width: 4em;
-                height: 4em;
+                width: 4rem;
+                height: 4rem;
 
                 span {
-                    font-size: 2em;
+                    font-size: 2rem;
                 }
 
                 .icon-flight:before {
@@ -57,19 +57,19 @@ footer {
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.5rem;
             }
         }
     }
 
     .footer-links {
-        font-size: 0.8em;
-        width: calc(70% - 4em);
+        font-size: 0.8rem;
+        width: calc(70% - 4rem);
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: start;
-        padding: 2em 0;
+        padding: 2rem 0;
         border-top: 2px solid rgba(255, 255, 255, 0.2);
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
@@ -78,19 +78,19 @@ footer {
             flex-direction: column;
             justify-content: space-between;
             width: 22%;
-            gap: 2em;
-            padding: 3em 0;
+            gap: 2rem;
+            padding: 3rem 0;
 
             .email {
                 background-color: $black;
                 border-radius: 999px;
-                height: 3em;
+                height: 3rem;
                 position: relative;
                 display: flex;
                 align-items: center;
 
                 p {
-                    margin: 1em;
+                    margin: 1rem;
                     color: $white;
                 }
 
@@ -99,8 +99,8 @@ footer {
                     right: 0;
                     background-color: $secondary;
                     border-radius: 100%;
-                    width: 3em;
-                    height: 3em;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -108,14 +108,14 @@ footer {
             }
 
             .footer-title {
-                font-size: 1.2em;
+                font-size: 1.2rem;
                 font-weight: 700;
             }
 
             .footer-links-col-content {
                 display: flex;
                 flex-direction: column;
-                gap: 1em;
+                gap: 1rem;
 
                 p {
                     display: flex;
@@ -123,8 +123,8 @@ footer {
                 }
 
                 .icon-tick {
-                    font-size: 0.7em;
-                    margin-right: 1em;
+                    font-size: 0.7rem;
+                    margin-right: 1rem;
                 }
             }
 
@@ -134,7 +134,7 @@ footer {
 
             .social-media {
                 display: flex;
-                gap: 1em;
+                gap: 1rem;
 
                 .icon-x:before,
                 .icon-fb:before,
@@ -147,17 +147,17 @@ footer {
     }
 
     .footer-policy {
-        width: calc(70% - 4em);
+        width: calc(70% - 4rem);
         display: flex;
         justify-content: space-between;
-        padding: 1em 0;
+        padding: 1rem 0;
         margin: 0 auto;
         color: rgba(255, 255, 255, 0.8);
 
         .footer-policy-links {
             display: flex;
             justify-content: space-between;
-            gap: 1em;
+            gap: 1rem;
         }
     }
 }

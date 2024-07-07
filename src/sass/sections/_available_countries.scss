@@ -2,7 +2,7 @@
     width: 70%;
 
     .icon-wiggly-arrow {
-        font-size: 0.5em;
+        font-size: 0.5rem;
     }
 
     .available-title {
@@ -14,33 +14,33 @@
     .countries-list {
         display: flex;
         justify-content: space-between;
-        gap: 1em;
-        margin-top: 1em;
+        gap: 1rem;
+        margin-top: 1rem;
 
         .available-country {
             border: 1px solid $border;
-            padding: 2em;
-            margin: 1em 0 0 0;
+            padding: 2rem;
+            margin: 1rem 0 0 0;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             border-radius: 20px;
             width: 24%;
-            gap: 1em;
+            gap: 1rem;
 
             img {
                 width: 25%;
             }
 
             .card-title {
-                font-size: 1.2em;
+                font-size: 1.2rem;
             }
 
             .card-ticks {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                gap: 1em;
+                gap: 1rem;
 
                 .card-tick {
                     display: flex;
@@ -49,8 +49,8 @@
                 }
 
                 .icon-tick {
-                    font-size: 0.6em;
-                    margin-right: 1em;
+                    font-size: 0.6rem;
+                    margin-right: 1rem;
                 }
 
                 .icon-tick::before {
@@ -58,7 +58,7 @@
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                     color: $sub-text;
                 }
             }

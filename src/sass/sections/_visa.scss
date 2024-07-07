@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .visa-card {
@@ -19,23 +19,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
-    gap: 2em;
+    padding: 1rem;
+    gap: 2rem;
 
     img {
         width: 40%;
     }
 
     .card-title {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .card-text {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 
     .visa-card-details {
-        margin-right: 1em;
+        margin-right: 1rem;
     }
 
     .visa-card-icons {
@@ -47,7 +47,7 @@
         border-radius: 20px;
         background-color: transparent;
         border: 1px solid $secondary;
-        padding: 1em;
+        padding: 1rem;
         width: fit-content;
         display: flex;
         justify-content: center;
@@ -64,7 +64,7 @@
         }
 
         span {
-            font-size: 0.75em;
+            font-size: 0.75rem;
         }
     }
 
@@ -72,6 +72,6 @@
     .icon-location,
     .icon-route,
     .icon-flight {
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 }

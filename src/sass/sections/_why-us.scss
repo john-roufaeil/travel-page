@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .exp {
@@ -31,18 +31,18 @@
     display: flex;
     width: 90%;
     border-radius: 20px;
-    padding: 2em;
+    padding: 2rem;
     align-items: center;
 }
 
 .exp-number {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .exp-text {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .why-us-images {
@@ -61,7 +61,7 @@
 }
 
 .why-us-companies {
-    margin-top: 4em;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -82,7 +82,7 @@
 
 .why-card {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5em;
+    padding: 0.5rem;
     width: 48%;
     border-radius: 20px;
     display: flex;
@@ -98,26 +98,26 @@
 
 .why-card-title {
     color: $primary;
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .why-card-text-details {
     color: $sub-text;
-    font-size: 0.9em;
-    margin: 0 0 0.5em 0;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
 }
 
 .why-card-text {
-    margin: 0 0.5em 0.5em 0;
+    margin: 0 0.5rem 0.5rem 0;
     color: $sub-text;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .why-card-text .icon-tick:before {
     color: $secondary;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .why-more {
@@ -126,20 +126,20 @@
 }
 
 .why-icon {
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     background-color: $secondary;
     border-radius: 100%;
-    padding: 0.8em;
+    padding: 0.8rem;
 }
 
 .why-icon span {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .help {
-    margin-left: 1em;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -158,17 +158,17 @@
 }
 
 .why-card-icon {
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     background-color: $secondary;
     border-radius: 100%;
-    padding: 1em;
-    margin: 1em 0;
+    padding: 1rem;
+    margin: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     span {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
