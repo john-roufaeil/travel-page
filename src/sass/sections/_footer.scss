@@ -133,6 +133,8 @@ footer {
             }
 
             .social-media {
+                display: flex;
+                gap: 1em;
 
                 .icon-x:before,
                 .icon-fb:before,

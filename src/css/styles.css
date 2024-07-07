@@ -1153,11 +1153,14 @@ footer {
           margin-right: 1em; }
       footer .footer-links .footer-links-col img {
         width: 50%; }
-      footer .footer-links .footer-links-col .social-media .icon-x:before,
-      footer .footer-links .footer-links-col .social-media .icon-fb:before,
-      footer .footer-links .footer-links-col .social-media .icon-ig:before,
-      footer .footer-links .footer-links-col .social-media .icon-in:before {
-        color: white; }
+      footer .footer-links .footer-links-col .social-media {
+        display: flex;
+        gap: 1em; }
+        footer .footer-links .footer-links-col .social-media .icon-x:before,
+        footer .footer-links .footer-links-col .social-media .icon-fb:before,
+        footer .footer-links .footer-links-col .social-media .icon-ig:before,
+        footer .footer-links .footer-links-col .social-media .icon-in:before {
+          color: white; }
   footer .footer-policy {
     width: calc(70% - 4em);
     display: flex;
