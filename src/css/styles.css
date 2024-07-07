@@ -1167,7 +1167,8 @@ footer {
     color: rgba(255, 255, 255, 0.8); }
     footer .footer-policy .footer-policy-links {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      gap: 1em; }
 
 @use 'sass:math';
 .p-0 {
