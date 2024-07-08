@@ -7,6 +7,14 @@
     flex-wrap: $wrap;
 }
 
+@mixin title($size: 2rem, $color: inherit, $weight: 700) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: 1.2;
+}
+
+
 @mixin respond-to($breakpoint) {
     @if $breakpoint =='mobile' {
         @media (max-width: 600px) {

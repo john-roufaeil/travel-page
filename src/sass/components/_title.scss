@@ -1,0 +1,45 @@
+.page__title {
+    @include title(3.5rem, inherit, 800);
+}
+
+.card__title {
+    @include title(1.5rem, $primary);
+}
+
+.card__title--md {
+    @include title(1.2rem, $primary);
+}
+
+.card__title--md--white {
+    @include title(1.2rem, $white);
+}
+
+.card__title--base {
+    @include title(1rem, $primary);
+}
+
+.card__title--sm {
+    @include title(0.8rem, $primary);
+}
+
+.section__title {
+    @include title(2.5rem);
+}
+
+.section__title--black {
+    @include title(2.5rem, $black);
+}
+
+.section__title--head {
+    @include title(0.8rem, $primary);
+    text-transform: uppercase;
+}
+
+.section__title--head--white {
+    @include title(0.8rem, $white);
+    text-transform: uppercase;
+}
+
+.footer__title {
+    @include title(1.2rem, $white);
+}

@@ -94,11 +94,6 @@ footer {
                 }
             }
 
-            .footer-title {
-                font-size: 1.2rem;
-                font-weight: 700;
-            }
-
             .footer-links-col-content {
                 @include flex(column, normal, normal, 1rem);
 

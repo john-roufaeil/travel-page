@@ -25,10 +25,6 @@
                 width: 25%;
             }
 
-            .card-title {
-                font-size: 1.2rem;
-            }
-
             .card-ticks {
                 @include flex(column, space-evenly, start, 1rem);
 

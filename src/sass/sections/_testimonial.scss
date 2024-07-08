@@ -34,7 +34,7 @@
             }
 
             .testimonial-contact-details {
-                @include flex(column, space-between, center, 0.5rem);
+                @include flex(column, space-between, normal, 0.5rem);
 
                 .testimonial-name {
                     font-weight: 700;

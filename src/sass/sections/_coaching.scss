@@ -38,10 +38,6 @@
                 position: absolute;
                 @include flex(row, space-between, center);
 
-                .card-title {
-                    font-size: 1.2rem;
-                }
-
                 .link-container {
                     background-color: transparent;
                     border: 1px solid $secondary;
