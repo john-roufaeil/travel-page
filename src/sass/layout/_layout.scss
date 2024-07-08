@@ -1,24 +1,17 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    @include flex(row, space-between, center);
 
-nav ul {
-    display: flex;
-    gap: 1rem;
-}
+    ul {
+        @include flex(row, normal, normal, 1rem);
 
-span {
-    vertical-align: middle;
-}
-
-li {
-    vertical-align: middle;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
+        li {
+            vertical-align: middle;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+    }
 }
 
 section {

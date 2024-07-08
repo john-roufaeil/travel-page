@@ -19,4 +19,16 @@ body {
     color: $primary;
     padding: 2rem 2rem 0 2rem;
     background-color: $background;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
 }
