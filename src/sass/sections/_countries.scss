@@ -1,4 +1,4 @@
-.countries-container {
+.countries {
     background-color: $primary;
     color: $white;
     border-radius: 50px;
@@ -8,11 +8,11 @@
     @include flex(row, normal, center);
 }
 
-.countries .icon-brochures:before {
+.countries-container .icon-brochures:before {
     color: $white;
 }
 
-.countries {
+.countries-container {
     width: 70%;
     margin: 5rem auto;
     @include flex(column);
@@ -106,11 +106,6 @@
     bottom: 0;
     width: calc(100% - 3rem);
 }
-
-// .working-visa p:first-of-type {
-//     font-size: 1.1rem;
-//     font-weight: 600;
-// }
 
 .working-visa p:last-of-type {
     font-size: 0.75rem;

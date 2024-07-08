@@ -38,19 +38,6 @@ footer {
         .footer-qs-object {
             @include flex(row, normal, center, 1rem);
 
-            .why-card-icon {
-                width: 4rem;
-                height: 4rem;
-
-                span {
-                    font-size: 2rem;
-                }
-
-                .icon-flight:before {
-                    color: $white;
-                }
-            }
-
             p {
                 font-size: 1.5rem;
             }

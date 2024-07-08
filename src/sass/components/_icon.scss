@@ -1,0 +1,15 @@
+.icon {
+    @include icon;
+}
+
+.icon--md {
+    @include icon(3rem);
+}
+
+.icon--sm {
+    @include icon(2rem);
+}
+
+.icon--md--text-sm {
+    @include icon(3rem, $secondary, $white, 0.35);
+}

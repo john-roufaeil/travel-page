@@ -568,18 +568,6 @@ section {
   border-radius: 20px;
 }
 
-.card-icon {
-  width: 4rem;
-  height: 4rem;
-  background-color: #00B8FF;
-  border-radius: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-.card-icon span {
-  font-size: 2rem;
-}
-
 .card-text {
   color: #727272;
   margin: 1rem 0;
@@ -662,6 +650,94 @@ section {
   color: #FFFFFF;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon span {
+  font-size: 2rem;
+}
+.icon [class^=icon-]:before,
+.icon [class^=icon-]:after {
+  color: #FFFFFF;
+}
+
+.icon--md {
+  width: 3rem;
+  height: 3rem;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon--md span {
+  font-size: 1.5rem;
+}
+.icon--md [class^=icon-]:before,
+.icon--md [class^=icon-]:after {
+  color: #FFFFFF;
+}
+
+.icon--sm {
+  width: 2rem;
+  height: 2rem;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon--sm span {
+  font-size: 1rem;
+}
+.icon--sm [class^=icon-]:before,
+.icon--sm [class^=icon-]:after {
+  color: #FFFFFF;
+}
+
+.icon--md--text-sm {
+  width: 3rem;
+  height: 3rem;
+  background-color: #00B8FF;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon--md--text-sm span {
+  font-size: 1.05rem;
+}
+.icon--md--text-sm [class^=icon-]:before,
+.icon--md--text-sm [class^=icon-]:after {
+  color: #FFFFFF;
 }
 
 .offerings {
@@ -844,7 +920,6 @@ section {
 
 .why-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
   width: 48%;
   border-radius: 20px;
   display: flex;
@@ -924,25 +999,7 @@ section {
   width: 100%;
 }
 
-.why-card-icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
-  width: 3rem;
-  height: 3rem;
-  background-color: #00B8FF;
-  border-radius: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-.why-card-icon span {
-  font-size: 1.5rem;
-}
-
-.countries-container {
+.countries {
   background-color: #2437AC;
   color: #FFFFFF;
   border-radius: 50px;
@@ -957,11 +1014,11 @@ section {
   flex-wrap: nowrap;
 }
 
-.countries .icon-brochures:before {
+.countries-container .icon-brochures:before {
   color: #FFFFFF;
 }
 
-.countries {
+.countries-container {
   width: 70%;
   margin: 5rem auto;
   display: flex;
@@ -1192,7 +1249,7 @@ section {
 .available-countries .icon-wiggly-arrow {
   font-size: 0.5rem;
 }
-.available-countries .available-title {
+.available-countries .available-title-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1863,16 +1920,6 @@ footer .footer-qs .footer-qs-object {
   align-items: center;
   gap: 1rem;
   flex-wrap: nowrap;
-}
-footer .footer-qs .footer-qs-object .why-card-icon {
-  width: 4rem;
-  height: 4rem;
-}
-footer .footer-qs .footer-qs-object .why-card-icon span {
-  font-size: 2rem;
-}
-footer .footer-qs .footer-qs-object .why-card-icon .icon-flight:before {
-  color: #FFFFFF;
 }
 footer .footer-qs .footer-qs-object p {
   font-size: 1.5rem;

@@ -14,6 +14,25 @@
     line-height: 1.2;
 }
 
+@mixin icon($size: 4rem, $bg: $secondary, $color: $white, $factor: 0.5) {
+    width: $size;
+    height: $size;
+    background-color: $bg;
+    border-radius: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    @include flex(row, center, center);
+
+    span {
+        font-size: calc($size * $factor);
+    }
+
+    [class^="icon-"]:before,
+    [class^="icon-"]:after {
+        color: $color;
+    }
+}
+
 
 @mixin respond-to($breakpoint) {
     @if $breakpoint =='mobile' {
