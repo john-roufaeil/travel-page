@@ -1,10 +1,10 @@
-@import 'variables';
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+@import 'abstracts/mixins';
 
-@import 'mixins';
+@import 'base/reset';
 
-@import 'base';
-
-@import 'layout';
+@import 'layout/layout';
 
 @import 'components/button';
 @import 'components/card';
@@ -22,5 +22,3 @@
 @import 'sections/process';
 @import 'sections/blogs';
 @import 'sections/footer';
-
-@import 'utilities';
