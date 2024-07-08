@@ -833,15 +833,6 @@ section {
   margin-top: 4rem;
 }
 
-.why-us-title {
-  color: #000000;
-  line-height: 90%;
-}
-
-.why-us-title-primary {
-  color: #2437AC;
-}
-
 .two-cards {
   display: flex;
   flex-direction: row;
@@ -871,13 +862,6 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-}
-
-.why-card-title {
-  color: #2437AC;
-  margin-left: 0.5rem;
-  font-weight: 700;
-  font-size: 1.2rem;
 }
 
 .why-card-text-details {
@@ -973,7 +957,6 @@ section {
   flex-wrap: nowrap;
 }
 
-.countries .section-title,
 .countries .icon-brochures:before {
   color: #FFFFFF;
 }
@@ -987,10 +970,6 @@ section {
   align-items: normal;
   gap: 0;
   flex-wrap: nowrap;
-}
-
-.countries-title {
-  width: 50%;
 }
 
 .carousel-icon {

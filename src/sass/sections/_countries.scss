@@ -8,7 +8,6 @@
     @include flex(row, normal, center);
 }
 
-.countries .section-title,
 .countries .icon-brochures:before {
     color: $white;
 }
@@ -17,10 +16,6 @@
     width: 70%;
     margin: 5rem auto;
     @include flex(column);
-}
-
-.countries-title {
-    width: 50%;
 }
 
 .carousel-icon {
@@ -102,7 +97,7 @@
 }
 
 .working-visa {
-    @include flex(column, space-between, normal,0.6rem);
+    @include flex(column, space-between, normal, 0.6rem);
     background-color: $secondary;
     margin: 1rem;
     padding: 1.5rem 1rem;
