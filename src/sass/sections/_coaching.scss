@@ -37,35 +37,6 @@
                 padding: 1.5rem;
                 position: absolute;
                 @include flex(row, space-between, center);
-
-                .link-container {
-                    background-color: transparent;
-                    border: 1px solid $secondary;
-                    height: 50%;
-                    width: fit-content;
-                    padding: 1rem;
-                    border-radius: 20px;
-                    @include flex(row, justify-content, center);
-
-                    .icon-link {
-                        height: 50%;
-                    }
-
-                    .icon-link:before {
-                        color: $secondary;
-                        font-size: 0.8rem;
-                    }
-
-                    &:hover {
-                        background-color: $secondary;
-                        border: 1px solid transparent;
-                        cursor: pointer;
-
-                        .icon-link:before {
-                            color: $white;
-                        }
-                    }
-                }
             }
         }
     }

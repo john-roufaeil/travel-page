@@ -2,26 +2,6 @@
     @include flex(column, space-between, normal, 2rem);
     width: 70%;
 
-    .carousel-icon {
-        border: 1px solid $primary;
-        background-color: $white;
-
-        .icon-right-arrow:before,
-        .icon-left-arrow:before {
-            color: $primary;
-        }
-
-        &:hover {
-            background: $primary;
-            border: 1px solid $primary;
-
-            .icon-right-arrow:before,
-            .icon-left-arrow:before {
-                color: $white;
-            }
-        }
-    }
-
     .blogs-list {
         @include flex(row, space-between, center, 1.5rem);
 

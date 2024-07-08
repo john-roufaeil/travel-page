@@ -55,25 +55,6 @@
                 width: 100%;
                 height: 1px;
             }
-
-            .carousel-icon {
-                background-color: $white;
-                border: 1px solid $white;
-
-                .icon-right-arrow:before,
-                .icon-left-arrow:before {
-                    color: $secondary;
-                }
-
-                &:hover {
-                    background-color: $secondary;
-
-                    .icon-right-arrow:before,
-                    .icon-left-arrow:before {
-                        color: $white;
-                    }
-                }
-            }
         }
     }
 }

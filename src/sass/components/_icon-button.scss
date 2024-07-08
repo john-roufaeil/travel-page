@@ -1,0 +1,29 @@
+.icon-button {
+    @include icon-button;
+}
+
+.icon-button--invert {
+    @include icon-button($white, $secondary);
+}
+
+.icon-button-link {
+    @include icon-button(transparent, $secondary);
+    height: 50%;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 20px;
+
+    .icon-link {
+        height: 50%;
+    }
+
+    .icon-link:before {
+        font-size: 0.8rem;
+    }
+
+    &:hover {
+        .icon-link:before {
+            color: white;
+        }
+    }
+}

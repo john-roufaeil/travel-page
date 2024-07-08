@@ -50,26 +50,6 @@
                             margin: 1rem 0 0 0;
                         }
                     }
-
-                    .carousel-icon {
-                        background-color: transparent;
-                        border: 1px solid $secondary;
-
-                        .icon-right-arrow:before,
-                        .icon-left-arrow:before {
-                            color: $secondary;
-                        }
-
-                        &:hover {
-                            background-color: $secondary;
-                            border: 1px solid transparent;
-
-                            .icon-right-arrow:before,
-                            .icon-left-arrow:before {
-                                color: white;
-                            }
-                        }
-                    }
                 }
             }
 

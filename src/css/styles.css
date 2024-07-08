@@ -740,6 +740,142 @@ section {
   color: #FFFFFF;
 }
 
+.icon-button {
+  border: 1px solid #00B8FF;
+  background-color: #FFFFFF;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  padding: 0;
+  margin: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon-button .icon-right-arrow:before,
+.icon-button .icon-left-arrow:before,
+.icon-button .icon-link:before {
+  color: #00B8FF;
+}
+.icon-button:hover {
+  background: #00B8FF;
+  border: 1px solid #FFFFFF;
+}
+.icon-button:hover .icon-right-arrow:before,
+.icon-button:hover .icon-left-arrow:before,
+.icon-button:hover .icon-link:before {
+  color: #FFFFFF;
+}
+.icon-button span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  height: fit-content;
+  font-size: 0.7rem;
+}
+
+.icon-button--invert {
+  border: 1px solid #00B8FF;
+  background-color: #FFFFFF;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  padding: 0;
+  margin: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.icon-button--invert .icon-right-arrow:before,
+.icon-button--invert .icon-left-arrow:before,
+.icon-button--invert .icon-link:before {
+  color: #00B8FF;
+}
+.icon-button--invert:hover {
+  background: #00B8FF;
+  border: 1px solid #FFFFFF;
+}
+.icon-button--invert:hover .icon-right-arrow:before,
+.icon-button--invert:hover .icon-left-arrow:before,
+.icon-button--invert:hover .icon-link:before {
+  color: #FFFFFF;
+}
+.icon-button--invert span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  height: fit-content;
+  font-size: 0.7rem;
+}
+
+.icon-button-link {
+  border: 1px solid #00B8FF;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  padding: 0;
+  margin: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  height: 50%;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.icon-button-link .icon-right-arrow:before,
+.icon-button-link .icon-left-arrow:before,
+.icon-button-link .icon-link:before {
+  color: #00B8FF;
+}
+.icon-button-link:hover {
+  background: #00B8FF;
+  border: 1px solid transparent;
+}
+.icon-button-link:hover .icon-right-arrow:before,
+.icon-button-link:hover .icon-left-arrow:before,
+.icon-button-link:hover .icon-link:before {
+  color: transparent;
+}
+.icon-button-link span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  height: fit-content;
+  font-size: 0.7rem;
+}
+.icon-button-link .icon-link {
+  height: 50%;
+}
+.icon-button-link .icon-link:before {
+  font-size: 0.8rem;
+}
+.icon-button-link:hover .icon-link:before {
+  color: white;
+}
+
 .offerings {
   display: flex;
   flex-direction: row;
@@ -1208,7 +1344,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: normal;
+  align-items: center;
   gap: 0;
   flex-wrap: nowrap;
 }
@@ -1449,35 +1585,6 @@ section {
   gap: 0;
   flex-wrap: nowrap;
 }
-.coaching .coaching-categories .coaching-category .coaching-details .link-container {
-  background-color: transparent;
-  border: 1px solid #00B8FF;
-  height: 50%;
-  width: fit-content;
-  padding: 1rem;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: justify-content;
-  align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
-}
-.coaching .coaching-categories .coaching-category .coaching-details .link-container .icon-link {
-  height: 50%;
-}
-.coaching .coaching-categories .coaching-category .coaching-details .link-container .icon-link:before {
-  color: #00B8FF;
-  font-size: 0.8rem;
-}
-.coaching .coaching-categories .coaching-category .coaching-details .link-container:hover {
-  background-color: #00B8FF;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-.coaching .coaching-categories .coaching-category .coaching-details .link-container:hover .icon-link:before {
-  color: #FFFFFF;
-}
 
 .team {
   display: flex;
@@ -1558,22 +1665,6 @@ section {
 .team .team-container .team-details .team-text .team-object .team-object-text .card-text {
   font-size: 0.9rem;
   margin: 1rem 0 0 0;
-}
-.team .team-container .team-details .team-text .team-object .carousel-icon {
-  background-color: transparent;
-  border: 1px solid #00B8FF;
-}
-.team .team-container .team-details .team-text .team-object .carousel-icon .icon-right-arrow:before,
-.team .team-container .team-details .team-text .team-object .carousel-icon .icon-left-arrow:before {
-  color: #00B8FF;
-}
-.team .team-container .team-details .team-text .team-object .carousel-icon:hover {
-  background-color: #00B8FF;
-  border: 1px solid transparent;
-}
-.team .team-container .team-details .team-text .team-object .carousel-icon:hover .icon-right-arrow:before,
-.team .team-container .team-details .team-text .team-object .carousel-icon:hover .icon-left-arrow:before {
-  color: white;
 }
 .team .team-container .team-details .team-img {
   flex: 1;
@@ -1680,21 +1771,6 @@ section {
   width: 100%;
   height: 1px;
 }
-.testimonial .testimonial-details .testimonial-nav .carousel-icon {
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-}
-.testimonial .testimonial-details .testimonial-nav .carousel-icon .icon-right-arrow:before,
-.testimonial .testimonial-details .testimonial-nav .carousel-icon .icon-left-arrow:before {
-  color: #00B8FF;
-}
-.testimonial .testimonial-details .testimonial-nav .carousel-icon:hover {
-  background-color: #00B8FF;
-}
-.testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-right-arrow:before,
-.testimonial .testimonial-details .testimonial-nav .carousel-icon:hover .icon-left-arrow:before {
-  color: #FFFFFF;
-}
 
 .process {
   display: flex;
@@ -1774,22 +1850,6 @@ section {
   gap: 2rem;
   flex-wrap: nowrap;
   width: 70%;
-}
-.blogs .carousel-icon {
-  border: 1px solid #2437AC;
-  background-color: #FFFFFF;
-}
-.blogs .carousel-icon .icon-right-arrow:before,
-.blogs .carousel-icon .icon-left-arrow:before {
-  color: #2437AC;
-}
-.blogs .carousel-icon:hover {
-  background: #2437AC;
-  border: 1px solid #2437AC;
-}
-.blogs .carousel-icon:hover .icon-right-arrow:before,
-.blogs .carousel-icon:hover .icon-left-arrow:before {
-  color: #FFFFFF;
 }
 .blogs .blogs-list {
   display: flex;

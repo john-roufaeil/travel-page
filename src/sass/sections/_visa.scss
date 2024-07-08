@@ -27,7 +27,7 @@
     }
 
     .visa-card-icons {
-        @include flex(row, space-between);
+        @include flex(row, space-between, center);
     }
 
     .link-container {

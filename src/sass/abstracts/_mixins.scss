@@ -33,6 +33,40 @@
     }
 }
 
+@mixin icon-button($bg: $white, $color: $secondary, $border-radius: 100%, $padding: 0) {
+    border: 1px solid $color;
+    background-color: $bg;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: $border-radius;
+    padding: $padding;
+    margin: 1rem 0;
+    cursor: pointer;
+    @include flex(row, center, center);
+
+    .icon-right-arrow:before,
+    .icon-left-arrow:before,
+    .icon-link:before {
+        color: $color;
+    }
+
+    &:hover {
+        background: $color;
+        border: 1px solid $bg;
+
+        .icon-right-arrow:before,
+        .icon-left-arrow:before,
+        .icon-link:before {
+            color: $bg;
+        }
+    }
+
+    span {
+        @include flex(row, center, center);
+        height: fit-content;
+        font-size: 0.7rem;
+    }
+}
 
 @mixin respond-to($breakpoint) {
     @if $breakpoint =='mobile' {
