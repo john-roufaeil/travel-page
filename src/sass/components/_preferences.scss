@@ -1,0 +1,35 @@
+.preferences {
+    @include flex(column, normal, center);
+    position: fixed;
+    right: 0;
+    top: 40%;
+    margin: 0;
+    padding: 0;
+
+    button {
+        @include flex(column, center, center);
+        background-color: $background;
+        border: 1px solid $border;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+            background-color: $secondary;
+
+            color: $white;
+        }
+    }
+
+    button:active {
+        width: 2.5rem;
+        background-color: $primary;
+        color: $white;
+    }
+
+    // .icon-moon:before {
+    //     color: black;
+    // }
+}

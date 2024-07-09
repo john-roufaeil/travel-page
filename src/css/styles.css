@@ -323,13 +323,16 @@
   text-align: center;
 }
 
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans";
   transition: all 250ms linear;
-  font-size: 16px;
 }
 
 body,
@@ -1022,6 +1025,44 @@ section {
 }
 .icon-button-link:hover .icon-link:before {
   color: white;
+}
+
+.preferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  margin: 0;
+  padding: 0;
+}
+.preferences button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  background-color: #F1F5EB;
+  border: 1px solid #E3DBD8;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.preferences button:hover {
+  background-color: #00B8FF;
+  color: #FFFFFF;
+}
+.preferences button:active {
+  width: 2.5rem;
+  background-color: #2437AC;
+  color: #FFFFFF;
 }
 
 .offerings {
@@ -2142,6 +2183,8 @@ footer .footer-links {
   padding: 2rem 0;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: inherit;
+  z-index: 2;
 }
 footer .footer-links .footer-links-col {
   display: flex;
@@ -2221,6 +2264,8 @@ footer .footer-links .footer-links-col .social-media .icon-in:before {
   color: white;
 }
 footer .footer-policy {
+  position: inherit;
+  z-index: 2;
   width: calc(70% - 4rem);
   display: flex;
   justify-content: space-between;
@@ -2235,6 +2280,10 @@ footer .footer-policy .footer-policy-links {
   align-items: normal;
   gap: 1rem;
   flex-wrap: nowrap;
+}
+footer .footer-policy a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

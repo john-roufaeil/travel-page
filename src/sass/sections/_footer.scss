@@ -52,6 +52,8 @@ footer {
         padding: 2rem 0;
         border-top: 2px solid rgba(255, 255, 255, 0.2);
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        position: inherit;
+        z-index: 2;
 
         .footer-links-col {
             @include flex(column, space-between, normal, 2rem);
@@ -112,6 +114,8 @@ footer {
     }
 
     .footer-policy {
+        position: inherit;
+        z-index: 2;
         width: calc(70% - 4rem);
         display: flex;
         justify-content: space-between;
@@ -121,6 +125,11 @@ footer {
 
         .footer-policy-links {
             @include flex(row, space-between, normal, 1rem);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
