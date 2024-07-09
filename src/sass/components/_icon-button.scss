@@ -6,6 +6,10 @@
     @include icon-button($white, $secondary);
 }
 
+.icon-button--primary {
+    @include icon-button($primary, $white);
+}
+
 .icon-button-link {
     @include icon-button(transparent, $secondary, 1rem, 1rem);
     height: 50%;

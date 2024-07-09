@@ -11,7 +11,7 @@
 }
 
 .outlined-btn-sec {
-    @include btn(white, $secondary, base);
+    @include btn(transparent, $secondary, base, $secondary, white);
 }
 
 .text-btn {
@@ -41,7 +41,6 @@
     span {
         @include flex(row, end, end);
     }
-
 
     &:hover {
         text-decoration: underline;

@@ -58,7 +58,7 @@
     }
 }
 
-@mixin btn($bg-color, $text-color, $size, $border-color: $text-color) {
+@mixin btn($bg-color, $text-color, $size, $border-color: $text-color, $hover: $bg-color) {
     border-radius: 150px;
     cursor: pointer;
     font-weight: 400;
@@ -77,12 +77,12 @@
 
     &:hover {
         background-color: $text-color;
-        color: $bg-color;
+        color: $hover;
         border-color: $bg-color;
 
         [class^="icon-"]:before,
         [class^="icon-"]:after {
-            color: $bg-color;
+            color: $hover;
         }
     }
 
