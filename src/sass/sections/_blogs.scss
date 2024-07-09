@@ -35,21 +35,6 @@
                     font-size: 0.8rem;
                     color: $sub-text;
                 }
-
-                .blog-button {
-                    font-size: 0.8rem;
-                    font-weight: 600;
-                    @include flex(row, normal, center);
-
-                    &:hover {
-                        text-decoration: underline;
-                        cursor: pointer;
-                    }
-
-                    .icon-right-arrow:before {
-                        font-size: 0.8rem;
-                    }
-                }
             }
 
             img {

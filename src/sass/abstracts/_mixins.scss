@@ -58,6 +58,56 @@
     }
 }
 
+@mixin btn($bg-color, $text-color, $size, $border-color: $text-color) {
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    background-color: $bg-color;
+    color: $text-color;
+    border: 1px solid $border-color;
+    @include flex(row, center, center);
+
+    [class^="icon-"]:before,
+    [class^="icon-"]:after {
+        color: $text-color;
+    }
+
+    &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+        border-color: $bg-color;
+
+        [class^="icon-"]:before,
+        [class^="icon-"]:after {
+            color: $bg-color;
+        }
+    }
+
+    @if $size ==base {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+
+        [class^="icon-"]:before,
+        [class^="icon-"]:after {
+            font-size: 0.8rem;
+        }
+    }
+
+    @else {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.7rem;
+        width: fit-content;
+
+        [class^="icon-"]:before,
+        [class^="icon-"]:after {
+            font-size: 0.5rem;
+        }
+    }
+}
+
 @mixin respond-to($breakpoint) {
     @if $breakpoint =='mobile' {
         @media (max-width: 600px) {
