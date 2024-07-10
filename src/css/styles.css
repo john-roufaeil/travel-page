@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/* Dark theme */
 .p-0 {
   padding: 0rem;
 }
@@ -1039,6 +1040,7 @@ section {
   top: 40%;
   margin: 0;
   padding: 0;
+  z-index: 5;
 }
 .preferences button {
   display: flex;
@@ -1620,7 +1622,7 @@ section {
   width: 24%;
 }
 .available-countries .countries-list .available-country img {
-  width: 25%;
+  width: 3rem;
 }
 .available-countries .countries-list .available-country .card-ticks {
   display: flex;
@@ -1772,7 +1774,7 @@ section {
   position: relative;
 }
 .coaching .coaching-categories .coaching-category img {
-  width: 100%;
+  width: 20rem;
 }
 .coaching .coaching-categories .coaching-category .coaching-details {
   background-color: #FFFFFF;
@@ -1896,7 +1898,7 @@ section {
   flex-wrap: nowrap;
 }
 .team .team-container .team-details .team-img img {
-  width: 100%;
+  width: 20rem;
 }
 .team .team-container .team-details .team-img a {
   text-decoration: none;
@@ -2112,7 +2114,7 @@ section {
   color: #727272;
 }
 .blogs .blogs-list .blog img {
-  width: 100%;
+  width: 20rem;
 }
 
 footer {

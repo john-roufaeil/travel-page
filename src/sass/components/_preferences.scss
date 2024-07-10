@@ -5,6 +5,7 @@
     top: 40%;
     margin: 0;
     padding: 0;
+    z-index: 5;
 
     button {
         @include flex(column, center, center);
@@ -28,8 +29,4 @@
         background-color: $primary;
         color: $white;
     }
-
-    // .icon-moon:before {
-    //     color: black;
-    // }
 }
