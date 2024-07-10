@@ -20,4 +20,9 @@
             color: white;
         }
     }
+
+    @at-root body.dark-theme & {
+        @include icon-button(transparent, $secondary-dark, 1rem, 1rem);
+    }
+
 }

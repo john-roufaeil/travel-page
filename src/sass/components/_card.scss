@@ -8,4 +8,8 @@
 .card-text {
     color: $sub-text;
     margin: 1rem 0;
+
+    @at-root body.dark-theme & {
+        color: $sub-text-dark
+    }
 }
