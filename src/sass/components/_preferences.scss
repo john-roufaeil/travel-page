@@ -17,15 +17,17 @@
         margin: 0;
         padding: 0;
 
+        [class^="icon-"]::after,
+        [class^="icon-"]::before {
+            color: $text;
+        }
+
         &:hover {
             background-color: $secondary;
-            color: $white;
         }
-    }
 
-    button:active {
-        width: 2.5rem;
-        background-color: $primary;
-        color: $white;
+        &:active {
+            width: 2.5rem;
+        }
     }
 }

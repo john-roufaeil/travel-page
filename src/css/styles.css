@@ -1056,14 +1056,15 @@ section {
   margin: 0;
   padding: 0;
 }
+.preferences button [class^=icon-]::after,
+.preferences button [class^=icon-]::before {
+  color: #16171A;
+}
 .preferences button:hover {
   background-color: #00B8FF;
-  color: #FFFFFF;
 }
 .preferences button:active {
   width: 2.5rem;
-  background-color: #2437AC;
-  color: #FFFFFF;
 }
 
 .offerings {

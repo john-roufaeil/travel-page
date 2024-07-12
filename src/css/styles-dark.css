@@ -342,9 +342,9 @@ html {
 
 body {
   font-family: "Helvetica, Arial, sans-serif";
-  color: #4D6FFF;
+  color: #0019d3;
   padding: 2rem 2rem 0 2rem;
-  background-color: #292929;
+  background-color: #272827;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -468,7 +468,7 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: flex;
@@ -486,12 +486,12 @@ section {
 }
 .outlined-btn:hover {
   background-color: #FFFFFF;
-  color: #4D6FFF;
-  border-color: #4D6FFF;
+  color: #0019d3;
+  border-color: #0019d3;
 }
 .outlined-btn:hover [class^=icon-]:before,
 .outlined-btn:hover [class^=icon-]:after {
-  color: #4D6FFF;
+  color: #0019d3;
 }
 .outlined-btn [class^=icon-]:before,
 .outlined-btn [class^=icon-]:after {
@@ -505,7 +505,7 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #292929;
+  background-color: #272827;
   color: #0096CC;
   border: 1px solid #0096CC;
   display: flex;
@@ -524,7 +524,7 @@ section {
 .outlined-btn-sec:hover {
   background-color: #0096CC;
   color: #FFFFFF;
-  border-color: #292929;
+  border-color: #272827;
 }
 .outlined-btn-sec:hover [class^=icon-]:before,
 .outlined-btn-sec:hover [class^=icon-]:after {
@@ -590,7 +590,7 @@ section {
   width: fit-content;
   text-align: center;
   background-color: transparent;
-  color: #4D6FFF;
+  color: #0019d3;
   border: 1px solid transparent;
   display: flex;
   flex-direction: row;
@@ -609,10 +609,10 @@ section {
 }
 .text-btn--prim [class^=icon-]:before,
 .text-btn--prim [class^=icon-]:after {
-  color: #4D6FFF;
+  color: #0019d3;
 }
 .text-btn--prim:hover {
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   color: transparent;
   border-color: transparent;
 }
@@ -636,11 +636,11 @@ section {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
   background-color: transparent;
-  color: #4D6FFF;
+  color: #0019d3;
 }
 .text-btn--prim:hover [class^=icon-]:before,
 .text-btn--prim:hover [class^=icon-]:after {
-  color: #4D6FFF;
+  color: #0019d3;
 }
 
 .card {
@@ -664,14 +664,14 @@ section {
 
 .card__title {
   font-size: 1.5rem;
-  color: #4D6FFF;
+  color: #0019d3;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .card__title--md {
   font-size: 1.2rem;
-  color: #4D6FFF;
+  color: #0019d3;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -685,14 +685,14 @@ section {
 
 .card__title--base {
   font-size: 1rem;
-  color: #4D6FFF;
+  color: #0019d3;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .card__title--sm {
   font-size: 0.8rem;
-  color: #4D6FFF;
+  color: #0019d3;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -713,7 +713,7 @@ section {
 
 .section__title--head {
   font-size: 0.8rem;
-  color: #4D6FFF;
+  color: #0019d3;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -925,7 +925,7 @@ section {
 .icon-button--primary {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -955,11 +955,11 @@ section {
 }
 .icon-button--primary:hover {
   background: #FFFFFF;
-  border: 1px solid #4D6FFF;
+  border: 1px solid #0019d3;
 }
 .icon-button--primary:hover [class^=icon-]:before,
 .icon-button--primary:hover [class^=icon-]:after {
-  color: #4D6FFF;
+  color: #0019d3;
 }
 .icon-button--primary span {
   display: flex;
@@ -1048,7 +1048,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  background-color: #292929;
+  background-color: #272827;
   border: 1px solid #3A3A3A;
   cursor: pointer;
   width: 2rem;
@@ -1056,14 +1056,15 @@ section {
   margin: 0;
   padding: 0;
 }
+.preferences button [class^=icon-]::after,
+.preferences button [class^=icon-]::before {
+  color: #E5E5E5;
+}
 .preferences button:hover {
   background-color: #0096CC;
-  color: #FFFFFF;
 }
 .preferences button:active {
   width: 2.5rem;
-  background-color: #4D6FFF;
-  color: #FFFFFF;
 }
 
 .offerings {
@@ -1084,7 +1085,7 @@ section {
 }
 
 .welcome {
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   color: #FFFFFF;
   border-radius: 50px;
   border: none;
@@ -1341,7 +1342,7 @@ section {
 }
 
 .countries {
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   color: #FFFFFF;
   border-radius: 50px;
   border: none;
@@ -1644,7 +1645,7 @@ section {
   margin-right: 1rem;
 }
 .available-countries .countries-list .available-country .card-ticks .icon-tick::before {
-  color: #4D6FFF;
+  color: #0019d3;
 }
 .available-countries .countries-list .available-country .card-ticks p {
   font-size: 0.8rem;
@@ -1799,7 +1800,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   background-color: #FFFFFF;
-  color: #4D6FFF;
+  color: #0019d3;
   border-radius: 50px;
   border: none;
   margin: 10rem 0 5rem 0;
@@ -1984,7 +1985,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   background-color: #FFFFFF;
-  color: #4D6FFF;
+  color: #0019d3;
   border-radius: 50px;
   border: none;
   margin: 10rem 0 5rem 0;
@@ -2117,7 +2118,7 @@ section {
 }
 
 footer {
-  background-color: #4D6FFF;
+  background-color: #0019d3;
   color: #FFFFFF;
   position: relative;
   left: -2rem;
