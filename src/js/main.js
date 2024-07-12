@@ -4,11 +4,12 @@ function toggleTheme(theme) {
     } else {
         document.head.getElementsByTagName("link")[1].href = "/src/css/styles-dark.css"
     }
-    console.log(document.head.getElementsByTagName("link")[1].href)
+    localStorage.setItem('theme', theme);
 }
 
 function toggleSize(size) {
     document.documentElement.style.setProperty('font-size', `${size}`);
+    localStorage.setItem('fontSize', size);
 }
 
 document.getElementById('toggle-light-theme').addEventListener('click', function () {
@@ -30,3 +31,19 @@ document.getElementById('toggle-base-size').addEventListener('click', function (
 document.getElementById('toggle-small-size').addEventListener('click', function () {
     toggleSize('14px');
 });
+
+
+function loadPreferences() {
+    const savedTheme = localStorage.getItem('theme');
+    const savedFontSize = localStorage.getItem('fontSize');
+
+    if (savedTheme) {
+        toggleTheme(savedTheme);
+    }
+
+    if (savedFontSize) {
+        toggleSize(savedFontSize);
+    }
+}
+
+window.addEventListener('load', loadPreferences);
