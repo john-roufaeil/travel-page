@@ -1,8 +1,8 @@
 function toggleTheme(theme) {
     if (theme === 'light') {
-        document.head.getElementsByTagName("link")[1].href = "/src/css/styles.css"
+        document.head.getElementsByTagName("link")[1].href = "css/styles.css"
     } else {
-        document.head.getElementsByTagName("link")[1].href = "/src/css/styles-dark.css"
+        document.head.getElementsByTagName("link")[1].href = "css/styles-dark.css"
     }
     localStorage.setItem('theme', theme);
 }
