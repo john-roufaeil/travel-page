@@ -21,20 +21,6 @@
             background-color: $secondary;
             color: $white;
         }
-
-        @at-root body.dark-theme & {
-            background-color: $background-dark;
-            border: 1px solid $border-dark;
-
-            span {
-                color: $white;
-            }
-
-            &:hover {
-                background-color: $secondary-dark;
-                color: $white;
-            }
-        }
     }
 
     button:active {

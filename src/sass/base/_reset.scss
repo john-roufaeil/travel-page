@@ -32,11 +32,6 @@ body {
     background-color: $background;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-
-    &.dark-theme {
-        color: $primary-dark;
-        background-color: $background-dark;
-    }
 }
 
 

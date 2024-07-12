@@ -342,9 +342,9 @@ html {
 
 body {
   font-family: "Helvetica, Arial, sans-serif";
-  color: #2437AC;
+  color: #4D6FFF;
   padding: 2rem 2rem 0 2rem;
-  background-color: #F1F5EB;
+  background-color: #292929;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -393,7 +393,7 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: flex;
@@ -412,12 +412,12 @@ section {
 }
 .contained-btn-sm:hover {
   background-color: #FFFFFF;
-  color: #00B8FF;
-  border-color: #00B8FF;
+  color: #0096CC;
+  border-color: #0096CC;
 }
 .contained-btn-sm:hover [class^=icon-]:before,
 .contained-btn-sm:hover [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .contained-btn-sm [class^=icon-]:before,
 .contained-btn-sm [class^=icon-]:after {
@@ -431,7 +431,7 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: flex;
@@ -449,12 +449,12 @@ section {
 }
 .contained-btn:hover {
   background-color: #FFFFFF;
-  color: #00B8FF;
-  border-color: #00B8FF;
+  color: #0096CC;
+  border-color: #0096CC;
 }
 .contained-btn:hover [class^=icon-]:before,
 .contained-btn:hover [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .contained-btn [class^=icon-]:before,
 .contained-btn [class^=icon-]:after {
@@ -468,7 +468,7 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: flex;
@@ -486,12 +486,12 @@ section {
 }
 .outlined-btn:hover {
   background-color: #FFFFFF;
-  color: #2437AC;
-  border-color: #2437AC;
+  color: #4D6FFF;
+  border-color: #4D6FFF;
 }
 .outlined-btn:hover [class^=icon-]:before,
 .outlined-btn:hover [class^=icon-]:after {
-  color: #2437AC;
+  color: #4D6FFF;
 }
 .outlined-btn [class^=icon-]:before,
 .outlined-btn [class^=icon-]:after {
@@ -505,9 +505,9 @@ section {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: #F1F5EB;
-  color: #00B8FF;
-  border: 1px solid #00B8FF;
+  background-color: #292929;
+  color: #0096CC;
+  border: 1px solid #0096CC;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -519,12 +519,12 @@ section {
 }
 .outlined-btn-sec [class^=icon-]:before,
 .outlined-btn-sec [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .outlined-btn-sec:hover {
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
-  border-color: #F1F5EB;
+  border-color: #292929;
 }
 .outlined-btn-sec:hover [class^=icon-]:before,
 .outlined-btn-sec:hover [class^=icon-]:after {
@@ -590,7 +590,7 @@ section {
   width: fit-content;
   text-align: center;
   background-color: transparent;
-  color: #2437AC;
+  color: #4D6FFF;
   border: 1px solid transparent;
   display: flex;
   flex-direction: row;
@@ -609,10 +609,10 @@ section {
 }
 .text-btn--prim [class^=icon-]:before,
 .text-btn--prim [class^=icon-]:after {
-  color: #2437AC;
+  color: #4D6FFF;
 }
 .text-btn--prim:hover {
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: transparent;
   border-color: transparent;
 }
@@ -636,11 +636,11 @@ section {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
   background-color: transparent;
-  color: #2437AC;
+  color: #4D6FFF;
 }
 .text-btn--prim:hover [class^=icon-]:before,
 .text-btn--prim:hover [class^=icon-]:after {
-  color: #2437AC;
+  color: #4D6FFF;
 }
 
 .card {
@@ -651,7 +651,7 @@ section {
 }
 
 .card-text {
-  color: #727272;
+  color: #A0A0A0;
   margin: 1rem 0;
 }
 
@@ -664,14 +664,14 @@ section {
 
 .card__title {
   font-size: 1.5rem;
-  color: #2437AC;
+  color: #4D6FFF;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .card__title--md {
   font-size: 1.2rem;
-  color: #2437AC;
+  color: #4D6FFF;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -685,14 +685,14 @@ section {
 
 .card__title--base {
   font-size: 1rem;
-  color: #2437AC;
+  color: #4D6FFF;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .card__title--sm {
   font-size: 0.8rem;
-  color: #2437AC;
+  color: #4D6FFF;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -713,7 +713,7 @@ section {
 
 .section__title--head {
   font-size: 0.8rem;
-  color: #2437AC;
+  color: #4D6FFF;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -737,7 +737,7 @@ section {
 .icon {
   width: 4rem;
   height: 4rem;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -759,7 +759,7 @@ section {
 .icon--md {
   width: 3rem;
   height: 3rem;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -781,7 +781,7 @@ section {
 .icon--sm {
   width: 2rem;
   height: 2rem;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -803,7 +803,7 @@ section {
 .icon--md--text-sm {
   width: 3rem;
   height: 3rem;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -835,7 +835,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  border: 1px solid #00B8FF;
+  border: 1px solid #0096CC;
   border-radius: 100%;
   padding: 0;
   cursor: pointer;
@@ -851,10 +851,10 @@ section {
 }
 .icon-button [class^=icon-]:before,
 .icon-button [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .icon-button:hover {
-  background: #00B8FF;
+  background: #0096CC;
   border: 1px solid #FFFFFF;
 }
 .icon-button:hover [class^=icon-]:before,
@@ -885,7 +885,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  border: 1px solid #00B8FF;
+  border: 1px solid #0096CC;
   border-radius: 100%;
   padding: 0;
   cursor: pointer;
@@ -901,10 +901,10 @@ section {
 }
 .icon-button--invert [class^=icon-]:before,
 .icon-button--invert [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .icon-button--invert:hover {
-  background: #00B8FF;
+  background: #0096CC;
   border: 1px solid #FFFFFF;
 }
 .icon-button--invert:hover [class^=icon-]:before,
@@ -925,7 +925,7 @@ section {
 .icon-button--primary {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -955,11 +955,11 @@ section {
 }
 .icon-button--primary:hover {
   background: #FFFFFF;
-  border: 1px solid #2437AC;
+  border: 1px solid #4D6FFF;
 }
 .icon-button--primary:hover [class^=icon-]:before,
 .icon-button--primary:hover [class^=icon-]:after {
-  color: #2437AC;
+  color: #4D6FFF;
 }
 .icon-button--primary span {
   display: flex;
@@ -985,7 +985,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  border: 1px solid #00B8FF;
+  border: 1px solid #0096CC;
   border-radius: 1rem;
   padding: 1rem;
   cursor: pointer;
@@ -1003,10 +1003,10 @@ section {
 }
 .icon-button-link [class^=icon-]:before,
 .icon-button-link [class^=icon-]:after {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .icon-button-link:hover {
-  background: #00B8FF;
+  background: #0096CC;
   border: 1px solid transparent;
 }
 .icon-button-link:hover [class^=icon-]:before,
@@ -1048,8 +1048,8 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  background-color: #F1F5EB;
-  border: 1px solid #E3DBD8;
+  background-color: #292929;
+  border: 1px solid #3A3A3A;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -1057,12 +1057,12 @@ section {
   padding: 0;
 }
 .preferences button:hover {
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
 }
 .preferences button:active {
   width: 2.5rem;
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: #FFFFFF;
 }
 
@@ -1084,7 +1084,7 @@ section {
 }
 
 .welcome {
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: #FFFFFF;
   border-radius: 50px;
   border: none;
@@ -1206,7 +1206,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
   width: 90%;
   border-radius: 20px;
@@ -1281,19 +1281,19 @@ section {
 }
 
 .why-card-text-details {
-  color: #727272;
+  color: #A0A0A0;
   font-size: 0.9rem;
   margin: 0 0 0.5rem 0;
 }
 
 .why-card-text {
   margin: 0 0.5rem 0.5rem 0;
-  color: #727272;
+  color: #A0A0A0;
   font-size: 0.8rem;
 }
 
 .why-card-text .icon-tick:before {
-  color: #00B8FF;
+  color: #0096CC;
   margin-right: 0.5rem;
 }
 
@@ -1309,7 +1309,7 @@ section {
 .why-icon {
   width: 3rem;
   height: 3rem;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   padding: 0.8rem;
 }
@@ -1341,7 +1341,7 @@ section {
 }
 
 .countries {
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: #FFFFFF;
   border-radius: 50px;
   border: none;
@@ -1409,8 +1409,8 @@ section {
 }
 
 .carousel-icon:hover {
-  background-color: #00B8FF;
-  border: 1px solid #00B8FF;
+  background-color: #0096CC;
+  border: 1px solid #0096CC;
 }
 
 .carousel-icons {
@@ -1480,7 +1480,7 @@ section {
   align-items: normal;
   gap: 0.6rem;
   flex-wrap: nowrap;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   margin: 1rem;
   padding: 1.5rem 1rem;
   border-radius: 20px;
@@ -1525,7 +1525,7 @@ section {
 }
 
 .visa-card {
-  border: 1px solid #E3DBD8;
+  border: 1px solid #3A3A3A;
   width: 49%;
   border-radius: 20px;
   padding: 1rem;
@@ -1556,7 +1556,7 @@ section {
 .visa-card .link-container {
   border-radius: 20px;
   background-color: transparent;
-  border: 1px solid #00B8FF;
+  border: 1px solid #0096CC;
   padding: 1rem;
   width: fit-content;
   display: flex;
@@ -1568,7 +1568,7 @@ section {
   cursor: pointer;
 }
 .visa-card .link-container:hover {
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border: 1px solid #FFFFFF;
 }
 .visa-card .link-container:hover .icon-link::before {
@@ -1608,7 +1608,7 @@ section {
   margin-top: 1rem;
 }
 .available-countries .countries-list .available-country {
-  border: 1px solid #E3DBD8;
+  border: 1px solid #3A3A3A;
   padding: 2rem;
   margin: 1rem 0 0 0;
   display: flex;
@@ -1644,11 +1644,11 @@ section {
   margin-right: 1rem;
 }
 .available-countries .countries-list .available-country .card-ticks .icon-tick::before {
-  color: #2437AC;
+  color: #4D6FFF;
 }
 .available-countries .countries-list .available-country .card-ticks p {
   font-size: 0.8rem;
-  color: #727272;
+  color: #A0A0A0;
 }
 
 .CTA {
@@ -1710,7 +1710,7 @@ section {
 }
 .CTA .side-CTA .CTA-stats {
   border-radius: 20px;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1749,16 +1749,16 @@ section {
   flex-wrap: nowrap;
 }
 .coaching .carousel-icon {
-  background-color: #00B8FF;
-  border: 1px solid #00B8FF;
+  background-color: #0096CC;
+  border: 1px solid #0096CC;
 }
 .coaching .carousel-icon:hover {
   background-color: transparent;
-  border: 1px solid #00B8FF;
+  border: 1px solid #0096CC;
 }
 .coaching .carousel-icon:hover .icon-right-arrow:before,
 .coaching .carousel-icon:hover .icon-left-arrow:before {
-  color: #00B8FF;
+  color: #0096CC;
 }
 .coaching .coaching-categories {
   display: flex;
@@ -1799,7 +1799,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   background-color: #FFFFFF;
-  color: #2437AC;
+  color: #4D6FFF;
   border-radius: 50px;
   border: none;
   margin: 10rem 0 5rem 0;
@@ -1852,7 +1852,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  border: 1px solid #E3DBD8;
+  border: 1px solid #3A3A3A;
   width: 100%;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -1920,7 +1920,7 @@ section {
 }
 .testimonial .testimonial-details {
   width: 60%;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -1984,7 +1984,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   background-color: #FFFFFF;
-  color: #2437AC;
+  color: #4D6FFF;
   border-radius: 50px;
   border: none;
   margin: 10rem 0 5rem 0;
@@ -2071,7 +2071,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   width: 32%;
-  border: 1px solid #E3DBD8;
+  border: 1px solid #3A3A3A;
   border-radius: 20px;
 }
 .blogs .blogs-list .blog .blog-info {
@@ -2110,14 +2110,14 @@ section {
 }
 .blogs .blogs-list .blog .blog-info .blog-text {
   font-size: 0.8rem;
-  color: #727272;
+  color: #A0A0A0;
 }
 .blogs .blogs-list .blog img {
   width: 20rem;
 }
 
 footer {
-  background-color: #2437AC;
+  background-color: #4D6FFF;
   color: #FFFFFF;
   position: relative;
   left: -2rem;
@@ -2216,7 +2216,7 @@ footer .footer-links .footer-links-col .email p {
 footer .footer-links .footer-links-col .email .icon-send-container {
   position: absolute;
   right: 0;
-  background-color: #00B8FF;
+  background-color: #0096CC;
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
@@ -2287,4 +2287,4 @@ footer .footer-policy a {
   color: white;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-dark.css.map */

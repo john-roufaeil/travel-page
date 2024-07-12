@@ -1,11 +1,10 @@
 function toggleTheme(theme) {
     if (theme === 'light') {
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
+        document.head.getElementsByTagName("link")[1].href = "/src/css/styles.css"
     } else {
-        document.body.classList.add('dark-theme');
-        document.body.classList.remove('light-theme');
+        document.head.getElementsByTagName("link")[1].href = "/src/css/styles-dark.css"
     }
+    console.log(document.head.getElementsByTagName("link")[1].href)
 }
 
 function toggleSize(size) {
