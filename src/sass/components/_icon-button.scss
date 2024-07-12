@@ -3,11 +3,11 @@
 }
 
 .icon-button--invert {
-    @include icon-button($white, $secondary);
+    @include icon-button($sub-background, $secondary);
 }
 
 .icon-button--primary {
-    @include icon-button($primary, $white);
+    @include icon-button($primary, $sub-background);
 }
 
 .icon-button-link {
@@ -17,7 +17,7 @@
 
     &:hover {
         .icon-link:before {
-            color: white;
+            color: $sub-background;
         }
     }
 }

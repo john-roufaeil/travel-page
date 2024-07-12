@@ -1,6 +1,6 @@
 .team {
     @include flex(column);
-    background-color: $white;
+    background-color: $sub-background;
     color: $primary;
     border-radius: 50px;
     border: none;
@@ -16,7 +16,7 @@
         width: 100%;
         height: auto;
         z-index: 1;
-        opacity: 50%;
+        opacity: $opacity;
     }
 
     .team-container {
@@ -40,7 +40,7 @@
                     padding: 1rem 2rem;
                     border-radius: 20px;
                     z-index: 3;
-                    background-color: $white;
+                    background-color: $sub-background;
 
                     .team-object-text {
                         @include flex(column, space-evenly);
@@ -62,11 +62,16 @@
                     position: absolute;
                     margin: auto;
                     bottom: 2.5rem;
-                    background-color: $white;
+                    background-color: $sub-background;
                     border-radius: 20px;
                     width: fit-content;
                     padding: 0.5rem 1rem;
                     @include flex(row, space-between, center, 1rem);
+
+                    [class^="icon-"]:before,
+                    [class^="icon-"]:after {
+                        color: $primary;
+                    }
                 }
 
                 img {

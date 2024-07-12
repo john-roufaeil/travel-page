@@ -21,7 +21,7 @@
 .exp {
     @include flex(row, normal, center);
     background-color: $secondary;
-    color: $white;
+    color: $sub-background;
     width: 90%;
     border-radius: 20px;
     padding: 2rem;

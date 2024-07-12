@@ -1,31 +1,35 @@
 .contained-btn-sm {
-    @include btn($secondary, $white, small);
+    @include btn($secondary, $background, small);
 }
 
 .contained-btn {
-    @include btn($secondary, $white, base);
+    @include btn($secondary, $background, base);
 }
 
 .outlined-btn {
-    @include btn($primary, $white, base);
+    @include btn($primary, $sub-background, base);
+}
+
+.outlined-btn-sec-bg {
+    @include btn($background, $secondary, base, $secondary, $background);
 }
 
 .outlined-btn-sec {
-    @include btn($background, $secondary, base, $secondary, $white);
+    @include btn($sub-background, $secondary, base, $secondary, $background);
 }
 
 .text-btn {
-    @include btn(transparent, $white, base, transparent);
+    @include btn(transparent, $sub-background, base, transparent);
 
     &:hover {
         text-decoration: underline;
         text-underline-offset: 0.25rem;
         background-color: transparent;
-        color: white;
+        color: $sub-background;
 
         [class^="icon-"]:before,
         [class^="icon-"]:after {
-            color: $white;
+            color: $sub-background;
         }
     }
 }

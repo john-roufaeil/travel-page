@@ -8,9 +8,9 @@
     @include flex(row, normal, center);
 }
 
-.countries-container .icon-brochures:before {
-    color: $white;
-}
+// .countries-container .icon-brochures:before {
+//     color: $white;
+// }
 
 .countries-container {
     width: 70%;
@@ -99,6 +99,7 @@
 .working-visa {
     @include flex(column, space-between, normal, 0.6rem);
     background-color: $secondary;
+    color: $sub-background;
     margin: 1rem;
     padding: 1.5rem 1rem;
     border-radius: 20px;

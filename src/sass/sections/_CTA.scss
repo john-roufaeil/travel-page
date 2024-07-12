@@ -30,6 +30,7 @@
             .CTA-offers-details {
                 @include flex(column, space-around);
                 padding: 2rem;
+                background-color: $sub-background;
 
                 .card-text {
                     font-size: 0.8rem;
@@ -50,7 +51,8 @@
             padding: 2.5rem 1.5rem;
 
             .CTA-stat {
-                @include flex(column);;
+                @include flex(column);
+                ;
                 text-align: center;
                 color: $white;
 

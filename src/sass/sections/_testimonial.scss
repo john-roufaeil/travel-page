@@ -13,10 +13,14 @@
     .testimonial-details {
         width: 60%;
         background-color: $secondary;
-        color: $white;
+        color: $sub-background;
         @include flex(column, space-between);
         border-radius: 20px;
         padding: 3rem;
+
+        .icon-quotes::before {
+            color: $sub-background
+        }
 
         .icon-quotes {
             font-size: 2rem;
@@ -50,8 +54,7 @@
             @include flex(row, normal, center, 1rem);
 
             hr {
-                color: white;
-                border: 1px solid $white;
+                border: 1px solid $sub-background;
                 width: 100%;
             }
         }

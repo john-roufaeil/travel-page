@@ -1,6 +1,6 @@
 .process {
     @include flex(column, normal, center);
-    background-color: $white;
+    background-color: $sub-background;
     color: $primary;
     border-radius: 50px;
     border: none;
@@ -17,7 +17,7 @@
         width: 100%;
         height: auto;
         z-index: 1;
-        opacity: 30%;
+        opacity: $opacity;
         position: absolute;
     }
 
@@ -37,14 +37,19 @@
                 border-radius: 20px;
                 padding: 2rem;
                 margin: 0 0 2rem 0;
-                background-color: $white;
+                background-color: $sub-background;
 
                 span {
                     font-size: 2rem;
                 }
 
+                [class^="icon"]:before {
+                    color: $primary;
+                }
+
                 .process-card-text {
                     font-size: 0.8rem;
+                    color: $text
                 }
             }
 

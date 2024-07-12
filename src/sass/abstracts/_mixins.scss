@@ -12,6 +12,11 @@
     color: $color;
     font-weight: $weight;
     line-height: 1.2;
+
+    [class^="icon-"]:before,
+    [class^="icon-"]:after {
+        color: $color;
+    }
 }
 
 @mixin icon($size: 4rem, $bg: $secondary, $color: $white, $factor: 0.5) {
@@ -33,7 +38,7 @@
     }
 }
 
-@mixin icon-button($bg: $white, $color: $secondary, $border-radius: 100%, $padding: 0) {
+@mixin icon-button($bg: $sub-background, $color: $secondary, $border-radius: 100%, $padding: 0) {
     @include icon(2.5rem, $bg, $color);
     border: 1px solid $color;
     border-radius: $border-radius;

@@ -17,8 +17,12 @@
 
                 .blog-details {
                     @include flex(row, space-between, center);
-                    color: $black;
+                    color: $text;
                     font-size: 0.8rem;
+
+                    [class^="icon"]:before {
+                        color: $text
+                    }
 
                     .date,
                     .admin {
