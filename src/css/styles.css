@@ -332,7 +332,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans";
-  transition: all 250ms linear;
+  transition: all 150ms linear;
 }
 
 body,
@@ -1167,6 +1167,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
   width: 100%;
+  margin: 2rem 0 0;
 }
 
 .nav-item {
@@ -1644,7 +1645,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
 }
-.visa-card .visa-card-icons span[class^=icon-]:before {
+.visa-card .visa-card-icons span[class^=icon-]:not(.icon-link):before {
   color: #2437AC;
 }
 .visa-card .link-container {

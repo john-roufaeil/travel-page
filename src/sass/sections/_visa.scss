@@ -29,7 +29,7 @@
     .visa-card-icons {
         @include flex(row, space-between, center);
 
-        span[class^="icon-"]:before {
+        span[class^="icon-"]:not(.icon-link):before {
             color: $primary;
         }
 
