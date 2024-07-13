@@ -12,14 +12,6 @@
         margin: 5rem auto;
         @include flex(column);
 
-        .countries-hello {
-            @include flex(row, space-between, end);
-
-            .carousel-icons {
-                @include flex(row, center, normal, 1rem);
-            }
-        }
-
         .countries-imgs-container {
             @include flex(row, space-between, normal, 1rem, nowrap);
             width: 100%;

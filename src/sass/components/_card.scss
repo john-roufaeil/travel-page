@@ -10,3 +10,8 @@
 .card--sm {
     @include card($border, $background, $text, 1rem, 1rem, 48%)
 }
+
+.card--vert {
+    @include card($border, $background, $text, 2rem, 2rem, 24%);
+    @include flex(column, space-evenly, start, 1rem);
+}

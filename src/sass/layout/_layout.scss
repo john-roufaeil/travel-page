@@ -17,3 +17,11 @@ nav {
 section {
     margin: 5rem auto;
 }
+
+.countries-hello {
+    @include flex(row, space-between, end);
+}
+
+.carousel-icons {
+    @include flex(row, center, normal, 1rem);
+}
