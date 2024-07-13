@@ -1613,6 +1613,7 @@ section {
 }
 .CTA .CTA-img img {
   height: 100%;
+  object-fit: cover;
 }
 .CTA .side-CTA {
   width: 65%;
@@ -1773,7 +1774,7 @@ section {
   align-items: normal;
   gap: 1.5rem;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 70%;
   flex: 2;
 }
 .team .team-container .team-details .team-text .team-object {
@@ -1793,17 +1794,15 @@ section {
 .team .team-container .team-details .team-text .team-object .team-object-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: normal;
-  gap: 0;
+  gap: 0.5rem;
   flex-wrap: nowrap;
 }
-.team .team-container .team-details .team-text .team-object .team-object-text .card-text {
-  font-size: 0.9rem;
-  margin: 1rem 0 0 0;
+.team .team-container .team-details .team-text .team-object .team-object-text .card__text {
+  margin: 0;
 }
 .team .team-container .team-details .team-img {
-  flex: 1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1811,6 +1810,7 @@ section {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
+  width: 30%;
 }
 .team .team-container .team-details .team-img .social-media {
   position: absolute;
@@ -1832,7 +1832,9 @@ section {
   color: #3B82F6;
 }
 .team .team-container .team-details .team-img img {
-  width: 20rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team .team-container .team-details .team-img a {
   text-decoration: none;
