@@ -7,23 +7,25 @@
         height: auto;
 
         img {
-            width: 100%;
+            height: 100%;
         }
     }
 
     .side-CTA {
-        width: 70%;
+        width: 65%;
         @include flex(column, space-between, normal, 2rem);
 
         .CTA-offers {
             border-radius: 20px;
             background-color: $white;
             width: 100%;
+            height: 100%;
+            font-size: 0.8rem;
             @include flex(row, space-between);
 
             img {
-                width: 30%;
-                height: auto;
+                width: 35%;
+                height: 100%;
                 object-fit: cover;
             }
 
@@ -31,15 +33,6 @@
                 @include flex(column, space-around);
                 padding: 2rem;
                 background-color: $sub-background;
-
-                .card-text {
-                    font-size: 0.8rem;
-                }
-
-                .icon-right-arrow {
-                    margin: 0 0 0 0.5rem;
-                    font-size: 0.8rem;
-                }
             }
         }
 
@@ -52,7 +45,6 @@
 
             .CTA-stat {
                 @include flex(column);
-                ;
                 text-align: center;
                 color: $white;
 
