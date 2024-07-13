@@ -22,7 +22,7 @@
     padding: 0 0 0 15rem;
     position: relative;
     height: 80vh;
-    color: $sub-background
+    color: $sub-background;
 }
 
 #eiffel-1,
@@ -65,7 +65,7 @@
     text-decoration: none;
     padding: 0.6rem 0.5rem 0.6rem 0.75rem;
     border-radius: 100%;
-    background-color: #3A4BB4;
+    background-color: $secondary;
     text-align: center;
 }
 

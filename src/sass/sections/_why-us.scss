@@ -1,122 +1,85 @@
 .why-us {
     @include flex(column);
     width: 70%;
-}
 
-.why-us-details {
-    @include flex(row, space-between);
-    width: 100%;
-}
+    .why-us-details {
+        @include flex(row, space-between);
+        width: 100%;
 
-.why-us-images {
-    @include flex();
-    width: 45%;
-}
+        .why-us-images {
+            @include flex();
+            width: 45%;
 
-.why-us-images-1,
-.why-us-images-2 {
-    @include flex(column, space-between, center, 1rem);
-}
+            img {
+                width: 90%;
+            }
 
-.exp {
-    @include flex(row, normal, center);
-    background-color: $secondary;
-    color: $sub-background;
-    width: 90%;
-    border-radius: 20px;
-    padding: 2rem;
-}
+            .why-us-images-1,
+            .why-us-images-2 {
+                @include flex(column, space-between, center, 1rem);
+            }
 
-.exp-number {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-right: 0.5rem;
-}
+            .why-us-image-1-parent {
+                position: relative
+            }
 
-.exp-text {
-    font-size: 1.2rem;
-}
+            .why-us-image-1-frame {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                width: 100%;
+            }
 
-.why-us-images {
-    width: 45%;
+            .exp {
+                @include flex(row, normal, center);
+                background-color: $secondary;
+                color: $sub-background;
+                width: 90%;
+                border-radius: 20px;
+                padding: 2rem;
 
-    img {
-        width: 90%;
+                .exp-number {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-right: 0.5rem;
+                }
+
+                .exp-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .why-us-text {
+            @include flex(column, space-between, normal, 0.5rem);
+            width: 52%;
+
+            .two-cards {
+                @include flex(row, space-between);
+
+                .why-card-head {
+                    @include flex(row, normal, center);
+                }
+
+                .icon-tick:before {
+                    color: $secondary;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            .why-more {
+                @include flex(row, normal, center);
+
+                .help {
+                    @include flex(column, normal, left);
+                    margin-left: 1rem;
+                }
+            }
+        }
     }
-}
 
-.why-us-text {
-    @include flex(column, space-between);
-    width: 52%;
-}
-
-.why-us-companies {
-    @include flex(row, space-between);
-    margin-top: 4rem;
-}
-
-.two-cards {
-    @include flex(row, space-between);
-}
-
-.why-card {
-    border: 1px solid $border;
-    // padding: 0.5rem;
-    width: 48%;
-    border-radius: 20px;
-    @include flex(column, left, left);
-}
-
-.why-card-head {
-    @include flex(row, normal, center);
-}
-
-.why-card-text-details {
-    color: $sub-text;
-    font-size: 0.9rem;
-    margin: 0 0 0.5rem 0;
-}
-
-.why-card-text {
-    margin: 0 0.5rem 0.5rem 0;
-    color: $sub-text;
-    font-size: 0.8rem;
-}
-
-.why-card-text .icon-tick:before {
-    color: $secondary;
-    margin-right: 0.5rem;
-}
-
-.why-more {
-    @include flex(row, normal, center);
-}
-
-.why-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: $secondary;
-    border-radius: 100%;
-    padding: 0.8rem;
-}
-
-.why-icon span {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.help {
-    @include flex(column, normal, left);
-    margin-left: 1rem;
-}
-
-.why-us-image-1-parent {
-    position: relative
-}
-
-.why-us-image-1-frame {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 100%;
+    .why-us-companies {
+        @include flex(row, space-between);
+        margin-top: 4rem;
+    }
 }

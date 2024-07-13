@@ -1,11 +1,7 @@
 .card {
-    border: 1px solid $border;
-    padding: 1rem 2rem;
-    width: 32%;
-    border-radius: 20px;
+    @include card();
 }
 
-.card-text {
-    color: $sub-text;
-    margin: 1rem 0;
+.card--sm {
+    @include card($border, $background, $text, 1rem, 1rem, 48%)
 }
