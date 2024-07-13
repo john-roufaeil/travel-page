@@ -6,120 +6,56 @@
     margin: 1rem 0;
     width: 100%;
     @include flex(row, normal, center);
-}
 
-// .countries-container .icon-brochures:before {
-//     color: $white;
-// }
+    .countries-container {
+        width: 70%;
+        margin: 5rem auto;
+        @include flex(column);
 
-.countries-container {
-    width: 70%;
-    margin: 5rem auto;
-    @include flex(column);
-}
+        .countries-hello {
+            @include flex(row, space-between, end);
 
-.carousel-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: transparent;
-    border-radius: 100%;
-    padding: 0;
-    border: 1px solid $white;
-    margin: 1rem 0;
-    cursor: pointer;
-    @include flex(row, center, center);
-}
+            .carousel-icons {
+                @include flex(row, center, normal, 1rem);
+            }
+        }
 
-.carousel-icon span {
-    @include flex(row, center, center);
-    height: fit-content;
-}
+        .countries-imgs-container {
+            @include flex(row, space-between, normal, 1rem, nowrap);
+            width: 100%;
+            padding: 2rem 0 0;
 
-.icon-right-arrow,
-.icon-left-arrow {
-    height: 50%;
-}
+            [class$="-img"] {
+                position: relative;
 
-.carousel-icon .icon-right-arrow:before,
-.carousel-icon .icon-left-arrow:before {
-    font-size: 0.65rem;
-    color: $white;
-}
+                & img {
+                    height: 100%;
+                    width: 100%;
+                }
 
-.carousel-icon:hover {
-    background-color: $secondary;
-    border: 1px solid $secondary;
-}
+                [class$="-flag"] {
+                    position: absolute;
+                    top: 1.25rem;
+                    right: 1.5rem;
+                }
+            }
 
-.carousel-icons {
-    @include flex(row, center, normal, 1rem);
-}
+            .working-visa {
+                @include flex(column, space-between, normal, 0.6rem);
+                background-color: $secondary;
+                color: $sub-background;
+                margin: 1rem;
+                padding: 1.5rem 1rem;
+                border-radius: 20px;
+                position: absolute;
+                bottom: 0;
+                width: calc(100% - 3rem);
 
-.countries-hello {
-    @include flex(row, space-between, end);
-}
-
-.countries-imgs-container {
-    @include flex(row, space-between, normal, 1rem, nowrap);
-    width: 100%;
-    padding: 2rem 0 0;
-}
-
-.canada-img img,
-.australia-img img,
-.usa-img img,
-.sri-lanka-img img {
-    height: 100%;
-    width: 95%;
-}
-
-.canada-img,
-.australia-img,
-.usa-img,
-.sri-lanka-img,
-.bangladesh-img {
-    position: relative;
-}
-
-.bangladesh-img img {
-    height: 100%;
-    width: 95%;
-}
-
-.canada-flag,
-.bangladesh-flag,
-.australia-flag,
-.usa-flag,
-.sri-lanka-flag {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.5rem;
-}
-
-.working-visa {
-    @include flex(column, space-between, normal, 0.6rem);
-    background-color: $secondary;
-    color: $sub-background;
-    margin: 1rem;
-    padding: 1.5rem 1rem;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 3rem);
-}
-
-.working-visa p:last-of-type {
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-
-.apply-btn {
-    display: inline-block;
-    padding: 0.8rem 1.2rem;
-    border-radius: 150px;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 0.7rem;
-    text-align: center;
-    width: fit-content;
+                & p:last-of-type {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
 }

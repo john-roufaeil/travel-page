@@ -1418,8 +1418,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
 }
-
-.countries-container {
+.countries .countries-container {
   width: 70%;
   margin: 5rem auto;
   display: flex;
@@ -1429,60 +1428,7 @@ section {
   gap: 0;
   flex-wrap: nowrap;
 }
-
-.carousel-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: transparent;
-  border-radius: 100%;
-  padding: 0;
-  border: 1px solid #FFFFFF;
-  margin: 1rem 0;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
-}
-
-.carousel-icon span {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
-  height: fit-content;
-}
-
-.icon-right-arrow,
-.icon-left-arrow {
-  height: 50%;
-}
-
-.carousel-icon .icon-right-arrow:before,
-.carousel-icon .icon-left-arrow:before {
-  font-size: 0.65rem;
-  color: #FFFFFF;
-}
-
-.carousel-icon:hover {
-  background-color: #00B8FF;
-  border: 1px solid #00B8FF;
-}
-
-.carousel-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: normal;
-  gap: 1rem;
-  flex-wrap: nowrap;
-}
-
-.countries-hello {
+.countries .countries-container .countries-hello {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1490,8 +1436,15 @@ section {
   gap: 0;
   flex-wrap: nowrap;
 }
-
-.countries-imgs-container {
+.countries .countries-container .countries-hello .carousel-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+.countries .countries-container .countries-imgs-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1501,39 +1454,19 @@ section {
   width: 100%;
   padding: 2rem 0 0;
 }
-
-.canada-img img,
-.australia-img img,
-.usa-img img,
-.sri-lanka-img img {
-  height: 100%;
-  width: 95%;
-}
-
-.canada-img,
-.australia-img,
-.usa-img,
-.sri-lanka-img,
-.bangladesh-img {
+.countries .countries-container .countries-imgs-container [class$=-img] {
   position: relative;
 }
-
-.bangladesh-img img {
+.countries .countries-container .countries-imgs-container [class$=-img] img {
   height: 100%;
-  width: 95%;
+  width: 100%;
 }
-
-.canada-flag,
-.bangladesh-flag,
-.australia-flag,
-.usa-flag,
-.sri-lanka-flag {
+.countries .countries-container .countries-imgs-container [class$=-img] [class$=-flag] {
   position: absolute;
   top: 1.25rem;
   right: 1.5rem;
 }
-
-.working-visa {
+.countries .countries-container .countries-imgs-container .working-visa {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1549,21 +1482,9 @@ section {
   bottom: 0;
   width: calc(100% - 3rem);
 }
-
-.working-visa p:last-of-type {
+.countries .countries-container .countries-imgs-container .working-visa p:last-of-type {
   font-size: 0.75rem;
   font-weight: 400;
-}
-
-.apply-btn {
-  display: inline-block;
-  padding: 0.8rem 1.2rem;
-  border-radius: 150px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 0.7rem;
-  text-align: center;
-  width: fit-content;
 }
 
 .visa {
