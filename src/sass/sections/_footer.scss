@@ -37,6 +37,7 @@ footer {
 
         .footer-qs-object {
             @include flex(row, normal, center, 1rem);
+            width: 40%;
 
             p {
                 font-size: 1.5rem;
@@ -88,6 +89,7 @@ footer {
 
                 p {
                     @include flex(row, normal, center);
+                    cursor: pointer;
                 }
 
                 .icon-tick {
@@ -103,10 +105,11 @@ footer {
             .social-media {
                 @include flex(row, normal, normal, 1rem);
 
-                .icon-x:before,
-                .icon-fb:before,
-                .icon-ig:before,
-                .icon-in:before {
+                a {
+                    text-decoration: none;
+                }
+
+                [class^="icon-"]:before {
                     color: white;
                 }
             }
