@@ -2,21 +2,6 @@
     width: 70%;
     @include flex(column, space-between, normal, 2rem);
 
-    .carousel-icon {
-        background-color: $secondary;
-        border: 1px solid $secondary;
-
-        &:hover {
-            background-color: transparent;
-            border: 1px solid $secondary;
-
-            .icon-right-arrow:before,
-            .icon-left-arrow:before {
-                color: $secondary;
-            }
-        }
-    }
-
     .coaching-categories {
         @include flex(row, space-between, normal, 2rem);
         width: 100%;
@@ -25,7 +10,7 @@
             position: relative;
 
             img {
-                width: 20rem;
+                width: 100%;
             }
 
             .coaching-details {

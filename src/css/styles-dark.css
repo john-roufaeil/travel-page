@@ -1691,18 +1691,6 @@ section {
   gap: 2rem;
   flex-wrap: nowrap;
 }
-.coaching .carousel-icon {
-  background-color: #32baec;
-  border: 1px solid #32baec;
-}
-.coaching .carousel-icon:hover {
-  background-color: transparent;
-  border: 1px solid #32baec;
-}
-.coaching .carousel-icon:hover .icon-right-arrow:before,
-.coaching .carousel-icon:hover .icon-left-arrow:before {
-  color: #32baec;
-}
 .coaching .coaching-categories {
   display: flex;
   flex-direction: row;
@@ -1716,7 +1704,7 @@ section {
   position: relative;
 }
 .coaching .coaching-categories .coaching-category img {
-  width: 20rem;
+  width: 100%;
 }
 .coaching .coaching-categories .coaching-category .coaching-details {
   background-color: #272827;
