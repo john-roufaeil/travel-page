@@ -2,6 +2,11 @@
     @include card();
 }
 
+.card--md {
+    @include card($border, $background, $sub-text, 1rem, 1rem, 49%);
+    @include flex(row, space-between, center, 2rem);
+}
+
 .card--sm {
     @include card($border, $background, $text, 1rem, 1rem, 48%)
 }

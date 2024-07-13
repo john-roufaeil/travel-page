@@ -115,7 +115,6 @@
 
 
 @mixin card($border-color: $border, $bg-color: $background, $color: $text, $py: 1rem, $px: 2rem, $width: 32%) {
-    @include flex(column, left, left);
     border: 1px solid $border-color;
     padding: $py $px;
     width: $width;

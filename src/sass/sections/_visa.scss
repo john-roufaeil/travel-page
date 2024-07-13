@@ -1,24 +1,19 @@
 .visa {
     @include flex(column, space-between);
     width: 70%;
+
+    .visa-cards {
+        @include flex(row, space-between, normal, 1rem, wrap);
+    }
 }
 
-.visa-cards {
-    @include flex(row, space-between, normal, 1rem, wrap);
-}
 
-.visa-card {
-    border: 1px solid $border;
-    width: 49%;
-    border-radius: 20px;
-    padding: 1rem;
-    @include flex(row, space-between, center, 2rem);
-
+.card--md {
     img {
         width: 40%;
     }
 
-    .card-text {
+    .card__text {
         font-size: 0.8rem;
     }
 
@@ -32,36 +27,9 @@
         span[class^="icon-"]:not(.icon-link):before {
             color: $primary;
         }
-
     }
 
-    .link-container {
-        border-radius: 20px;
-        background-color: transparent;
-        border: 1px solid $secondary;
-        padding: 1rem;
-        width: fit-content;
-        @include flex(row, center, center);
-        cursor: pointer;
-
-        &:hover {
-            background-color: $secondary;
-            border: 1px solid $white;
-
-            .icon-link::before {
-                color: white;
-            }
-        }
-
-        span {
-            font-size: 0.75rem;
-        }
-    }
-
-    .icon-privacy,
-    .icon-location,
-    .icon-route,
-    .icon-flight {
+    [class^="icon"]:not(.icon-link) {
         font-size: 2.5rem;
     }
 }
