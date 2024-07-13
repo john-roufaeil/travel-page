@@ -21,7 +21,7 @@
                 width: 95%;
                 padding: 1.5rem;
                 position: absolute;
-                @include flex(row, space-between, center);
+                @include flex(row, space-between, center, 0.5rem);
             }
         }
     }
