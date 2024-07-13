@@ -700,6 +700,8 @@ section {
 
 .card {
   border: 1px solid #E3DBD8;
+  background-color: #F1F5EB;
+  color: #16171A;
   padding: 1rem 2rem;
   width: 32%;
   border-radius: 20px;
@@ -707,6 +709,8 @@ section {
 
 .card--md {
   border: 1px solid #E3DBD8;
+  background-color: #F1F5EB;
+  color: #727272;
   padding: 1rem 1rem;
   width: 49%;
   border-radius: 20px;
@@ -720,6 +724,8 @@ section {
 
 .card--sm {
   border: 1px solid #E3DBD8;
+  background-color: #F1F5EB;
+  color: #16171A;
   padding: 1rem 1rem;
   width: 48%;
   border-radius: 20px;
@@ -727,6 +733,8 @@ section {
 
 .card--vert {
   border: 1px solid #E3DBD8;
+  background-color: #F1F5EB;
+  color: #16171A;
   padding: 2rem 2rem;
   width: 24%;
   border-radius: 20px;
@@ -1854,19 +1862,22 @@ section {
 }
 .testimonial .testimonial-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .testimonial .testimonial-details {
-  width: 60%;
+  border: 1px solid #00B8FF;
   background-color: #00B8FF;
   color: #FFFFFF;
+  padding: 3rem 3rem;
+  width: 60%;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: normal;
   gap: 0;
   flex-wrap: nowrap;
-  border-radius: 20px;
-  padding: 3rem;
 }
 .testimonial .testimonial-details .icon-quotes::before {
   color: #FFFFFF;
