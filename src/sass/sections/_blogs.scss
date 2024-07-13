@@ -7,13 +7,10 @@
 
         .blog {
             @include flex(column, normal, center);
-            width: 32%;
-            border: 1px solid $border;
-            border-radius: 20px;
+            @include card($border, $background, $text, 0, 0, 32%);
 
             .blog-info {
                 @include flex(column, space-between, normal, 1rem);
-                padding: 2rem;
 
                 .blog-details {
                     @include flex(row, space-between, center);
@@ -42,7 +39,7 @@
             }
 
             img {
-                width: 20rem;
+                width: 100%;
             }
         }
     }
