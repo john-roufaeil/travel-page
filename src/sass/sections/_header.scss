@@ -103,4 +103,8 @@
     @include flex(row, space-between);
     width: 100%;
     margin: 2rem 0 0;
+
+    @include respond-to(mobile) {
+        @include flex(column, space-between, normal, 1rem);
+    }
 }

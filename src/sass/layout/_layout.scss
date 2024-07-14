@@ -11,6 +11,15 @@ nav {
             align-items: center;
             gap: 0.25rem;
         }
+
+        @include respond-to(mobile) {
+            @include flex(row, space-evenly, center, 1rem, wrap);
+            width: 80%;
+        }
+    }
+
+    @include respond-to(mobile) {
+        @include flex(column, normal, center, 1rem, wrap);
     }
 }
 

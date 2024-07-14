@@ -1,5 +1,9 @@
 .card {
     @include card();
+
+    @include respond-to(mobile) {
+        width: 100%;
+    }
 }
 
 .card--md {

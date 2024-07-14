@@ -36,6 +36,17 @@
     [class^="icon-"]:after {
         color: $color;
     }
+
+    @include respond-to(mobile) {
+        width: 0.75 * $size;
+        height: 0.75 * $size;
+        padding: 0.75rem;
+        margin: 0.75rem 0;
+    }
+
+    span {
+        font-size: calc($size * $factor * 0.75);
+    }
 }
 
 @mixin icon-button($bg: $sub-background, $color: $secondary, $border-radius: 100%, $padding: 0) {
