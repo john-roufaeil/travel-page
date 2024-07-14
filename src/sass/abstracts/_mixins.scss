@@ -113,7 +113,6 @@
     }
 }
 
-
 @mixin card($border-color: $border, $bg-color: $background, $color: $text, $py: 1rem, $px: 2rem, $width: 32%) {
     border: 1px solid $border-color;
     background-color: $bg-color;

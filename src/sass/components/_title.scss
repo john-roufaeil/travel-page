@@ -1,5 +1,9 @@
 .page__title {
     @include title(3.5rem, inherit, 800);
+
+    @include respond-to(mobile) {
+        font-size: 2rem;
+    }
 }
 
 .card__title {

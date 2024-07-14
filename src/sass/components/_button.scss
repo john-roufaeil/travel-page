@@ -8,6 +8,10 @@
 
 .outlined-btn {
     @include btn($primary, $sub-background, base);
+
+    @include respond-to(mobile) {
+        @include btn($primary, $sub-background, small);
+    }
 }
 
 .outlined-btn-sec-bg {
@@ -31,6 +35,10 @@
         [class^="icon-"]:after {
             color: $sub-background;
         }
+    }
+
+    @include respond-to(mobile) {
+        @include btn(transparent, $sub-background, small, transparent);
     }
 }
 

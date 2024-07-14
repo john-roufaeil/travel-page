@@ -515,6 +515,45 @@ section {
 .outlined-btn [class^=icon-]:after {
   font-size: 0.8rem;
 }
+@media (max-width: 600px) {
+  .outlined-btn {
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    background-color: #2437AC;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.7rem;
+    width: fit-content;
+  }
+  .outlined-btn [class^=icon-]:before,
+  .outlined-btn [class^=icon-]:after {
+    color: #FFFFFF;
+  }
+  .outlined-btn:hover {
+    background-color: #FFFFFF;
+    color: #2437AC;
+    border-color: #2437AC;
+  }
+  .outlined-btn:hover [class^=icon-]:before,
+  .outlined-btn:hover [class^=icon-]:after {
+    color: #2437AC;
+  }
+  .outlined-btn [class^=icon-]:before,
+  .outlined-btn [class^=icon-]:after {
+    font-size: 0.5rem;
+  }
+}
 
 .outlined-btn-sec-bg {
   border-radius: 150px;
@@ -636,6 +675,45 @@ section {
 .text-btn:hover [class^=icon-]:after {
   color: #FFFFFF;
 }
+@media (max-width: 600px) {
+  .text-btn {
+    border-radius: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.7rem;
+    width: fit-content;
+  }
+  .text-btn [class^=icon-]:before,
+  .text-btn [class^=icon-]:after {
+    color: #FFFFFF;
+  }
+  .text-btn:hover {
+    background-color: #FFFFFF;
+    color: transparent;
+    border-color: transparent;
+  }
+  .text-btn:hover [class^=icon-]:before,
+  .text-btn:hover [class^=icon-]:after {
+    color: transparent;
+  }
+  .text-btn [class^=icon-]:before,
+  .text-btn [class^=icon-]:after {
+    font-size: 0.5rem;
+  }
+}
 
 .text-btn--prim {
   border-radius: 150px;
@@ -755,6 +833,11 @@ section {
 .page__title [class^=icon-]:before,
 .page__title [class^=icon-]:after {
   color: inherit;
+}
+@media (max-width: 600px) {
+  .page__title {
+    font-size: 2rem;
+  }
 }
 
 .card__title {
@@ -1224,17 +1307,6 @@ section {
   width: 2.5rem;
 }
 
-.offerings {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: normal;
-  gap: 0;
-  flex-wrap: nowrap;
-  width: 100%;
-  margin: 2rem 0 0;
-}
-
 .nav-item {
   font-weight: 700;
   text-decoration: none;
@@ -1260,12 +1332,38 @@ section {
   height: 80vh;
   color: #FFFFFF;
 }
+.welcome .welcome__text {
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .welcome .welcome__text {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    padding: 3rem;
+    height: 55vh;
+  }
+}
 
 #eiffel-1,
 #eiffel-2 {
   width: 21rem;
   position: absolute;
   display: inline-block;
+}
+@media (max-width: 600px) {
+  #eiffel-1,
+  #eiffel-2 {
+    width: 10rem;
+  }
 }
 
 #eiffel-1 {
@@ -1278,6 +1376,11 @@ section {
   right: 6.5rem;
   z-index: 10;
 }
+@media (max-width: 600px) {
+  #eiffel-2 {
+    right: 0;
+  }
+}
 
 #man {
   width: 26rem;
@@ -1287,6 +1390,12 @@ section {
   z-index: 11;
   display: inline-block;
 }
+@media (max-width: 600px) {
+  #man {
+    width: 10rem;
+    right: 35%;
+  }
+}
 
 #circle {
   width: 28rem;
@@ -1294,6 +1403,12 @@ section {
   bottom: 0;
   right: 10rem;
   display: inline-block;
+}
+@media (max-width: 600px) {
+  #circle {
+    width: 12rem;
+    right: 30%;
+  }
 }
 
 .icon-play {
@@ -1317,6 +1432,17 @@ section {
   align-items: center;
   gap: 1px;
   flex-wrap: nowrap;
+}
+
+.offerings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  gap: 0;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 2rem 0 0;
 }
 
 .why-us {
