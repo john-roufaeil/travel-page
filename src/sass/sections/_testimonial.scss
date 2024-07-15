@@ -1,5 +1,5 @@
 .testimonial {
-    width: 70%;
+    @include layout();
     @include flex(row, space-between, normal, 1rem);
 
     .testimonial-img {
@@ -56,5 +56,9 @@
                 width: 100%;
             }
         }
+    }
+
+    @include respond-to(mobile) {
+        @include flex(column-reverse, space-between, end, 1rem);
     }
 }

@@ -1,9 +1,5 @@
 .card {
     @include card();
-
-    @include respond-to(mobile) {
-        width: 100%;
-    }
 }
 
 .card--md {
@@ -16,6 +12,6 @@
 }
 
 .card--vert {
-    @include card($border, $background, $text, 2rem, 2rem, 24%);
+    @include card($border, $background, $text, 2rem, 2rem, 24%, 49%);
     @include flex(column, space-evenly, start, 1rem);
 }

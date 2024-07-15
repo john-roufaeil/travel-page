@@ -17,6 +17,26 @@
     [class^="icon-"]:after {
         color: $color;
     }
+
+    // @include respond-to(mobile) {
+    //     font-size: clamp(0.5rem, $size * 0.5, $size * 0.75);
+    // }
+}
+
+@mixin text($size: 1rem, $color: inherit, $weight: 400) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: 1;
+
+    [class^="icon-"]:before,
+    [class^="icon-"]:after {
+        color: $color;
+    }
+
+    @include respond-to(mobile) {
+        font-size: clamp(0.5rem, $size * 0.5, $size * 0.75);
+    }
 }
 
 @mixin icon($size: 4rem, $bg: $secondary, $color: $white, $factor: 0.5) {
@@ -124,13 +144,28 @@
     }
 }
 
-@mixin card($border-color: $border, $bg-color: $background, $color: $text, $py: 1rem, $px: 2rem, $width: 32%) {
+@mixin card($border-color: $border, $bg-color: $background, $color: $text, $py: 1rem, $px: 2rem, $width: 32%, $width-mob: 100%) {
     border: 1px solid $border-color;
     background-color: $bg-color;
     color: $color;
     padding: $py $px;
     width: $width;
     border-radius: 20px;
+
+    @include respond-to(mobile) {
+        padding: ($py * 0.75) ($px * 0.75);
+        width: $width-mob;
+    }
+}
+
+@mixin layout($width: 70%, $my: 5rem, $mx: auto) {
+    width: $width;
+    margin: $my $mx;
+
+    @include respond-to(mobile) {
+        width: 100%;
+        margin: 0.5 * $my $mx;
+    }
 }
 
 @mixin respond-to($breakpoint) {
@@ -141,7 +176,7 @@
     }
 
     @else if $breakpoint =='tablet' {
-        @media (max-width: 900px) {
+        @media (min-width: 600px) and (max-width: 900px) {
             @content;
         }
     }

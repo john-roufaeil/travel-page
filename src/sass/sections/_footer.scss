@@ -42,6 +42,16 @@ footer {
             p {
                 font-size: 1.5rem;
             }
+
+            @include respond-to(mobile) {
+                width: 100%;
+            }
+        }
+
+        @include respond-to(mobile) {
+            @include flex(column, normal, normal, 1rem);
+            width: 80%;
+            margin: 0 auto;
         }
     }
 
@@ -114,6 +124,22 @@ footer {
                 }
             }
         }
+
+        @include respond-to(mobile) {
+            width: 80%;
+            margin: 0 auto;
+            @include flex(column, space-around, center, 1rem);
+            // padding: 0;
+
+            .footer-links-col {
+                width: 100%;
+                padding: 0;
+
+                img {
+                    width: 25%;
+                }
+            }
+        }
     }
 
     .footer-policy {
@@ -133,6 +159,11 @@ footer {
         a {
             text-decoration: none;
             color: white;
+        }
+
+        @include respond-to(mobile) {
+            width: 80%;
+            @include flex(column, space-around, normal, 1rem)
         }
     }
 }

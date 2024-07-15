@@ -1,5 +1,5 @@
 .available-countries {
-    width: 70%;
+    @include layout();
 
     .icon-wiggly-arrow {
         font-size: 0.5rem;
@@ -7,6 +7,10 @@
 
     .available-title-box {
         @include flex(row, space-between, last baseline);
+
+        @include respond-to(mobile) {
+            @include flex(column, space-between, start, 1rem);
+        }
     }
 
     .countries-list {
@@ -38,6 +42,10 @@
                     color: $sub-text;
                 }
             }
+        }
+
+        @include respond-to(mobile) {
+            @include flex(row, space-between, start, 0rem, wrap);
         }
     }
 }

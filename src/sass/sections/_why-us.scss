@@ -1,14 +1,22 @@
 .why-us {
     @include flex(column);
-    width: 70%;
+    @include layout();
 
     .why-us-details {
         @include flex(row, space-between);
         width: 100%;
 
+        @include respond-to(mobile) {
+            @include flex(column, space-between, normal, 1rem);
+        }
+
         .why-us-images {
             @include flex();
             width: 45%;
+
+            @include respond-to(mobile) {
+                width: 100%
+            }
 
             img {
                 width: 90%;
@@ -55,7 +63,7 @@
             width: 52%;
 
             .two-cards {
-                @include flex(row, space-between);
+                @include flex(row, space-between, normal, 1rem);
 
                 .why-card-head {
                     @include flex(row, normal, center);
@@ -75,11 +83,21 @@
                     margin-left: 1rem;
                 }
             }
+
+            @include respond-to(mobile) {
+                width: 100%
+            }
         }
     }
 
     .why-us-companies {
         @include flex(row, space-between);
         margin-top: 4rem;
+
+        @include respond-to(mobile) {
+            @include flex(row, space-around, center, 0, wrap)
+        }
     }
 }
+
+@include respond-to(mobile) {}

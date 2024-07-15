@@ -1,6 +1,6 @@
 .visa {
     @include flex(column, space-between);
-    width: 70%;
+    @include layout();
 
     .visa-cards {
         @include flex(row, space-between, normal, 1rem, wrap);

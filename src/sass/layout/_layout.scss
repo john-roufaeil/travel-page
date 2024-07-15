@@ -25,6 +25,10 @@ nav {
 
 section {
     margin: 5rem auto;
+
+    @include respond-to(mobile) {
+        margin: 2rem auto;
+    }
 }
 
 .countries-hello {

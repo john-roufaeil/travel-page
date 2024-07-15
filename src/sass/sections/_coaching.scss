@@ -1,6 +1,12 @@
 .coaching {
-    width: 70%;
+    @include layout();
     @include flex(column, space-between, normal, 2rem);
+
+    .countries-hello {
+        @include respond-to(mobile) {
+            @include flex(column, space-between, start, 1rem);
+        }
+    }
 
     .coaching-categories {
         @include flex(row, space-between, normal, 2rem);
@@ -23,6 +29,15 @@
                 position: absolute;
                 @include flex(row, space-between, center, 0.5rem);
             }
+
+            @include respond-to(mobile) {
+                width: 80%;
+                margin: 0 auto 4rem;
+            }
+        }
+
+        @include respond-to(mobile) {
+            @include flex(row, space-between, start, 1rem, wrap);
         }
     }
 }

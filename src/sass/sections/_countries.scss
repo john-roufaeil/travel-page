@@ -8,8 +8,7 @@
     @include flex(row, normal, center);
 
     .countries-container {
-        width: 70%;
-        margin: 5rem auto;
+        @include layout();
         @include flex(column);
 
         .countries-imgs-container {
@@ -29,6 +28,18 @@
                     position: absolute;
                     top: 1.25rem;
                     right: 1.5rem;
+
+                    @include respond-to(mobile) {
+                        top: 0.25rem;
+                        right: 0.25rem;
+                        width: 50%
+                    }
+                }
+
+                .bangladesh-flag {
+                    @include respond-to(mobile) {
+                        width: 25%
+                    }
                 }
             }
 
@@ -47,6 +58,19 @@
                     font-size: 0.75rem;
                     font-weight: 400;
                 }
+
+                @include respond-to(mobile) {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        @include respond-to(mobile) {
+            width: 80%;
+            margin: 2rem auto;
+
+            .countries-hello {
+                @include flex(column, space-between, start, 1rem);
             }
         }
     }

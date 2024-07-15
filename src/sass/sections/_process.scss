@@ -4,7 +4,7 @@
     color: $primary;
     border-radius: 50px;
     border: none;
-    margin: 10rem 0 5rem 0;
+    margin: 5rem 0 5rem 0;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -23,9 +23,9 @@
 
     .process-container {
         @include flex(column, space-between, normal, 2rem);
+        @include layout();
         z-index: 2;
-        width: 70%;
-        margin: 4rem auto;
+        margin: 5rem auto;
 
         .process-cards {
             @include flex(row, space-between, normal, 2rem);
@@ -34,6 +34,7 @@
                 @include flex(column, normal, normal, 1rem);
                 box-shadow: 0px 0px 5px 0px lightgray;
                 @include card($border, $sub-background, $text, 2rem, 2rem);
+                margin: 0 0 2rem 0;
 
                 span {
                     font-size: 2rem;
@@ -47,11 +48,27 @@
                     font-size: 0.8rem;
                     color: $text
                 }
+
+                @include respond-to(mobile) {
+                    margin: 0 2rem 0 0;
+                }
             }
 
-            .process-card-down {
+            .process-card:nth-of-type(2) {
                 margin: 2rem 0 0 0;
+
+                @include respond-to(mobile) {
+                    margin: 0 0 0 2rem;
+                }
             }
+
+            @include respond-to(mobile) {
+                @include flex(column, normal, normal, 1rem);
+            }
+        }
+
+        @include respond-to(mobile) {
+            width: 80%;
         }
     }
 }

@@ -29,7 +29,7 @@
     @include respond-to(mobile) {
         @include flex(column, normal, center, 1rem);
         padding: 3rem;
-        height: 55vh;
+        height: 60vh;
     }
 }
 

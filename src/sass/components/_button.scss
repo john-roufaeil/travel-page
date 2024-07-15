@@ -38,7 +38,7 @@
     }
 
     @include respond-to(mobile) {
-        @include btn(transparent, $sub-background, small, transparent);
+        @include btn(transparent, $sub-background, small    , transparent);
     }
 }
 

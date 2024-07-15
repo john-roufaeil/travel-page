@@ -1,6 +1,12 @@
 .blogs {
     @include flex(column, space-between, normal, 2rem);
-    width: 70%;
+    @include layout();
+
+    .countries-hello {
+        @include respond-to(mobile) {
+            @include flex(column, space-between, start)
+        }
+    }
 
     .blogs-list {
         @include flex(row, space-between, center, 1.5rem);
@@ -41,6 +47,14 @@
             img {
                 width: 100%;
             }
+
+            @include respond-to(mobile) {
+                width: 80%
+            }
+        }
+
+        @include respond-to(mobile) {
+            @include flex(row, space-around, center, 1rem, wrap);
         }
     }
 }
