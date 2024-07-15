@@ -8,7 +8,13 @@ function toggleTheme(theme) {
 }
 
 function toggleSize(size) {
-    document.documentElement.style.setProperty('font-size', `${size}`);
+    let newSize = size;
+    if (window.innerWidth <= 600) {
+        const sizeValue = parseInt(size, 10);
+        newSize = (sizeValue - 4) + 'px';
+    }
+
+    document.documentElement.style.fontSize = newSize;
     localStorage.setItem('fontSize', size);
 }
 

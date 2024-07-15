@@ -324,16 +324,16 @@
 }
 
 :root {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 @media (max-width: 600px) {
   :root {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   :root {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 }
 
@@ -748,6 +748,16 @@ section {
   .text-btn [class^=icon-]:before,
   .text-btn [class^=icon-]:after {
     font-size: 0.5rem;
+  }
+  .text-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    background-color: transparent;
+    color: #272827;
+  }
+  .text-btn:hover [class^=icon-]:before,
+  .text-btn:hover [class^=icon-]:after {
+    color: #272827;
   }
 }
 
@@ -1492,7 +1502,7 @@ section {
     gap: 1rem;
     flex-wrap: nowrap;
     padding: 3rem;
-    height: 60vh;
+    height: 30rem;
   }
 }
 
@@ -2020,6 +2030,7 @@ section {
 @media (max-width: 600px) {
   .CTA .CTA-img {
     width: 50%;
+    height: 50%;
   }
 }
 .CTA .side-CTA {

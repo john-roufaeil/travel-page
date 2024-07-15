@@ -38,7 +38,19 @@
     }
 
     @include respond-to(mobile) {
-        @include btn(transparent, $sub-background, small    , transparent);
+        @include btn(transparent, $sub-background, small, transparent);
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.25rem;
+            background-color: transparent;
+            color: $sub-background;
+
+            [class^="icon-"]:before,
+            [class^="icon-"]:after {
+                color: $sub-background;
+            }
+        }
     }
 }
 
