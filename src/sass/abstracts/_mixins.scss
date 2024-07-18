@@ -35,7 +35,7 @@
     }
 }
 
-@mixin icon($size: 4rem, $bg: var(--secondary), $color: var(--background), $factor: 0.75) {
+@mixin icon($size: 4rem, $bg: var(--secondary), $color: var(--background), $factor: 0.5) {
     width: $size;
     height: $size;
     background-color: $bg;

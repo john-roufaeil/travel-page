@@ -1072,7 +1072,7 @@ svg {
   flex-wrap: nowrap;
 }
 .icon [class^=icon] {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .icon [class^=icon-]:before,
 .icon [class^=icon-]:after {
@@ -1087,7 +1087,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon [class^=icon] {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1106,7 +1106,7 @@ svg {
   flex-wrap: nowrap;
 }
 .icon--md [class^=icon] {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 .icon--md [class^=icon-]:before,
 .icon--md [class^=icon-]:after {
@@ -1121,7 +1121,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon--md [class^=icon] {
-    font-size: 1.6875rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1140,7 +1140,7 @@ svg {
   flex-wrap: nowrap;
 }
 .icon--sm [class^=icon] {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .icon--sm [class^=icon-]:before,
 .icon--sm [class^=icon-]:after {
@@ -1155,7 +1155,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon--sm [class^=icon] {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1212,7 +1212,7 @@ svg {
   cursor: pointer;
 }
 .icon-button [class^=icon] {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
 }
 .icon-button [class^=icon-]:before,
 .icon-button [class^=icon-]:after {
@@ -1227,7 +1227,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon-button [class^=icon] {
-    font-size: 1.40625rem;
+    font-size: 0.9375rem;
   }
 }
 .icon-button:hover {
@@ -1268,7 +1268,7 @@ svg {
   cursor: pointer;
 }
 .icon-button--invert [class^=icon] {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
 }
 .icon-button--invert [class^=icon-]:before,
 .icon-button--invert [class^=icon-]:after {
@@ -1283,7 +1283,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon-button--invert [class^=icon] {
-    font-size: 1.40625rem;
+    font-size: 0.9375rem;
   }
 }
 .icon-button--invert:hover {
@@ -1324,7 +1324,7 @@ svg {
   cursor: pointer;
 }
 .icon-button--primary [class^=icon] {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
 }
 .icon-button--primary [class^=icon-]:before,
 .icon-button--primary [class^=icon-]:after {
@@ -1339,7 +1339,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon-button--primary [class^=icon] {
-    font-size: 1.40625rem;
+    font-size: 0.9375rem;
   }
 }
 .icon-button--primary:hover {
@@ -1382,7 +1382,7 @@ svg {
   width: fit-content;
 }
 .icon-button-link [class^=icon] {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
 }
 .icon-button-link [class^=icon-]:before,
 .icon-button-link [class^=icon-]:after {
@@ -1397,7 +1397,7 @@ svg {
     margin: 0.75rem 0;
   }
   .icon-button-link [class^=icon] {
-    font-size: 1.40625rem;
+    font-size: 0.9375rem;
   }
 }
 .icon-button-link:hover {
