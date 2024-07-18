@@ -1086,9 +1086,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon [class^=icon] {
-  font-size: 2.25rem;
+  .icon [class^=icon] {
+    font-size: 2.25rem;
+  }
 }
 
 .icon--md {
@@ -1120,9 +1120,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon--md [class^=icon] {
-  font-size: 1.6875rem;
+  .icon--md [class^=icon] {
+    font-size: 1.6875rem;
+  }
 }
 
 .icon--sm {
@@ -1154,9 +1154,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon--sm [class^=icon] {
-  font-size: 1.125rem;
+  .icon--sm [class^=icon] {
+    font-size: 1.125rem;
+  }
 }
 
 .icon--md--text-sm {
@@ -1188,9 +1188,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon--md--text-sm [class^=icon] {
-  font-size: 0.7875rem;
+  .icon--md--text-sm [class^=icon] {
+    font-size: 0.7875rem;
+  }
 }
 
 .icon-button {
@@ -1226,9 +1226,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon-button [class^=icon] {
-  font-size: 1.40625rem;
+  .icon-button [class^=icon] {
+    font-size: 1.40625rem;
+  }
 }
 .icon-button:hover {
   background: var(--secondary);
@@ -1282,9 +1282,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon-button--invert [class^=icon] {
-  font-size: 1.40625rem;
+  .icon-button--invert [class^=icon] {
+    font-size: 1.40625rem;
+  }
 }
 .icon-button--invert:hover {
   background: var(--secondary);
@@ -1338,9 +1338,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon-button--primary [class^=icon] {
-  font-size: 1.40625rem;
+  .icon-button--primary [class^=icon] {
+    font-size: 1.40625rem;
+  }
 }
 .icon-button--primary:hover {
   background: var(--sub-background);
@@ -1396,9 +1396,9 @@ svg {
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
-}
-.icon-button-link [class^=icon] {
-  font-size: 1.40625rem;
+  .icon-button-link [class^=icon] {
+    font-size: 1.40625rem;
+  }
 }
 .icon-button-link:hover {
   background: var(--secondary);

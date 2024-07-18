@@ -59,10 +59,10 @@
         height: 0.75 * $size;
         padding: 0.75rem;
         margin: 0.75rem 0;
-    }
 
-    [class^="icon"] {
-        font-size: calc($size * $factor * 0.75);
+        [class^="icon"] {
+            font-size: calc($size * $factor * 0.75);
+        }
     }
 }
 
