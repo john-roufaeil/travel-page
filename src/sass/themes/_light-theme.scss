@@ -1,0 +1,10 @@
+:root.light-theme {
+    --background: #{$background};
+    --sub-background: #{$sub-background};
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --text: #{$text};
+    --sub-text: #{$sub-text};
+    --border: #{$border};
+    --opacity: #{$opacity};
+}

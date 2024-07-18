@@ -1,0 +1,10 @@
+:root.contrast-theme {
+    --background: #{$background-contrast};
+    --sub-background: #{$sub-background-contrast};
+    --primary: #{$primary-contrast};
+    --secondary: #{$secondary-contrast};
+    --text: #{$text-contrast};
+    --sub-text: #{$sub-text-contrast};
+    --border: #{$border-contrast};
+    --opacity: #{$opacity-contrast};
+}

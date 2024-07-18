@@ -1,6 +1,6 @@
 .coaching {
     @include layout();
-    @include flex(column, space-between, normal, 2rem);
+    @include flex(column, space-between, normal, 1rem);
 
     .countries-hello {
         @include respond-to(mobile) {
@@ -15,12 +15,12 @@
         .coaching-category {
             position: relative;
 
-            img {
+            .coaching__img {
                 width: 100%;
             }
 
             .coaching-details {
-                background-color: $sub-background;
+                background-color: var(--sub-background);
                 border-radius: 20px 0 20px 20px;
                 bottom: -4rem;
                 right: 0;

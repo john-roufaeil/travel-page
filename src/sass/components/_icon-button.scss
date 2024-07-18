@@ -3,21 +3,21 @@
 }
 
 .icon-button--invert {
-    @include icon-button($sub-background, $secondary);
+    @include icon-button(var(--sub-background), var(--secondary));
 }
 
 .icon-button--primary {
-    @include icon-button($primary, $sub-background);
+    @include icon-button(var(--primary), var(--sub-background));
 }
 
 .icon-button-link {
-    @include icon-button(transparent, $secondary, 1rem, 1rem);
+    @include icon-button(transparent, var(--secondary), 1rem, 1rem);
     height: 50%;
     width: fit-content;
 
     &:hover {
         .icon-link:before {
-            color: $sub-background;
+            color: var(--sub-background);
         }
     }
 }

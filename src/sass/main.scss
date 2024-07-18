@@ -19,10 +19,14 @@
 @import 'sections/countries';
 @import 'sections/visa';
 @import 'sections/available_countries';
-@import 'sections/CTA';
+@import 'sections/cta';
 @import 'sections/coaching';
 @import 'sections/team';
 @import 'sections/testimonial';
 @import 'sections/process';
 @import 'sections/blogs';
 @import 'sections/footer';
+
+@import 'themes/light-theme.scss';
+@import 'themes/dark-theme.scss';
+@import 'themes/contrast-theme.scss';

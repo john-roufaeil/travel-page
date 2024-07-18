@@ -1,24 +1,27 @@
 .process {
     @include flex(column, normal, center);
-    background-color: $sub-background;
-    color: $primary;
+    background-color: var(--sub-background);
+    color: var(--primary);
     border-radius: 50px;
     border: none;
     margin: 5rem 0 5rem 0;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
 
-    .process-shape {
-        width: 100%;
+    &::before {
+        content: '';
         position: absolute;
-        bottom: 0;
-        right: 0;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
-        z-index: 1;
-        opacity: $opacity;
-        position: absolute;
+        height: 100%;
+        background-image: url('/john/travel-page/assets/images/process-shape.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: var(--opacity);
+        pointer-events: none;
+        z-index: -1;
     }
 
     .process-container {
@@ -33,20 +36,20 @@
             .process-card {
                 @include flex(column, normal, normal, 1rem);
                 box-shadow: 0px 0px 5px 0px lightgray;
-                @include card($border, $sub-background, $text, 2rem, 2rem);
+                @include card(var(--border), var(--sub-background), var(--text), 2rem, 2rem);
                 margin: 0 0 2rem 0;
 
-                span {
+                [class^="icon"] {
                     font-size: 2rem;
                 }
 
                 [class^="icon"]:before {
-                    color: $primary;
+                    color: var(--primary);
                 }
 
                 .process-card-text {
                     font-size: 0.8rem;
-                    color: $text
+                    color: var(--text);
                 }
 
                 @include respond-to(mobile) {

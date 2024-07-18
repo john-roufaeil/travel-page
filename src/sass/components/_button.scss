@@ -1,80 +1,76 @@
 .contained-btn-sm {
-    @include btn($secondary, $background, small);
+    @include btn(var(--secondary), var(--background), small);
 }
 
 .contained-btn {
-    @include btn($secondary, $background, base);
+    @include btn(var(--secondary), var(--background), base);
 }
 
 .outlined-btn {
-    @include btn($primary, $sub-background, base);
+    @include btn(var(--primary), var(--sub-background), base);
 
     @include respond-to(mobile) {
-        @include btn($primary, $sub-background, small);
+        @include btn(var(--primary), var(--sub-background), small);
     }
 }
 
 .outlined-btn-sec-bg {
-    @include btn($background, $secondary, base, $secondary, $background);
+    @include btn(var(--background), var(--secondary), base, var(--secondary), var(--background));
 }
 
 .outlined-btn-sec {
-    @include btn($sub-background, $secondary, base, $secondary, $background);
+    @include btn(var(--sub-background), var(--secondary), base, var(--secondary), var(--background));
 }
 
 .text-btn {
-    @include btn(transparent, $sub-background, base, transparent);
+    @include btn(transparent, var(--sub-background), base, transparent);
 
     &:hover {
         text-decoration: underline;
         text-underline-offset: 0.25rem;
         background-color: transparent;
-        color: $sub-background;
+        color: var(--sub-background);
 
         [class^="icon-"]:before,
         [class^="icon-"]:after {
-            color: $sub-background;
+            color: var(--sub-background);
         }
     }
 
     @include respond-to(mobile) {
-        @include btn(transparent, $sub-background, small, transparent);
+        @include btn(transparent, var(--sub-background), small, transparent);
 
         &:hover {
             text-decoration: underline;
             text-underline-offset: 0.25rem;
             background-color: transparent;
-            color: $sub-background;
+            color: var(--sub-background);
 
             [class^="icon-"]:before,
             [class^="icon-"]:after {
-                color: $sub-background;
+                color: var(--sub-background);
             }
         }
     }
 }
 
 .text-btn--prim {
-    @include btn(transparent, $primary, small, transparent);
+    @include btn(transparent, var(--primary), small, transparent);
     font-weight: 600;
     font-size: 0.8rem;
     padding: 0;
     margin: 0;
     text-align: center;
 
-    span {
-        @include flex(row, end, end);
-    }
-
     &:hover {
         text-decoration: underline;
         text-underline-offset: 0.25rem;
         background-color: transparent;
-        color: $primary;
+        color: var(--primary);
 
         [class^="icon-"]:before,
         [class^="icon-"]:after {
-            color: $primary;
+            color: var(--primary);
         }
     }
 }

@@ -1,15 +1,12 @@
-.CTA {
+.cta {
     @include flex(row, space-between, normal, 2rem);
     @include layout();
 
-    .CTA-img {
+    .cta__img {
         width: 35%;
         height: auto;
-
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
+        height: 100%;
+        object-fit: cover;
 
         @include respond-to(mobile) {
             width: 50%;
@@ -17,49 +14,49 @@
         }
     }
 
-    .side-CTA {
+    .side-cta {
         width: 65%;
         @include flex(column, space-between, normal, 2rem);
 
-        .CTA-offers {
+        .cta-offers {
             border-radius: 20px;
-            background-color: $white;
+            background-color: var(--sub-background);
             width: 100%;
             height: 100%;
             font-size: 0.8rem;
             @include flex(row, space-between, center);
 
-            img {
+            .cta-offers__img {
                 width: 35%;
                 height: 100%;
                 object-fit: cover;
             }
 
-            .CTA-offers-details {
+            .cta-offers-details {
                 @include flex(column, space-around);
                 padding: 2rem;
-                background-color: $sub-background;
+                background-color: var(--sub-background);
             }
         }
 
-        .CTA-stats {
+        .cta-stats {
             border-radius: 20px;
-            background-color: $secondary;
+            background-color: var(--secondary);
             width: 100%;
             @include flex(row, space-evenly);
             padding: 2.5rem 1.5rem;
 
-            .CTA-stat {
+            .cta-stat {
                 @include flex(column);
                 text-align: center;
-                color: $white;
+                color: var(--white);
 
-                .CTA-number {
+                .cta-number {
                     font-size: 2.2rem;
                     font-weight: 700;
                 }
 
-                .CTA-desc {
+                .cta-desc {
                     font-size: 0.7rem;
                     font-weight: 400;
                 }

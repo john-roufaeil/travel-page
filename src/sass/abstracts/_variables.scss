@@ -1,6 +1,8 @@
-// colors
+// common colors
 $white: #FFFFFF;
 $black: #121212;
+
+// light theme
 $background: #F1F5EB;
 $sub-background: #FFFFFF;
 $primary: #2437AC;
@@ -8,8 +10,27 @@ $secondary: #00B8FF;
 $text: #16171A;
 $sub-text: #727272;
 $border: #E3DBD8;
-
 $opacity: 30%;
+
+// dark theme
+$background-dark: #1F1F1F;
+$sub-background-dark: #272827;
+$primary-dark: #3B82F6;
+$secondary-dark: #32baec;
+$text-dark: #E5E5E5;
+$sub-text-dark: #A0A0A0;
+$border-dark: #3A3A3A;
+$opacity-dark: 100%;
+
+// contrast theme
+$background-contrast: #111111;
+$sub-background-contrast: #111111;
+$primary-contrast: #e33d3d;
+$secondary-contrast: #3DE3E3;
+$text-contrast: #ffffff;
+$sub-text-contrast: #ffffff;
+$border-contrast: #ffffff;
+$opacity-contrast: 100%;
 
 // font
 $font-stack: 'Helvetica, Arial, sans-serif';

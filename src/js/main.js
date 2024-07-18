@@ -1,8 +1,18 @@
+const root = document.documentElement;
+
 function toggleTheme(theme) {
     if (theme === 'light') {
-        document.head.getElementsByTagName("link")[1].href = "css/styles.css"
+        root.classList.remove("contrast-theme");
+        root.classList.remove("dark-theme");
+        root.classList.add("light-theme");
+    } else if (theme === 'dark') {
+        root.classList.remove("contrast-theme");
+        root.classList.add("dark-theme");
+        root.classList.remove("light-theme");
     } else {
-        document.head.getElementsByTagName("link")[1].href = "css/styles-dark.css"
+        root.classList.add("contrast-theme");
+        root.classList.remove("dark-theme");
+        root.classList.remove("light-theme");
     }
     localStorage.setItem('theme', theme);
 }
@@ -14,7 +24,7 @@ function toggleSize(size) {
         newSize = (sizeValue - 4) + 'px';
     }
 
-    document.documentElement.style.fontSize = newSize;
+    root.style.fontSize = newSize;
     localStorage.setItem('fontSize', size);
 }
 
@@ -24,6 +34,10 @@ document.getElementById('toggle-light-theme').addEventListener('click', function
 
 document.getElementById('toggle-dark-theme').addEventListener('click', function () {
     toggleTheme('dark');
+});
+
+document.getElementById('toggle-contrast-theme').addEventListener('click', function () {
+    toggleTheme('contrast');
 });
 
 document.getElementById('toggle-large-size').addEventListener('click', function () {
@@ -45,6 +59,8 @@ function loadPreferences() {
 
     if (savedTheme) {
         toggleTheme(savedTheme);
+    } else {
+        root.classList.add('light-theme');
     }
 
     if (savedFontSize) {

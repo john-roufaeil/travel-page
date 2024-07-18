@@ -11,5 +11,5 @@
 }
 
 .icon--md--text-sm {
-    @include icon(3rem, $secondary, $white, 0.35);
+    @include icon(3rem, var(--secondary), var(--white), 0.35);
 }

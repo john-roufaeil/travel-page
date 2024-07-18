@@ -1,0 +1,10 @@
+:root.dark-theme {
+    --background: #{$background-dark};
+    --sub-background: #{$sub-background-dark};
+    --primary: #{$primary-dark};
+    --secondary: #{$secondary-dark};
+    --text: #{$text-dark};
+    --sub-text: #{$sub-text-dark};
+    --border: #{$border-dark};
+    --opacity: #{$opacity-dark};
+}

@@ -1,15 +1,27 @@
-nav {
+.navbar {
     @include flex(row, space-between, center);
 
-    ul {
+    .navbar__ul {
         @include flex(row, normal, normal, 1rem);
 
-        li {
-            vertical-align: middle;
+        .nav-item {
             cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .navbar__link,
+        .navbar__link:visited {
+            color: var(--primary);
             display: inline-flex;
             align-items: center;
             gap: 0.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            [class^="icon-"]::before {
+                color: var(--primary)
+            }
         }
 
         @include respond-to(mobile) {
@@ -20,14 +32,6 @@ nav {
 
     @include respond-to(mobile) {
         @include flex(column, normal, center, 1rem, wrap);
-    }
-}
-
-section {
-    margin: 5rem auto;
-
-    @include respond-to(mobile) {
-        margin: 2rem auto;
     }
 }
 

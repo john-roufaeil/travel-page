@@ -3,15 +3,15 @@
 }
 
 .card--md {
-    @include card($border, $background, $sub-text, 1rem, 1rem, 49%);
+    @include card(var(--border), var(--background), var(--sub-text), 1rem, 1rem, 49%);
     @include flex(row, space-between, center, 2rem);
 }
 
 .card--sm {
-    @include card($border, $background, $text, 1rem, 1rem, 48%)
+    @include card(var(--border), var(--background), var(--text), 1rem, 1rem, 48%)
 }
 
 .card--vert {
-    @include card($border, $background, $text, 2rem, 2rem, 24%, 49%);
+    @include card(var(--border), var(--background), var(--text), 2rem, 2rem, 24%, 49%);
     @include flex(column, space-evenly, start, 1rem);
 }

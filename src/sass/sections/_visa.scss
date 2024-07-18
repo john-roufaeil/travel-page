@@ -7,9 +7,8 @@
     }
 }
 
-
 .card--md {
-    img {
+    .card--md__img {
         width: 40%;
     }
 
@@ -24,8 +23,8 @@
     .visa-card-icons {
         @include flex(row, space-between, center);
 
-        span[class^="icon-"]:not(.icon-link):before {
-            color: $primary;
+        [class^="icon-"]:not(.icon-link):before {
+            color: var(--primary);
         }
     }
 

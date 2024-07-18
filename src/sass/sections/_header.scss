@@ -1,13 +1,6 @@
-.nav-item {
-    font-weight: 700;
-    text-decoration: none;
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
 .welcome {
-    background-color: $primary;
-    color: $white;
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 50px;
     border: none;
     margin: 1rem 0;
@@ -15,8 +8,8 @@
     @include flex(row, normal, center);
     padding: 0 0 0 15rem;
     position: relative;
-    height: 80vh;
-    color: $sub-background;
+    height: 80dvh;
+    color: var(--sub-background);
 
     .welcome__text {
         width: 40%;
@@ -91,7 +84,7 @@
     text-decoration: none;
     padding: 0.6rem 0.5rem 0.6rem 0.75rem;
     border-radius: 100%;
-    background-color: $secondary;
+    background-color: var(--secondary);
     text-align: center;
 }
 

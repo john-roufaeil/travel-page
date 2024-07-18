@@ -7,10 +7,10 @@
     padding: 0;
     z-index: 5;
 
-    button {
+    .preference__button {
         @include flex(column, center, center);
-        background-color: $background;
-        border: 1px solid $border;
+        background-color: var(--background);
+        border: 1px solid var(--border);
         cursor: pointer;
         width: 2rem;
         height: 2rem;
@@ -19,11 +19,11 @@
 
         [class^="icon-"]::after,
         [class^="icon-"]::before {
-            color: $text;
+            color: var(--text);
         }
 
         &:hover {
-            background-color: $secondary;
+            background-color: var(--secondary);
         }
 
         &:active {

@@ -1,22 +1,27 @@
 .team {
     @include flex(column);
-    background-color: $sub-background;
-    color: $primary;
+    background-color: var(--sub-background);
+    color: var(--primary);
     border-radius: 50px;
     border: none;
     margin: 10rem 0 5rem 0;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
 
-    .teams-shape {
+    &::before {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;
-        z-index: 1;
-        opacity: $opacity;
+        height: 100%;
+        background-image: url('/john/travel-page/assets/images/team-shape.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: var(--opacity);
+        pointer-events: none;
+        z-index: -1;
     }
 
     .team-container {
@@ -34,12 +39,12 @@
 
                 .team-object {
                     @include flex(row, space-between, center);
-                    border: 1px solid $border;
+                    border: 1px solid var(--border);
                     width: 100%;
                     padding: 1rem 2rem;
                     border-radius: 20px;
                     z-index: 3;
-                    background-color: $sub-background;
+                    background-color: var(--sub-background);
 
                     .team-object-text {
                         @include flex(column, space-around, normal, 0.5rem);
@@ -60,7 +65,7 @@
                     position: absolute;
                     margin: auto;
                     bottom: 2.5rem;
-                    background-color: $sub-background;
+                    background-color: var(--sub-background);
                     border-radius: 20px;
                     width: fit-content;
                     padding: 0.5rem 1rem;
@@ -68,17 +73,17 @@
 
                     [class^="icon-"]:before,
                     [class^="icon-"]:after {
-                        color: $primary;
+                        color: var(--primary);
                     }
                 }
 
-                img {
+                .team__img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
 
-                a {
+                .social-media__link {
                     text-decoration: none;
                 }
 

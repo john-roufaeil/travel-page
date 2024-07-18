@@ -3,23 +3,23 @@
 }
 
 .card__title {
-    @include title(1.5rem, $primary);
+    @include title(1.5rem, var(--primary));
 }
 
 .card__title--md {
-    @include title(1.2rem, $primary);
+    @include title(1.2rem, var(--primary));
 }
 
 .card__title--md--white {
-    @include title(1.2rem, $sub-background);
+    @include title(1.2rem, var(--sub-background));
 }
 
 .card__title--base {
-    @include title(1rem, $primary);
+    @include title(1rem, var(--primary));
 }
 
 .card__title--sm {
-    @include title(0.8rem, $primary);
+    @include title(0.8rem, var(--primary));
 }
 
 .section__title {
@@ -27,23 +27,23 @@
 }
 
 .section__title--black {
-    @include title(2.5rem, $text);
+    @include title(2.5rem, var(--text));
 }
 
 .section__title--sub-bg {
-    @include title(2.5rem, $sub-background)
+    @include title(2.5rem, var(--sub-background));
 }
 
 .section__title--head {
-    @include title(0.8rem, $primary);
+    @include title(0.8rem, var(--primary));
     text-transform: uppercase;
 }
 
 .section__title--head--white {
-    @include title(0.8rem, $sub-background);
+    @include title(0.8rem, var(--sub-background));
     text-transform: uppercase;
 }
 
 .footer__title {
-    @include title(1.2rem, $white);
+    @include title(1.2rem, var(--white));
 }

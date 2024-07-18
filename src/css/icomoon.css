@@ -248,3 +248,7 @@
 .icon-sun:before {
   content: "\e9d4";
 }
+
+.icon-contrast:before {
+  content: "\e9d5";
+}

@@ -17,7 +17,7 @@
         @include flex(row, space-between, center, 1rem);
 
         .card--vert {
-            img {
+            .card--vert__img {
                 width: 3rem;
             }
 
@@ -34,12 +34,12 @@
                 }
 
                 .icon-tick::before {
-                    color: $primary
+                    color: var(--primary);
                 }
 
-                p {
+                .tick-text {
                     font-size: 0.8rem;
-                    color: $sub-text;
+                    color: var(--sub-text);
                 }
             }
         }

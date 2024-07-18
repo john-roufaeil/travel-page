@@ -1,6 +1,6 @@
 .countries {
-    background-color: $primary;
-    color: $white;
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 50px;
     border: none;
     margin: 1rem 0;
@@ -19,7 +19,7 @@
             [class$="-img"] {
                 position: relative;
 
-                & img {
+                & .countries__img {
                     height: 100%;
                     width: 100%;
                 }
@@ -45,8 +45,8 @@
 
             .working-visa {
                 @include flex(column, space-between, normal, 0.6rem);
-                background-color: $secondary;
-                color: $sub-background;
+                background-color: var(--secondary);
+                color: var(--sub-background);
                 margin: 1rem;
                 padding: 1.5rem 1rem;
                 border-radius: 20px;

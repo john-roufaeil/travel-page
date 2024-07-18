@@ -5,7 +5,7 @@
     .testimonial-img {
         width: 40%;
 
-        img {
+        .testimonial__img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -13,11 +13,11 @@
     }
 
     .testimonial-details {
-        @include card($secondary, $secondary, $sub-background, 3rem, 3rem, 60%);
+        @include card(var(--secondary), var(--secondary), var(--sub-background), 3rem, 3rem, 60%);
         @include flex(column, space-between);
 
         .icon-quotes::before {
-            color: $sub-background
+            color: var(--sub-background);
         }
 
         .icon-quotes {
@@ -31,7 +31,7 @@
         .testimonial-contact {
             @include flex(row, normal, center, 0.5rem);
 
-            img {
+            .testimonial-contact-img {
                 transform: scale(0.8);
             }
 
@@ -51,8 +51,8 @@
         .testimonial-nav {
             @include flex(row, normal, center, 1rem);
 
-            hr {
-                border: 1px solid $sub-background;
+            .testimonial__hr {
+                border: 1px solid var(--sub-background);
                 width: 100%;
             }
         }

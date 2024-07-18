@@ -1,5 +1,5 @@
 .blogs {
-    @include flex(column, space-between, normal, 2rem);
+    @include flex(column, space-between, normal, 1rem);
     @include layout();
 
     .countries-hello {
@@ -13,38 +13,34 @@
 
         .blog {
             @include flex(column, normal, center);
-            @include card($border, $background, $text, 0, 0, 32%);
+            @include card(var(--border), var(--background), var(--text), 0, 0, 32%);
 
             .blog-info {
                 @include flex(column, space-between, normal, 1rem);
 
                 .blog-details {
                     @include flex(row, space-between, center);
-                    color: $text;
+                    color: var(--text);
                     font-size: 0.8rem;
 
                     [class^="icon"]:before {
-                        color: $text
+                        color: var(--text);
                     }
 
                     .date,
                     .admin {
                         @include flex(row, normal, center, 0.25rem);
-
-                        p,
-                        span {
-                            font-size: 0.8rem;
-                        }
+                        font-size: 0.8rem;
                     }
                 }
 
                 .blog-text {
                     font-size: 0.8rem;
-                    color: $sub-text;
+                    color: var(--sub-text);
                 }
             }
 
-            img {
+            .blog__img {
                 width: 100%;
             }
 
