@@ -42,3 +42,23 @@
 .carousel-icons {
     @include flex(row, center, normal, 1rem);
 }
+
+.skip-link {
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    width: 20rem;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0 0 4rem 0;
+    clip-path: ellipse(15rem 4rem at 0% 0%);
+    background-color: var(--primary);
+    color: var(--background);
+    transition: top 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:focus {
+        top: 0;
+        z-index: 100;
+    }
+}
